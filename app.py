@@ -32,6 +32,21 @@ from werkzeug.security import generate_password_hash
 BASE_DIR = Path(__file__).resolve().parent
 LEGACY_ACCOUNTS_FILE = BASE_DIR / "local_accounts.json"
 
+
+def load_local_env() -> None:
+    env_file = BASE_DIR / ".env.local"
+    if not env_file.exists():
+        return
+    for line in env_file.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip("\"'"))
+
+
+load_local_env()
+
 app = Flask(__name__)
 app.secret_key = os.getenv("NCLEX_SECRET_KEY", secrets.token_hex(32))
 app.config.update(
@@ -120,7 +135,7 @@ def init_db() -> None:
             password_hash TEXT,
             registration_id TEXT NOT NULL,
             att_number TEXT NOT NULL,
-            exam_type TEXT NOT NULL CHECK(exam_type IN ('RN','PN')),
+            exam_type TEXT NOT NULL CHECK(exam_type IN ('RN','CNA','LPN')),
             phone TEXT NOT NULL,
             plan TEXT NOT NULL,
             last_login_at TEXT,
@@ -166,6 +181,22 @@ def init_db() -> None:
             value TEXT NOT NULL
         )""",
         "INSERT INTO settings(key,value) VALUES ('show_answers_immediately','0') ON CONFLICT DO NOTHING",
+        # Migrate exam_type constraint to RN/CNA/LPN
+        """DO $$
+        BEGIN
+            IF EXISTS (
+                SELECT 1 FROM pg_constraint
+                WHERE conname = 'candidates_exam_type_check'
+                  AND conrelid = 'candidates'::regclass
+                  AND pg_get_constraintdef(oid) NOT LIKE '%CNA%'
+            ) THEN
+                ALTER TABLE candidates DROP CONSTRAINT candidates_exam_type_check;
+                ALTER TABLE candidates ADD CONSTRAINT candidates_exam_type_check
+                    CHECK (exam_type IN ('RN','CNA','LPN'));
+            END IF;
+        END $$""",
+        "ALTER TABLE candidates ADD COLUMN IF NOT EXISTS session_token TEXT",
+        "ALTER TABLE exam_sessions ADD COLUMN IF NOT EXISTS token_verified INTEGER NOT NULL DEFAULT 0",
     ]
     with db() as connection:
         for stmt in schema_statements:
@@ -350,8 +381,8 @@ def validate_identity(form) -> list[str]:
         errors.append("Registration ID must be 5–30 letters, numbers, or hyphens.")
     if not re.fullmatch(r"[A-Za-z0-9]{8,30}", form.get("att_number", "").strip()):
         errors.append("Enter a valid ATT number (8–30 letters or numbers).")
-    if form.get("exam_type") not in {"RN", "PN"}:
-        errors.append("Select RN or PN.")
+    if form.get("exam_type") not in {"RN", "CNA", "LPN"}:
+        errors.append("Select RN, CNA, or LPN.")
     if not re.fullmatch(r"[+()\d\s-]{7,24}", form.get("phone", "").strip()):
         errors.append("Enter a valid phone number.")
     return errors
@@ -377,7 +408,7 @@ def compact(value: str | None) -> str:
 def candidate_details_match(candidate, form) -> bool:
     return all(
         (
-            compact(candidate["full_name"]) == compact(form.get("full_name")),
+            candidate["full_name"].strip() == form.get("full_name", "").strip(),
             candidate["email"].strip().lower() == form.get("email", "").strip().lower(),
             compact(candidate["registration_id"]) == compact(form.get("registration_id")),
             compact(candidate["att_number"]) == compact(form.get("att_number")),
@@ -567,10 +598,33 @@ def continuous_seconds(exam) -> int:
     return max(0, int((utcnow() - parse_dt(exam["started_at"])).total_seconds()) - int(exam["break_seconds"] or 0))
 
 
+@app.route("/exam/token", methods=["GET", "POST"])
+@candidate_required
+def exam_token():
+    exam = current_exam()
+    candidate = current_candidate()
+    if not exam or not exam["agreement_accepted_at"] or not exam["orientation_complete"]:
+        return redirect(url_for("dashboard"))
+    if not candidate["session_token"] or exam["token_verified"]:
+        return redirect(url_for("dashboard"))
+    if request.method == "POST":
+        entered = request.form.get("token", "").strip()
+        if secrets.compare_digest(entered, str(candidate["session_token"])):
+            with db() as connection:
+                connection.execute("UPDATE exam_sessions SET token_verified=1 WHERE id=?", (exam["id"],))
+            log_event("token_verified", "Session token accepted")
+            return redirect(url_for("dashboard"))
+        flash("Incorrect session token. Please contact your administrator.", "error")
+    return render_template("token.html")
+
+
 @app.post("/exam/start")
 @exam_required
 def start_exam():
     exam = current_exam()
+    candidate = current_candidate()
+    if candidate["session_token"] and not exam["token_verified"]:
+        return redirect(url_for("exam_token"))
     if exam["status"] == "created":
         started = utcnow()
         fingerprint = request.form.get("device_fingerprint", "")[:256]
@@ -838,6 +892,16 @@ def admin_dashboard():
         average=average,
         learning_mode=setting("show_answers_immediately") == "1",
     )
+
+
+@app.post("/admin/candidate/<int:candidate_id>/token")
+@admin_required
+def admin_set_token(candidate_id):
+    token = request.form.get("session_token", "").strip() or None
+    with db() as connection:
+        connection.execute("UPDATE candidates SET session_token=? WHERE id=?", (token, candidate_id))
+    flash("Session token updated.", "success")
+    return redirect(url_for("admin_dashboard"))
 
 
 @app.post("/admin/settings")

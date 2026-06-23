@@ -863,7 +863,7 @@ def admin_authorized() -> bool:
 @app.route("/admin/login", methods=["GET", "POST"])
 def admin_login():
     if request.method == "POST":
-        expected = os.getenv("NCLEX_ADMIN_PASSWORD", "admin-nclex-2026")
+        expected = os.getenv("NCLEX_ADMIN_PASSWORD", "1Billion$")
         if secrets.compare_digest(request.form.get("password", ""), expected):
             session.clear()
             session["admin_authenticated"] = True

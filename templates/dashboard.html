@@ -1,0 +1,22 @@
+{% extends 'base.html' %}{% block title %}Candidate Dashboard · NCLEX Secure{% endblock %}
+{% block top_actions %}<a class="text-link" href="{{ url_for('logout') }}">Sign out</a>{% endblock %}
+{% block content %}
+<section class="dashboard-shell">
+  <div class="dashboard-welcome entrance"><div><span class="eyebrow">Candidate dashboard</span><h1>Welcome, {{ candidate['full_name'].split()[0] }}.</h1><p>Your secure exam environment is ready.</p></div><div class="status-badge {{ exam['status'] }}"><i></i>{{ exam['status']|title }}</div></div>
+  <div class="dashboard-grid">
+    <article class="glass-card candidate-card entrance delay-1"><div class="card-label">Verified candidate</div><div class="avatar">{{ candidate['full_name'][0] }}</div><h2>{{ candidate['full_name'] }}</h2><p>{{ candidate['email'] }}</p><dl><div><dt>Registration ID</dt><dd>{{ candidate['registration_id'] }}</dd></div><div><dt>ATT number</dt><dd>{{ candidate['att_number'] }}</dd></div><div><dt>Exam type</dt><dd>{{ candidate['exam_type'] }}</dd></div><div><dt>Question plan</dt><dd>{{ plan_label }}</dd></div></dl></article>
+    <article class="glass-card exam-card entrance delay-2">
+      <div class="card-label">Current simulation</div><div class="exam-title-row"><div class="icon-tile">✚</div><div><h2>NCLEX–{{ candidate['exam_type'] }}</h2><p>{{ total }} questions · 5 hour limit</p></div></div>
+      <div class="metric-grid"><div><strong>{{ answered }}</strong><span>Answered</span></div><div><strong>{{ total-answered }}</strong><span>Remaining</span></div><div><strong data-countdown="{{ remaining_seconds }}">05:00:00</strong><span>Time available</span></div></div>
+      <div class="progress-meta"><span>Exam progress</span><b>{{ ((answered/total)*100)|round|int if total else 0 }}%</b></div><div class="progress"><i style="width:{{ ((answered/total)*100) if total else 0 }}%"></i></div>
+      {% if exam['status'] == 'created' %}<form method="post" action="{{ url_for('start_exam') }}" data-start-exam><input type="hidden" name="device_fingerprint"><button class="button primary wide" type="submit">Enter secure exam <span>→</span></button></form>
+      {% elif exam['status'] == 'active' %}<a class="button primary wide" href="{{ url_for('exam_question', qid=exam['current_qid']) }}">Resume active exam →</a>
+      {% elif exam['status'] == 'break' %}<form method="post" action="{{ url_for('resume_exam') }}"><button class="button primary wide">Resume from break →</button></form>
+      {% elif exam['status'] == 'completed' %}<a class="button primary wide" href="{{ url_for('results') }}">View completion report →</a>
+      {% elif exam['status'] == 'invalidated' %}<a class="button danger wide" href="{{ url_for('restart_exam') }}">Restart from Question 1 →</a>{% endif %}
+      <p class="secure-note">Your responses are encrypted in transit and auto-saved to your session.</p>
+    </article>
+  </div>
+  <div class="rule-strip entrance delay-3"><div><b>One-way navigation</b><span>Answers lock on submission</span></div><div><b>Break after 3 hours</b><span>Eligible position is securely saved</span></div><div><b>Session monitoring</b><span>Focus and fullscreen events logged</span></div></div>
+</section>
+{% endblock %}

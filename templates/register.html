@@ -1,0 +1,18 @@
+{% extends 'base.html' %}{% block title %}Candidate Registration · NCLEX Secure{% endblock %}
+{% block content %}
+<section class="narrow-shell">
+  <div class="section-heading entrance"><span class="eyebrow">Secure enrolment</span><h1>Candidate identity verification</h1><p>All fields are required and linked to one protected exam session.</p></div>
+  <form method="post" class="glass-card form-grid entrance delay-1">
+    <label class="span-2">Full legal name<input name="full_name" value="{{ request.form.get('full_name','') }}" autocomplete="name" minlength="3" required></label>
+    <label>Email address<input type="email" name="email" value="{{ request.form.get('email','') }}" autocomplete="email" required></label>
+    <label>Phone number<input type="tel" name="phone" value="{{ request.form.get('phone','') }}" autocomplete="tel" required></label>
+    <label>Registration ID<input name="registration_id" value="{{ request.form.get('registration_id','') }}" pattern="[A-Za-z0-9-]{5,30}" required></label>
+    <label>ATT number<input name="att_number" value="{{ request.form.get('att_number','') }}" pattern="[A-Za-z0-9]{8,30}" required></label>
+    <label>Exam type<select name="exam_type" required><option value="">Select exam</option><option>RN</option><option>PN</option></select></label>
+    <label>Package access key<input type="password" name="access_key" autocomplete="off" required></label>
+    <label>Password<input type="password" name="password" autocomplete="new-password" minlength="8" required></label>
+    <label>Confirm password<input type="password" name="confirm_password" autocomplete="new-password" minlength="8" required></label>
+    <div class="span-2 form-actions"><a class="button ghost" href="{{ url_for('login') }}">Back to sign in</a><button class="button primary" type="submit">Create secure record →</button></div>
+  </form>
+</section>
+{% endblock %}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>{% block title %}NCLEX Secure Simulation{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body class="{% block body_class %}{% endblock %}">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <div class="header-title">
+      <b>Candidate Examination</b>
+      <small>Authorization Portal</small>
+    </div>
+    <div class="top-actions">
+      {% if candidate %}<span class="secure-chip"><i></i> Secure session</span><span class="candidate-mini">{{ candidate['full_name'] }}</span>{% endif %}
+      {% block top_actions %}{% endblock %}
+    </div>
+    <a class="brand" href="{{ url_for('dashboard') if candidate else url_for('login') }}" aria-label="NCLEX exam login home">
+      <span class="nclex-wordmark" aria-hidden="true">NCLE<span>X</span><sup>®</sup></span>
+    </a>
+  </header>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}<div class="toast-stack">{% for category,message in messages %}<div class="toast {{ category }}">{{ message }}</div>{% endfor %}</div>{% endif %}
+  {% endwith %}
+  <main class="page-shell page-enter">{% block content %}{% endblock %}</main>
+  <footer>Secure Simulation · Educational use only · © {{ now_year }}</footer>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

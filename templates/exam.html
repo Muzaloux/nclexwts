@@ -1,0 +1,27 @@
+{% extends 'base.html' %}{% block title %}Question {{ qid }} · NCLEX Secure{% endblock %}{% block body_class %}exam-mode{% endblock %}
+{% block top_actions %}<button class="button compact ghost" data-fullscreen>Enter fullscreen</button>{% endblock %}
+{% block content %}
+<section class="exam-shell" data-exam-session data-activity-url="{{ url_for('activity') }}">
+  <div class="exam-statusbar">
+    <div><span class="eyebrow">NCLEX–{{ candidate['exam_type'] }}</span><strong>Question {{ qid }} of {{ total }}</strong></div>
+    <div class="timer" data-countdown="{{ remaining_seconds }}"><span>Time remaining</span><strong>05:00:00</strong></div>
+    <div class="exam-actions">{% if break_eligible %}<form method="post" action="{{ url_for('take_break') }}"><button class="button amber compact">Take break</button></form>{% else %}<span class="locked-chip">Break locked</span>{% endif %}<span class="autosave"><i></i>Auto-save on</span></div>
+  </div>
+  <div class="exam-progress"><i style="width:{{ ((qid-1)/total)*100 }}%"></i></div>
+  <article class="question-card glass-card entrance">
+    <div class="question-meta"><span>{{ question['domain'] or 'Clinical judgement' }}</span>{% if question['difficulty'] %}<span>{{ question['difficulty'] }}</span>{% endif %}<span>{{ 'Select all that apply' if question['is_sata'] else 'Select one answer' }}</span></div>
+    {% if question['scenario'] %}<div class="clinical-note"><b>Clinical scenario</b><p>{{ question['scenario'] }}</p></div>{% endif %}
+    {% if question['image'] %}<figure class="exhibit"><img src="{{ url_for('static',filename=question['image']) }}" alt="{{ question['image_prompt'] or 'Clinical image' }}"><figcaption>{{ question['image_prompt'] or 'Clinical image' }}</figcaption></figure>{% endif %}
+    <h1>{{ question['question'] }}</h1>
+    <form method="post" class="answers-form" data-answer-form>
+      <div class="answers-list">{% for option in question['options'] %}{% set correct = option['letter'] in question['answer'] %}{% set chosen = option['letter'] in selected %}<label class="answer-option {% if show_feedback and correct %}correct{% elif show_feedback and chosen %}incorrect{% endif %}">
+        <input type="{{ 'checkbox' if question['is_sata'] else 'radio' }}" name="answer" value="{{ option['letter'] }}" {% if chosen %}checked{% endif %} {% if answer_row %}disabled{% endif %}><span class="answer-letter">{{ option['letter'] }}</span><span>{{ option['text'] }}</span>{% if show_feedback and correct %}<b class="answer-state">Correct</b>{% elif show_feedback and chosen %}<b class="answer-state">Selected</b>{% endif %}
+      </label>{% endfor %}</div>
+      {% if not answer_row %}<div class="submit-row"><p>Your selection cannot be changed after submission.</p><button class="button primary" type="submit" disabled data-submit-answer>Submit & lock answer →</button></div>{% endif %}
+    </form>
+    {% if show_feedback %}<div class="rationale {{ 'success' if is_correct else 'error' }}"><span class="eyebrow">{{ 'Correct response' if is_correct else 'Review this concept' }}</span><h2>{{ 'Well reasoned.' if is_correct else 'That response was not correct.' }}</h2><p>{{ question['explanation'] }}</p></div><form method="post" action="{{ url_for('next_question') }}" class="next-row"><button class="button primary">Continue to next question →</button></form>{% endif %}
+  </article>
+  <p class="exam-footer-note">Do not close this window or leave this tab. Security activity is recorded.</p>
+  <div class="security-modal" data-security-modal hidden><div><span class="warning-icon">!</span><h2>Exam focus interrupted</h2><p>You left the secure exam view. This event has been recorded. Return to fullscreen to continue.</p><button class="button primary" data-return-exam>Return to exam</button></div></div>
+</section>
+{% endblock %}

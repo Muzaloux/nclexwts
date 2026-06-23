@@ -1,0 +1,5064 @@
+[
+  {
+    "id": 1,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": "Adult patient in respiratory distress with accessory muscle use and pursed-lip breathing.",
+    "scenario": "A 68-year-old male with a history of COPD presents to the ED with increased shortness of breath, pursed-lip breathing, and use of accessory muscles. SpO2 is 84% on room air. ABG results: pH 7.28, PaCO2 62 mmHg, PaO2 55 mmHg, HCO3 28 mEq/L.",
+    "stem": "Which is the priority hypothesis the nurse should address first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Impaired gas exchange related to airflow obstruction"
+      },
+      {
+        "letter": "B",
+        "text": "Activity intolerance related to dyspnea"
+      },
+      {
+        "letter": "C",
+        "text": "Anxiety related to respiratory distress"
+      },
+      {
+        "letter": "D",
+        "text": "Risk for infection related to retained secretions"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "The ABG shows acute-on-chronic respiratory acidosis with hypoxemia (pH 7.28, PaCO2 62, PaO2 55). Impaired gas exchange is the immediate life-threatening priority.",
+    "image": "imported_images/scene_02_respiratory_distress_1.png"
+  },
+  {
+    "id": 2,
+    "domain": "Generate Solutions",
+    "difficulty": "Hard",
+    "type": "SATA",
+    "image_prompt": "ECG strip showing wide-complex tachycardia at a rate of 158 bpm with no discernible P waves.",
+    "scenario": "A 54-year-old female post-MI day 2 develops sudden palpitations. Refer to the ECG strip above.",
+    "stem": "Which interventions should the nurse prepare to implement? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Obtain a 12-lead ECG"
+      },
+      {
+        "letter": "B",
+        "text": "Administer atropine 0.5 mg IV push"
+      },
+      {
+        "letter": "C",
+        "text": "Notify the provider immediately"
+      },
+      {
+        "letter": "D",
+        "text": "Prepare for synchronized cardioversion"
+      },
+      {
+        "letter": "E",
+        "text": "Establish IV access if not already present"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "C",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Wide-complex tachycardia post-MI is ventricular tachycardia until proven otherwise. Priority actions: 12-lead ECG, notify provider, prepare for cardioversion, and ensure IV access.",
+    "image": "generated_images/main_plan_q2.jpg"
+  },
+  {
+    "id": 3,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse administered 40 mEq potassium chloride IV over 4 hours to a patient with hypokalemia (K+ 2.9 mEq/L). A repeat lab is drawn 2 hours after completion.",
+    "stem": "Which finding best indicates that the treatment has been effective?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Serum potassium of 3.6 mEq/L and absence of muscle cramps"
+      },
+      {
+        "letter": "B",
+        "text": "Urine output of 35 mL/hr"
+      },
+      {
+        "letter": "C",
+        "text": "Patient reports feeling less fatigued"
+      },
+      {
+        "letter": "D",
+        "text": "Heart rate of 62 bpm in sinus rhythm"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "The most objective and direct measure of treatment effectiveness is a serum potassium within normal range (3.5-5.0 mEq/L) combined with resolution of symptoms like muscle cramps."
+  },
+  {
+    "id": 4,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A 32-year-old woman at 38 weeks gestation arrives in triage. BP is 168/110 mmHg, she reports severe headache and visual changes. Urine dipstick shows 3+ protein. Deep tendon reflexes are hyperactive (3+).",
+    "stem": "What is the nurse's priority hypothesis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fluid volume deficit related to proteinuria"
+      },
+      {
+        "letter": "B",
+        "text": "Risk for seizure activity related to severe preeclampsia"
+      },
+      {
+        "letter": "C",
+        "text": "Altered comfort related to headache"
+      },
+      {
+        "letter": "D",
+        "text": "Anxiety related to high-risk pregnancy"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "This patient meets criteria for severe preeclampsia (BP >=160/110, proteinuria, neurological symptoms, hyperreflexia). The priority hypothesis is seizure risk (eclampsia), which is immediately life-threatening to mother and fetus."
+  },
+  {
+    "id": 5,
+    "domain": "Generate Solutions",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A 78-year-old male with a hip fracture repair yesterday has a new onset confusion, agitation, and is attempting to climb out of bed. His SpO2 is 93%, HR 102, and he is pulling at his urinary catheter.",
+    "stem": "Which nursing interventions are appropriate at this time? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apply bilateral wrist restraints immediately"
+      },
+      {
+        "letter": "B",
+        "text": "Reorient the patient and reduce environmental stimuli"
+      },
+      {
+        "letter": "C",
+        "text": "Assess for pain, hypoxia, urinary retention, and infection"
+      },
+      {
+        "letter": "D",
+        "text": "Ensure call light is within reach and bed is in lowest position"
+      },
+      {
+        "letter": "E",
+        "text": "Notify the provider and document change in mental status"
+      }
+    ],
+    "correct_answers": [
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Acute confusion in a post-op elderly patient suggests delirium. Interventions focus on identifying reversible causes, ensuring safety, reorienting, and notifying the provider."
+  },
+  {
+    "id": 6,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": "Vital signs trending graph showing BP readings over 24 hours: 178/104 -> 165/98 -> 148/92 -> 138/86 mmHg.",
+    "scenario": "A patient with hypertensive urgency was started on oral antihypertensives 24 hours ago. Refer to the vital signs graph.",
+    "stem": "Which interpretation of the trend is most accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Treatment is ineffective; BP should have normalized within 4 hours"
+      },
+      {
+        "letter": "B",
+        "text": "The trend indicates a gradual, controlled reduction consistent with expected outcomes"
+      },
+      {
+        "letter": "C",
+        "text": "The patient is at risk for hypotension and the medication should be held"
+      },
+      {
+        "letter": "D",
+        "text": "The readings indicate the patient has progressed to hypertensive emergency"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "For hypertensive urgency, the goal is gradual BP reduction over 24-48 hours to avoid end-organ ischemia. This trend reflects safe, effective management.",
+    "image": "generated_images/main_plan_q6.jpg"
+  },
+  {
+    "id": 7,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A 9-year-old brought in by parents presents with 3-day history of polyuria, polydipsia, and weight loss. Blood glucose is 478 mg/dL, pH 7.22, bicarbonate 10 mEq/L, serum ketones positive. The child is drowsy but arousable.",
+    "stem": "Which hypothesis should the nurse prioritize?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Imbalanced nutrition related to new diabetes diagnosis"
+      },
+      {
+        "letter": "B",
+        "text": "Deficient knowledge related to insulin administration"
+      },
+      {
+        "letter": "C",
+        "text": "Decreased cardiac output related to dehydration"
+      },
+      {
+        "letter": "D",
+        "text": "Fluid and electrolyte imbalance related to diabetic ketoacidosis"
+      }
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "rationale_correct": "This child presents with classic DKA: hyperglycemia, metabolic acidosis, and ketonemia. The priority hypothesis is fluid/electrolyte imbalance from DKA."
+  },
+  {
+    "id": 8,
+    "domain": "Generate Solutions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A post-operative patient who had bowel resection 6 hours ago has a BP of 82/50 mmHg, HR 128 bpm, RR 24/min, and urine output of 18 mL over the last hour. Skin is cool and clammy.",
+    "stem": "Which intervention should the nurse implement first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administer morphine 2 mg IV for post-op pain"
+      },
+      {
+        "letter": "B",
+        "text": "Elevate the head of the bed to 45 degrees"
+      },
+      {
+        "letter": "C",
+        "text": "Notify the surgeon and prepare for rapid fluid resuscitation"
+      },
+      {
+        "letter": "D",
+        "text": "Insert a Foley catheter to more accurately monitor urine output"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "This patient shows signs of hypovolemic/hemorrhagic shock. Immediate notification of the surgeon and IV fluid resuscitation are priorities."
+  },
+  {
+    "id": 9,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse has been caring for a patient with community-acquired pneumonia who was started on IV antibiotics and supplemental oxygen 48 hours ago.",
+    "stem": "Which finding best indicates the patient is responding to treatment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "WBC decreased from 18,000 to 11,500 cells/mcL and temperature 37.4C"
+      },
+      {
+        "letter": "B",
+        "text": "Patient requests a regular diet instead of clear liquids"
+      },
+      {
+        "letter": "C",
+        "text": "Respiratory rate decreased from 28 to 24 breaths/min"
+      },
+      {
+        "letter": "D",
+        "text": "SpO2 improved from 88% to 91% on 4L nasal cannula"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "A decrease in WBC toward normal range and near-normal temperature are objective indicators of resolving infection."
+  },
+  {
+    "id": 10,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": "Medication label showing: Heparin Sodium 25,000 units/500 mL 0.9% NaCl. Infusing at 18 mL/hr.",
+    "scenario": "A patient with a pulmonary embolism is on a heparin infusion. Refer to the label above.",
+    "stem": "How many units per hour is the patient currently receiving?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "450 units/hr"
+      },
+      {
+        "letter": "B",
+        "text": "900 units/hr"
+      },
+      {
+        "letter": "C",
+        "text": "1,800 units/hr"
+      },
+      {
+        "letter": "D",
+        "text": "18,000 units/hr"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Concentration = 25,000 units / 500 mL = 50 units/mL. 50 units/mL x 18 mL/hr = 900 units/hr.",
+    "image": "generated_images/main_plan_q10.jpg"
+  },
+  {
+    "id": 11,
+    "domain": "Safety and Infection Control",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A nurse is caring for a patient with confirmed pulmonary tuberculosis who is being admitted from the ED.",
+    "stem": "Which actions are appropriate for this patient's care? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Place the patient in an airborne infection isolation room (negative pressure)"
+      },
+      {
+        "letter": "B",
+        "text": "Don a surgical mask when entering the room"
+      },
+      {
+        "letter": "C",
+        "text": "Wear an N95 respirator when providing direct care"
+      },
+      {
+        "letter": "D",
+        "text": "Ensure the door to the room remains closed at all times"
+      },
+      {
+        "letter": "E",
+        "text": "Instruct the patient to wear a surgical mask when leaving the room"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "C",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "TB requires airborne precautions: negative pressure room, N95 for staff, door kept closed, and surgical mask for the patient when leaving the room."
+  },
+  {
+    "id": 12,
+    "domain": "Reduction of Risk Potential",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is scheduled for a CT scan with iodinated contrast. During the pre-procedure assessment, the patient reports a shellfish allergy and a history of asthma.",
+    "stem": "Which action should the nurse take first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cancel the CT scan and notify the provider"
+      },
+      {
+        "letter": "B",
+        "text": "Document the allergy and proceed with the scan as ordered"
+      },
+      {
+        "letter": "C",
+        "text": "Notify the radiologist and provider and confirm premedication orders"
+      },
+      {
+        "letter": "D",
+        "text": "Administer diphenhydramine prophylactically without an order"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Shellfish allergy and asthma increase contrast reaction risk but are not absolute contraindications. Notify the provider and radiologist and confirm pre-medication protocols."
+  },
+  {
+    "id": 13,
+    "domain": "Psychosocial Integrity",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A 45-year-old patient newly diagnosed with multiple sclerosis states: 'I don't know why I should bother with physical therapy. I'm just going to end up in a wheelchair anyway.'",
+    "stem": "Which response by the nurse is most therapeutic?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'Many patients with MS live full, active lives for many years.'"
+      },
+      {
+        "letter": "B",
+        "text": "'It sounds like you're feeling hopeless about your future right now. Tell me more about what you're experiencing.'"
+      },
+      {
+        "letter": "C",
+        "text": "'Physical therapy has been proven to slow MS progression significantly.'"
+      },
+      {
+        "letter": "D",
+        "text": "'I understand. This is a very difficult diagnosis to receive.'"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "The most therapeutic response acknowledges the patient's feelings and invites elaboration before providing information."
+  },
+  {
+    "id": 14,
+    "domain": "Management of Care",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A charge nurse on a medical-surgical unit receives report that the following patients need assessment. The nurse has one LPN and one UAP available.",
+    "stem": "Which patient should the RN assess first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A 60-year-old post-op day 2 hip replacement requesting pain medication (pain 6/10)"
+      },
+      {
+        "letter": "B",
+        "text": "A 72-year-old with heart failure whose weight has increased 3 lb overnight"
+      },
+      {
+        "letter": "C",
+        "text": "A 55-year-old with COPD whose SpO2 dropped from 95% to 88% in the last 30 minutes"
+      },
+      {
+        "letter": "D",
+        "text": "A 40-year-old newly admitted for cellulitis awaiting IV antibiotic initiation"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "An acute drop in SpO2 from 95% to 88% represents a significant change in respiratory status and requires immediate RN assessment."
+  },
+  {
+    "id": 15,
+    "domain": "Physiological Adaptation",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": "Lab result table: Na+ 128 mEq/L, K+ 5.8 mEq/L, Cl- 96 mEq/L, CO2 18 mEq/L, BUN 48 mg/dL, Creatinine 4.2 mg/dL, Glucose 102 mg/dL.",
+    "scenario": "A 66-year-old male with chronic kidney disease stage 4 presents with nausea, weakness, and decreased urine output. Refer to lab results above.",
+    "stem": "Which finding requires the most urgent intervention?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sodium of 128 mEq/L"
+      },
+      {
+        "letter": "B",
+        "text": "Potassium of 5.8 mEq/L"
+      },
+      {
+        "letter": "C",
+        "text": "BUN of 48 mg/dL"
+      },
+      {
+        "letter": "D",
+        "text": "Creatinine of 4.2 mg/dL"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Hyperkalemia is the most immediately life-threatening finding because it can cause fatal cardiac dysrhythmias.",
+    "image": "generated_images/main_plan_q15.jpg"
+  },
+  {
+    "id": 16,
+    "domain": "Health Promotion and Maintenance",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse is providing discharge education to a 52-year-old male patient who was recently diagnosed with type 2 diabetes.",
+    "stem": "Which statement by the patient indicates a need for further teaching?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'I should check my feet every day for cuts or sores.'"
+      },
+      {
+        "letter": "B",
+        "text": "'I can skip my metformin on days when I eat less.'"
+      },
+      {
+        "letter": "C",
+        "text": "'I should aim for at least 150 minutes of moderate exercise per week.'"
+      },
+      {
+        "letter": "D",
+        "text": "'I need to monitor my blood glucose as directed by my provider.'"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Metformin should not be skipped based on dietary intake; consistent medication adherence supports glycemic control."
+  },
+  {
+    "id": 17,
+    "domain": "Basic Care and Comfort",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse is repositioning a patient who has been immobile following a stroke. The patient has no contractures but has limited left-side movement.",
+    "stem": "When positioning the patient in the lateral position, which action is most important?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Place the patient on the affected (left) side with arm extended"
+      },
+      {
+        "letter": "B",
+        "text": "Support the upper arm and leg with pillows to prevent internal rotation and pressure"
+      },
+      {
+        "letter": "C",
+        "text": "Keep the head of bed elevated at 60 degrees"
+      },
+      {
+        "letter": "D",
+        "text": "Reposition every 4 hours to allow adequate rest"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Proper lateral positioning requires pillow support to maintain alignment, prevent pressure ulcers, and avoid internal rotation of extremities."
+  },
+  {
+    "id": 18,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with acute pancreatitis has been NPO for 48 hours and receiving IV fluids and analgesics. The nurse is evaluating the patient's response to treatment.",
+    "stem": "Which set of findings best indicates improvement in the patient's condition?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Amylase 520 U/L (down from 1,800), lipase 440 U/L (down from 2,200), pain 3/10, bowel sounds present"
+      },
+      {
+        "letter": "B",
+        "text": "Patient reports hunger and requests food, amylase still elevated at 1,400 U/L"
+      },
+      {
+        "letter": "C",
+        "text": "Pain 2/10 with morphine, BP 100/62, HR 112, no bowel sounds"
+      },
+      {
+        "letter": "D",
+        "text": "Amylase and lipase within normal limits, patient is febrile at 38.9C"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Decreasing enzyme levels, reduced pain, and return of bowel sounds indicate pancreatitis is resolving and GI function is returning."
+  },
+  {
+    "id": 19,
+    "domain": "Recognize Cues",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": "ECG strip showing: regular rhythm, rate 42 bpm, P waves present before each QRS, PR interval 0.28 seconds, QRS 0.08 seconds.",
+    "scenario": "A 71-year-old male on metoprolol for heart failure is connected to a cardiac monitor. Refer to the ECG strip above.",
+    "stem": "Which finding requires the most urgent recognition by the nurse?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "PR interval of 0.28 seconds"
+      },
+      {
+        "letter": "B",
+        "text": "Heart rate of 42 bpm"
+      },
+      {
+        "letter": "C",
+        "text": "P waves present before each QRS"
+      },
+      {
+        "letter": "D",
+        "text": "QRS of 0.08 seconds"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "A heart rate of 42 bpm requires urgent recognition because severe bradycardia poses immediate hemodynamic risk.",
+    "image": "generated_images/main_plan_q19.jpg"
+  },
+  {
+    "id": 20,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A 19-year-old male is brought to the ED after a diving accident. He is alert, reports inability to move his legs, and has a C6 spinal injury confirmed by imaging. BP is 78/42 mmHg, HR 54 bpm, skin is warm and flushed.",
+    "stem": "Which hypothesis best explains the patient's hemodynamic status?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hypovolemic shock due to internal hemorrhage"
+      },
+      {
+        "letter": "B",
+        "text": "Cardiogenic shock due to myocardial injury"
+      },
+      {
+        "letter": "C",
+        "text": "Neurogenic shock due to loss of sympathetic tone"
+      },
+      {
+        "letter": "D",
+        "text": "Septic shock due to spinal cord injury complications"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Neurogenic shock results from loss of sympathetic tone. The classic pattern is hypotension, bradycardia, and warm/flushed skin."
+  },
+  {
+    "id": 21,
+    "domain": "Generate Solutions",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A nurse is preparing to administer a blood transfusion to a patient with symptomatic anemia (Hgb 6.8 g/dL). Fifteen minutes into the transfusion, the patient develops chills, back pain, and temperature rises from 37.0C to 38.9C.",
+    "stem": "Which actions should the nurse take? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stop the transfusion immediately"
+      },
+      {
+        "letter": "B",
+        "text": "Disconnect the IV tubing and discard the blood"
+      },
+      {
+        "letter": "C",
+        "text": "Maintain IV access with normal saline through new tubing"
+      },
+      {
+        "letter": "D",
+        "text": "Notify the provider and blood bank"
+      },
+      {
+        "letter": "E",
+        "text": "Monitor vital signs every 15 minutes"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "C",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Signs suggest a transfusion reaction. Stop the transfusion, keep IV access with normal saline through new tubing, notify provider and blood bank, and monitor vitals."
+  },
+  {
+    "id": 22,
+    "domain": "Reduction of Risk Potential",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with cirrhosis is scheduled for a paracentesis. Before the procedure, the nurse reviews labs: INR 2.1, platelets 62,000/mcL, serum albumin 2.0 g/dL.",
+    "stem": "Which pre-procedure assessment finding should the nurse report to the provider?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Serum albumin of 2.0 g/dL"
+      },
+      {
+        "letter": "B",
+        "text": "Platelet count of 62,000/mcL"
+      },
+      {
+        "letter": "C",
+        "text": "Patient's history of cirrhosis"
+      },
+      {
+        "letter": "D",
+        "text": "INR of 2.1"
+      }
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "rationale_correct": "An INR of 2.1 indicates significant coagulopathy and bleeding risk that must be reported before paracentesis."
+  },
+  {
+    "id": 23,
+    "domain": "Analyze Cues",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": "Lab results: ABG: pH 7.50, PaCO2 30 mmHg, PaO2 95 mmHg, HCO3 22 mEq/L, SpO2 98%.",
+    "scenario": "A 28-year-old female is admitted following a panic attack. She is hyperventilating and reports tingling in her hands and feet. Refer to the ABG above.",
+    "stem": "Which acid-base imbalance do these findings represent?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Metabolic alkalosis, uncompensated"
+      },
+      {
+        "letter": "B",
+        "text": "Respiratory alkalosis, uncompensated"
+      },
+      {
+        "letter": "C",
+        "text": "Respiratory acidosis, partially compensated"
+      },
+      {
+        "letter": "D",
+        "text": "Metabolic acidosis, compensated"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "pH above 7.45 indicates alkalosis. Low PaCO2 indicates a respiratory cause. Normal HCO3 indicates no metabolic compensation.",
+    "image": "generated_images/main_plan_q23.jpg"
+  },
+  {
+    "id": 24,
+    "domain": "Take Actions",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse is caring for a patient on warfarin whose INR result just returned at 6.8. The patient is not actively bleeding.",
+    "stem": "Which action should the nurse take first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administer vitamin K IV as per standing order"
+      },
+      {
+        "letter": "B",
+        "text": "Hold the next scheduled warfarin dose and notify the provider"
+      },
+      {
+        "letter": "C",
+        "text": "Prepare fresh frozen plasma for immediate transfusion"
+      },
+      {
+        "letter": "D",
+        "text": "Draw a repeat INR in 30 minutes to confirm the result"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "For a supratherapeutic INR without active bleeding, the first action is to hold warfarin and notify the provider."
+  },
+  {
+    "id": 25,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": "Pediatric patient with asthma showing intercostal retractions and respiratory effort.",
+    "scenario": "A 4-year-old with asthma is in the ED for an acute exacerbation. Initial SpO2 was 88%. The child received two rounds of albuterol nebulization and IV methylprednisolone 30 minutes ago.",
+    "stem": "Which finding best indicates the treatment is working?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Child is crying and asking for juice"
+      },
+      {
+        "letter": "B",
+        "text": "Accessory muscle use resolved, SpO2 97%, RR 24"
+      },
+      {
+        "letter": "C",
+        "text": "Child is quiet and appears sleepy"
+      },
+      {
+        "letter": "D",
+        "text": "Wheezing audible without stethoscope, SpO2 93%"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Resolution of accessory muscle use and SpO2 of 97% indicate improved ventilation and oxygenation.",
+    "image": "imported_images/scene_06_pediatric_retractions_1.png"
+  },
+  {
+    "id": 26,
+    "domain": "Management of Care",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse is preparing to delegate tasks to the nursing team. The team consists of one RN, one LPN, and two UAPs.",
+    "stem": "Which task is most appropriate to delegate to the UAP?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Performing an admission assessment on a new patient"
+      },
+      {
+        "letter": "B",
+        "text": "Administering a scheduled oral medication"
+      },
+      {
+        "letter": "C",
+        "text": "Measuring and recording hourly urine output for a stable patient"
+      },
+      {
+        "letter": "D",
+        "text": "Teaching a patient how to perform wound care at home"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Measuring and recording urine output on a stable patient is a non-invasive, observational task within UAP scope of practice."
+  },
+  {
+    "id": 27,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A 62-year-old female returns from cardiac catheterization 2 hours ago. She suddenly becomes diaphoretic, reports chest pain 8/10, and her BP drops from 128/78 to 86/50 mmHg. The access site is intact with no hematoma.",
+    "stem": "Which hypothesis should the nurse prioritize?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Retroperitoneal hemorrhage"
+      },
+      {
+        "letter": "B",
+        "text": "Allergic reaction to contrast dye"
+      },
+      {
+        "letter": "C",
+        "text": "Acute coronary occlusion or vessel dissection"
+      },
+      {
+        "letter": "D",
+        "text": "Vasovagal response to pain"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Post-cardiac catheterization, sudden chest pain with hemodynamic collapse suggests acute coronary occlusion, vessel dissection, or coronary spasm."
+  },
+  {
+    "id": 28,
+    "domain": "Generate Solutions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse finds an unresponsive adult patient in bed. There is no pulse detected on carotid palpation and no breathing observed after 10 seconds.",
+    "stem": "What is the correct sequence of immediate nursing actions?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Call for help, start CPR 30:2, attach AED when available"
+      },
+      {
+        "letter": "B",
+        "text": "Deliver 2 rescue breaths, then start chest compressions"
+      },
+      {
+        "letter": "C",
+        "text": "Start CPR, call for help after 2 minutes, then attach AED"
+      },
+      {
+        "letter": "D",
+        "text": "Apply AED first, then begin CPR if no shock advised"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Per AHA guidelines: activate emergency response, begin high-quality CPR at 30:2, and use AED as soon as available."
+  },
+  {
+    "id": 29,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with major depressive disorder was started on sertraline 50 mg daily 6 weeks ago. The nurse is evaluating treatment response during a follow-up visit.",
+    "stem": "Which patient statement best indicates a therapeutic response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'I feel a little less tired than before, but I still don't feel like myself.'"
+      },
+      {
+        "letter": "B",
+        "text": "'I have been sleeping better, enjoying activities, and feel more like myself.'"
+      },
+      {
+        "letter": "C",
+        "text": "'I stopped taking it last week because I felt better.'"
+      },
+      {
+        "letter": "D",
+        "text": "'I still feel hopeless, but I haven't cried as much.'"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Improved sleep, enjoyment of activities, and improved subjective well-being are signs of adequate antidepressant response after 4-6 weeks."
+  },
+  {
+    "id": 30,
+    "domain": "Safety and Infection Control",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse is about to administer medications through a nasogastric tube to a patient who is semi-conscious.",
+    "stem": "Which action is most important before administering the medications?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Flush the tube with 30 mL of water"
+      },
+      {
+        "letter": "B",
+        "text": "Verify tube placement by checking pH of aspirate or chest X-ray"
+      },
+      {
+        "letter": "C",
+        "text": "Elevate the head of the bed to 30 degrees"
+      },
+      {
+        "letter": "D",
+        "text": "Crush all medications and mix them together"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Verification of NG tube placement is the most important safety step before administration to prevent aspiration."
+  },
+  {
+    "id": 31,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with a seizure disorder is admitted with status epilepticus. The nurse administers lorazepam IV as ordered. The seizure stops after 3 minutes.",
+    "stem": "Which assessment finding following the medication requires the most urgent nursing action?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Patient is drowsy and slow to respond"
+      },
+      {
+        "letter": "B",
+        "text": "RR drops to 7 breaths/min, SpO2 88%"
+      },
+      {
+        "letter": "C",
+        "text": "BP decreases from 142/88 to 118/72 mmHg"
+      },
+      {
+        "letter": "D",
+        "text": "Patient reports mild dizziness"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Respiratory depression is a serious side effect of benzodiazepines. RR 7 with SpO2 88% requires immediate airway support."
+  },
+  {
+    "id": 32,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse is assessing a 3-day-old neonate. The infant has a bilirubin of 22 mg/dL, is lethargic, feeds poorly, and has a high-pitched cry. Temperature is 37.2C, HR 168, RR 52.",
+    "stem": "Which is the priority hypothesis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ineffective breastfeeding related to poor suck reflex"
+      },
+      {
+        "letter": "B",
+        "text": "Risk for jaundice progression related to breastfeeding"
+      },
+      {
+        "letter": "C",
+        "text": "Risk for bilirubin-induced neurological dysfunction (kernicterus)"
+      },
+      {
+        "letter": "D",
+        "text": "Imbalanced nutrition less than body requirements"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Bilirubin of 22 mg/dL with neurological signs indicates acute bilirubin encephalopathy and risk for kernicterus."
+  },
+  {
+    "id": 33,
+    "domain": "Generate Solutions",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse is caring for a patient who has just been told they have terminal lung cancer with a prognosis of 3-6 months. The patient refuses to speak and stares at the ceiling.",
+    "stem": "Which nursing intervention is most appropriate at this time?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Provide written information about palliative care and hospice services"
+      },
+      {
+        "letter": "B",
+        "text": "Sit quietly with the patient and offer presence without forcing conversation"
+      },
+      {
+        "letter": "C",
+        "text": "Contact the chaplain and social worker immediately"
+      },
+      {
+        "letter": "D",
+        "text": "Ask the patient what they understand about their diagnosis"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Therapeutic presence acknowledges acute grief without forcing the patient to process or speak immediately."
+  },
+  {
+    "id": 34,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with increased intracranial pressure (ICP) is receiving mannitol infusion and hyperventilation therapy. The nurse is evaluating response 2 hours after initiation.",
+    "stem": "Which finding best indicates therapy is effective?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "ICP decreased from 28 mmHg to 14 mmHg, GCS improved from 9 to 13"
+      },
+      {
+        "letter": "B",
+        "text": "Serum osmolality of 325 mOsm/kg, patient remains unresponsive"
+      },
+      {
+        "letter": "C",
+        "text": "PaCO2 of 28 mmHg, ICP unchanged at 28 mmHg"
+      },
+      {
+        "letter": "D",
+        "text": "Patient's pupils equal and reactive, ICP 22 mmHg"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "ICP reduction to normal range and improved GCS demonstrate both physiological and neurological effectiveness."
+  },
+  {
+    "id": 35,
+    "domain": "Reduction of Risk Potential",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A 70-year-old patient is being prepared for discharge following a total hip replacement. The nurse is providing fall prevention education.",
+    "stem": "Which instructions should be included? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use a raised toilet seat and grab bars in the bathroom"
+      },
+      {
+        "letter": "B",
+        "text": "Remove loose rugs and ensure adequate lighting at home"
+      },
+      {
+        "letter": "C",
+        "text": "Resume driving once pain is controlled"
+      },
+      {
+        "letter": "D",
+        "text": "Wear non-slip footwear at all times when ambulating"
+      },
+      {
+        "letter": "E",
+        "text": "Use the prescribed assistive device (walker) until cleared by PT"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Fall prevention after hip replacement includes bathroom modifications, hazard removal, proper footwear, and assistive device use."
+  },
+  {
+    "id": 36,
+    "domain": "Analyze Cues",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": "Wound photo showing: stage 3 pressure ulcer on sacrum, approximately 4 cm x 3 cm, yellow-tan slough present, no undermining, no surrounding erythema.",
+    "scenario": "A nurse is assessing the sacral wound of an 84-year-old bedridden patient. Refer to the wound image above.",
+    "stem": "How should the nurse document and analyze this wound finding?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stage 2 pressure injury with partial-thickness skin loss"
+      },
+      {
+        "letter": "B",
+        "text": "Stage 3 pressure injury with slough; wound bed requires debridement"
+      },
+      {
+        "letter": "C",
+        "text": "Unstageable pressure injury covered by necrotic tissue"
+      },
+      {
+        "letter": "D",
+        "text": "Stage 4 pressure injury with exposed bone"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "A full-thickness wound with visible slough and no exposed tendon or bone describes a Stage 3 pressure injury.",
+    "image": "generated_images/main_plan_q36.jpg"
+  },
+  {
+    "id": 37,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A 55-year-old male with a history of peptic ulcer disease presents with 2 hours of sudden severe epigastric pain radiating to the back, rigid abdomen, and absent bowel sounds. He is pale and diaphoretic. BP 92/60, HR 124.",
+    "stem": "Which hypothesis should the nurse prioritize?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Acute gastritis related to NSAID use"
+      },
+      {
+        "letter": "B",
+        "text": "Bowel obstruction related to adhesions"
+      },
+      {
+        "letter": "C",
+        "text": "Perforated peptic ulcer with peritonitis and septic shock"
+      },
+      {
+        "letter": "D",
+        "text": "Acute pancreatitis related to alcohol use"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Sudden severe epigastric pain, rigid abdomen, absent bowel sounds, and instability in PUD strongly suggest perforated ulcer with peritonitis."
+  },
+  {
+    "id": 38,
+    "domain": "Health Promotion and Maintenance",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "During a well-child visit, the nurse is assessing a 15-month-old child.",
+    "stem": "Which developmental milestone should the nurse expect to observe at this age?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Walking up stairs independently with alternating feet"
+      },
+      {
+        "letter": "B",
+        "text": "Speaking in 4-to-5-word sentences"
+      },
+      {
+        "letter": "C",
+        "text": "Walking independently and saying 3-6 recognizable words"
+      },
+      {
+        "letter": "D",
+        "text": "Running steadily and using a spoon without spilling"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "By 15 months, most children walk independently and have a vocabulary of 3-6 words."
+  },
+  {
+    "id": 39,
+    "domain": "Generate Solutions",
+    "difficulty": "Hard",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A 67-year-old male with CKD stage 3 is prescribed IV contrast for a CT scan. His creatinine is 2.4 mg/dL. The provider wants to proceed.",
+    "stem": "Which interventions should the nurse anticipate to reduce contrast-induced nephropathy risk? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administer IV normal saline hydration before and after the procedure"
+      },
+      {
+        "letter": "B",
+        "text": "Hold nephrotoxic medications such as NSAIDs and aminoglycosides"
+      },
+      {
+        "letter": "C",
+        "text": "Administer N-acetylcysteine as ordered"
+      },
+      {
+        "letter": "D",
+        "text": "Administer furosemide 40 mg IV before contrast to promote diuresis"
+      },
+      {
+        "letter": "E",
+        "text": "Monitor BUN and creatinine 24-48 hours post-procedure"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "rationale_correct": "Preventing contrast nephropathy includes IV saline hydration, holding nephrotoxins, N-acetylcysteine if ordered, and renal monitoring."
+  },
+  {
+    "id": 40,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse is evaluating a patient 24 hours after initiation of total parenteral nutrition (TPN).",
+    "stem": "Which finding most indicates a complication of TPN requiring intervention?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Blood glucose 210 mg/dL"
+      },
+      {
+        "letter": "B",
+        "text": "Serum phosphate 0.7 mg/dL (normal 2.5-4.5)"
+      },
+      {
+        "letter": "C",
+        "text": "Weight increased by 0.5 kg"
+      },
+      {
+        "letter": "D",
+        "text": "Mild tenderness at central line insertion site"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Severe hypophosphatemia after TPN initiation suggests refeeding syndrome and can cause cardiac, respiratory, and neuromuscular complications."
+  },
+  {
+    "id": 41,
+    "domain": "Physiological Adaptation",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Addison's disease is brought to the ED obtunded, with BP 72/40 mmHg, HR 128 bpm, temperature 39.1C, and serum sodium of 124 mEq/L.",
+    "stem": "Which intervention is the highest priority?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administer IV hydrocortisone and normal saline fluid resuscitation"
+      },
+      {
+        "letter": "B",
+        "text": "Administer oral fludrocortisone as scheduled"
+      },
+      {
+        "letter": "C",
+        "text": "Obtain blood cultures and start IV antibiotics for infection"
+      },
+      {
+        "letter": "D",
+        "text": "Administer hypertonic saline to correct hyponatremia"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "This is Addisonian crisis. IV hydrocortisone and normal saline address cortisol deficiency and volume depletion."
+  },
+  {
+    "id": 42,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A 28-year-old G1P0 at 36 weeks gestation calls the labor unit reporting sudden onset of painless bright red vaginal bleeding for the past 20 minutes. She denies contractions or fluid leakage.",
+    "stem": "Which hypothesis should the nurse prioritize before the patient's arrival?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Placental abruption with fetal distress"
+      },
+      {
+        "letter": "B",
+        "text": "Placenta previa with hemorrhage risk"
+      },
+      {
+        "letter": "C",
+        "text": "Bloody show indicating active labor"
+      },
+      {
+        "letter": "D",
+        "text": "Cervical polyp or cervicitis causing spotting"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Painless bright red bleeding in the third trimester is classic for placenta previa. Vaginal examination must be avoided until previa is ruled out."
+  },
+  {
+    "id": 43,
+    "domain": "Generate Solutions",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with newly diagnosed type 1 diabetes is hospitalized for hypoglycemia management education. Blood glucose is 54 mg/dL, and the patient is alert and able to swallow.",
+    "stem": "Which intervention should the nurse implement first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administer 1 mg glucagon IM"
+      },
+      {
+        "letter": "B",
+        "text": "Provide 15 grams of fast-acting carbohydrate and recheck glucose in 15 minutes"
+      },
+      {
+        "letter": "C",
+        "text": "Administer D50W IV push"
+      },
+      {
+        "letter": "D",
+        "text": "Hold the next scheduled insulin dose"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "For a conscious patient who can swallow, use the 15-15 rule: 15 g fast-acting carbohydrate, then recheck glucose in 15 minutes."
+  },
+  {
+    "id": 44,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with pulmonary embolism was started on IV heparin 24 hours ago. The nurse is reviewing results.",
+    "stem": "Which aPTT value indicates the heparin therapy is within therapeutic range?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "aPTT 28 seconds (normal 25-35 seconds)"
+      },
+      {
+        "letter": "B",
+        "text": "aPTT 68 seconds (therapeutic 60-100 seconds for PE)"
+      },
+      {
+        "letter": "C",
+        "text": "aPTT 120 seconds"
+      },
+      {
+        "letter": "D",
+        "text": "aPTT 42 seconds"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Therapeutic aPTT for heparin anticoagulation is typically 60-100 seconds or 1.5-2.5 times baseline."
+  },
+  {
+    "id": 45,
+    "domain": "Psychosocial Integrity",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse is caring for a patient with schizophrenia who states: 'The nurses are putting poison in my food. I will not eat anything you give me.'",
+    "stem": "Which nursing response is most therapeutic?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'That is not true. We would never harm you. The food is safe.'"
+      },
+      {
+        "letter": "B",
+        "text": "'I understand you are concerned about the food. Can you tell me more about what you are experiencing?'"
+      },
+      {
+        "letter": "C",
+        "text": "'You must eat to get better. You have no choice while you're here.'"
+      },
+      {
+        "letter": "D",
+        "text": "'Would you feel safer if you opened the sealed food items yourself?'"
+      }
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "rationale_correct": "Offering sealed food supports control and safety without directly confronting or reinforcing the delusion."
+  },
+  {
+    "id": 46,
+    "domain": "Reduction of Risk Potential",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is receiving IV vancomycin for MRSA bacteremia. The nurse notes the patient's face, neck, and chest are flushed and itchy midway through the infusion. There is no hypotension or wheezing.",
+    "stem": "Which action should the nurse take first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stop the infusion and administer epinephrine 0.3 mg IM"
+      },
+      {
+        "letter": "B",
+        "text": "Slow the infusion rate and administer diphenhydramine as ordered"
+      },
+      {
+        "letter": "C",
+        "text": "Continue the infusion at the current rate and reassess in 30 minutes"
+      },
+      {
+        "letter": "D",
+        "text": "Discontinue vancomycin permanently and notify the provider"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "This is consistent with vancomycin infusion reaction, a rate-related reaction managed by slowing the infusion and giving antihistamine as ordered."
+  },
+  {
+    "id": 47,
+    "domain": "Generate Solutions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A 6-year-old child is brought in by a parent reporting the child has had a fever of 39.2C for 3 days, refuses to eat, and has developed a sandpaper-like rash over the trunk. The oropharynx shows a bright red 'strawberry' tongue.",
+    "stem": "Based on these findings, which is the priority nursing action?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Initiate contact precautions and administer acetaminophen"
+      },
+      {
+        "letter": "B",
+        "text": "Notify the provider and anticipate throat culture and antibiotic therapy"
+      },
+      {
+        "letter": "C",
+        "text": "Educate the parent on viral illness management at home"
+      },
+      {
+        "letter": "D",
+        "text": "Initiate droplet precautions and prepare for lumbar puncture"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "The presentation is classic scarlet fever from Group A Strep. Anticipate throat culture and antibiotic therapy to prevent complications."
+  },
+  {
+    "id": 48,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Hard",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient with heart failure has been on furosemide and fluid restriction for 3 days. The nurse is evaluating response to diuretic therapy.",
+    "stem": "Which findings indicate a therapeutic response? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Weight decreased by 1.5 kg since admission"
+      },
+      {
+        "letter": "B",
+        "text": "Bilateral crackles resolved on auscultation"
+      },
+      {
+        "letter": "C",
+        "text": "Serum potassium 3.0 mEq/L"
+      },
+      {
+        "letter": "D",
+        "text": "Urine output 80 mL/hr over the past 8 hours"
+      },
+      {
+        "letter": "E",
+        "text": "Patient reports sleeping flat without dyspnea for the first time"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Decreased weight, resolved crackles, improved urine output, and resolution of orthopnea indicate effective fluid removal."
+  },
+  {
+    "id": 49,
+    "domain": "Recognize Cues",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": "Vital signs trending graph: Day 1: Temp 37.0, HR 78, BP 122/78. Day 2: Temp 38.1, HR 92, BP 116/74. Day 3: Temp 39.4, HR 114, BP 102/62. Day 4: Temp 38.8, HR 108, BP 98/58.",
+    "scenario": "A post-operative day 4 patient following bowel surgery. Refer to the trending vital signs.",
+    "stem": "Which cue from the vital sign trend requires the most urgent recognition?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gradual increase in temperature over 4 days"
+      },
+      {
+        "letter": "B",
+        "text": "Persistent tachycardia with progressive hypotension"
+      },
+      {
+        "letter": "C",
+        "text": "Slight decrease in temperature from day 3 to day 4"
+      },
+      {
+        "letter": "D",
+        "text": "Fever spike on day 3"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Progressive tachycardia with worsening hypotension suggests developing sepsis or anastomotic leak and requires urgent recognition.",
+    "image": "generated_images/main_plan_q49.jpg"
+  },
+  {
+    "id": 50,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A 48-year-old male is admitted with sudden onset of severe 'thunderclap' headache described as 'the worst of my life.' He has nuchal rigidity, photophobia, and vomiting. GCS is 14. BP 188/110, HR 98, Temp 37.8C.",
+    "stem": "Which is the priority hypothesis the nurse must address?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hypertensive urgency causing severe headache"
+      },
+      {
+        "letter": "B",
+        "text": "Subarachnoid hemorrhage requiring immediate evaluation"
+      },
+      {
+        "letter": "C",
+        "text": "Bacterial meningitis requiring empiric antibiotics"
+      },
+      {
+        "letter": "D",
+        "text": "Migraine with meningeal signs"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Thunderclap headache with nuchal rigidity and photophobia is subarachnoid hemorrhage until proven otherwise."
+  },
+  {
+    "id": 51,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with heart failure is taking digoxin and furosemide. The patient reports nausea, vomiting, and seeing yellow halos around lights. Lab results show a potassium level of 2.8 mEq/L.",
+    "stem": "Which action should the nurse take first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administer the next scheduled dose of digoxin"
+      },
+      {
+        "letter": "B",
+        "text": "Notify the provider and hold the digoxin"
+      },
+      {
+        "letter": "C",
+        "text": "Administer an IV antiemetic for the nausea"
+      },
+      {
+        "letter": "D",
+        "text": "Request an order for a 12-lead ECG"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Nausea, vomiting, and visual disturbances (yellow halos) are classic signs of digoxin toxicity, which is severely exacerbated by hypokalemia (K+ 2.8). The immediate first action is to hold the medication and notify the provider to prevent fatal dysrhythmias.",
+    "rationale_incorrect": {
+      "A": "Administering more digoxin in the presence of toxicity could be fatal.",
+      "C": "Antiemetics treat the symptom but ignore the life-threatening underlying toxicity.",
+      "D": "An ECG is needed, but holding the drug and notifying the provider is the immediate priority action."
+    }
+  },
+  {
+    "id": 52,
+    "domain": "Safety and Infection Control",
+    "difficulty": "Easy",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A nurse is admitting an 82-year-old patient with a history of falls, moderate dementia, and urinary incontinence.",
+    "stem": "Which fall prevention strategies should the nurse implement? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Place the patient in a room near the nurses' station"
+      },
+      {
+        "letter": "B",
+        "text": "Keep the bed in the lowest position with wheels locked"
+      },
+      {
+        "letter": "C",
+        "text": "Raise all four bed rails to prevent the patient from getting up"
+      },
+      {
+        "letter": "D",
+        "text": "Provide a bedside commode"
+      },
+      {
+        "letter": "E",
+        "text": "Ensure the room is brightly lit with overhead lights at night"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "rationale_correct": "Placing the patient near the station for close observation, keeping the bed low, and providing a bedside commode are evidence-based, safe fall prevention strategies.",
+    "rationale_incorrect": {
+      "C": "Raising all four bed rails is considered a physical restraint and can increase injury risk if the confused patient attempts to climb over them.",
+      "E": "Bright overhead lighting at night disrupts sleep; dim nightlights should be used instead."
+    }
+  },
+  {
+    "id": 53,
+    "domain": "Physiological Adaptation",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Type 1 Diabetes is admitted with Diabetic Ketoacidosis (DKA). Initial blood glucose is 650 mg/dL, pH is 7.15, and potassium is 5.2 mEq/L. An IV regular insulin drip and normal saline infusion are started. Two hours later, the blood glucose is 240 mg/dL.",
+    "stem": "Which intervention should the nurse anticipate next?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stop the continuous insulin drip"
+      },
+      {
+        "letter": "B",
+        "text": "Change the IV fluid to include 5% dextrose (D5W)"
+      },
+      {
+        "letter": "C",
+        "text": "Administer sodium bicarbonate IV push"
+      },
+      {
+        "letter": "D",
+        "text": "Increase the rate of the insulin drip"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "In DKA management, when blood glucose drops to approximately 250 mg/dL, dextrose is added to IV fluids to prevent hypoglycemia while insulin continues to clear ketones.",
+    "rationale_incorrect": {
+      "A": "Stopping insulin prematurely will halt correction of metabolic acidosis.",
+      "C": "Bicarbonate is rarely used unless pH is < 6.9.",
+      "D": "Increasing the rate would risk dangerous hypoglycemia."
+    }
+  },
+  {
+    "id": 54,
+    "domain": "Management of Care",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "The RN is coordinating care with a Licensed Practical Nurse (LPN) and an Unlicensed Assistive Personnel (UAP).",
+    "stem": "Which task is most appropriate to delegate to the LPN?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Assessing a newly admitted patient reporting chest pain"
+      },
+      {
+        "letter": "B",
+        "text": "Administering oral pain medication to a patient 2 days post-appendectomy"
+      },
+      {
+        "letter": "C",
+        "text": "Assisting a patient with a recent stroke to eat their first meal"
+      },
+      {
+        "letter": "D",
+        "text": "Developing a discharge teaching plan for a patient with heart failure"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Administering oral medications to a stable patient is within the LPN's scope of practice.",
+    "rationale_incorrect": {
+      "A": "Initial assessments of unstable or new patients must be performed by the RN.",
+      "C": "First meals for stroke patients require RN assessment of swallowing.",
+      "D": "Discharge planning and initial patient education are RN responsibilities."
+    }
+  },
+  {
+    "id": 55,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A 32-year-old pregnant patient at 34 weeks gestation presents with sudden, severe abdominal pain and dark red vaginal bleeding. The uterus is rigid and board-like upon palpation. Fetal heart rate is 100 bpm.",
+    "stem": "What is the nurse's priority hypothesis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Placenta previa"
+      },
+      {
+        "letter": "B",
+        "text": "Placental abruption"
+      },
+      {
+        "letter": "C",
+        "text": "Preterm labor"
+      },
+      {
+        "letter": "D",
+        "text": "Uterine rupture"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Sudden severe pain, dark red bleeding, and a rigid, board-like abdomen are classic signs of placental abruption.",
+    "rationale_incorrect": {
+      "A": "Placenta previa typically presents with painless, bright red vaginal bleeding.",
+      "C": "Preterm labor presents with regular contractions, not continuous rigidity and dark bleeding.",
+      "D": "Uterine rupture often involves sudden loss of fetal station, cessation of contractions, and prior uterine surgery."
+    }
+  },
+  {
+    "id": 56,
+    "domain": "Recognize Cues",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is 12 hours post-op from a right tibial fracture repair and has a cast in place. The patient reports severe pain (9/10) that is not relieved by IV morphine. The right foot is pale, cool to the touch, and the patient reports a 'pins and needles' sensation.",
+    "stem": "Which cue is most indicative of a developing complication?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pain level of 9/10"
+      },
+      {
+        "letter": "B",
+        "text": "Pain unrelieved by IV narcotics"
+      },
+      {
+        "letter": "C",
+        "text": "Pale and cool right foot"
+      },
+      {
+        "letter": "D",
+        "text": "Capillary refill of 2 seconds"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Pain out of proportion to the injury and unrelieved by strong narcotics is the hallmark early sign of compartment syndrome.",
+    "rationale_incorrect": {
+      "A": "High pain can be expected post-op; the lack of response is the critical cue.",
+      "C": "Pale/cool skin is a later sign of arterial compromise.",
+      "D": "Capillary refill of 2 seconds is normal."
+    }
+  },
+  {
+    "id": 57,
+    "domain": "Psychosocial Integrity",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with schizophrenia is looking nervously at the corner of the room and says, 'The shadow people are telling me to hurt myself.'",
+    "stem": "Which response by the nurse is most appropriate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'There is no one in the corner of the room.'"
+      },
+      {
+        "letter": "B",
+        "text": "'I don't see any shadow people, but I understand you are frightened. I will stay with you.'"
+      },
+      {
+        "letter": "C",
+        "text": "'What exactly are the shadow people saying to you?'"
+      },
+      {
+        "letter": "D",
+        "text": "'You need to ignore the voices; they aren't real.'"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "This response presents reality without arguing, validates fear, and offers immediate safety and support.",
+    "rationale_incorrect": {
+      "A": "Directly challenging the hallucination can cause agitation.",
+      "C": "Exploring hallucination details can reinforce them; safety and grounding come first.",
+      "D": "This is dismissive and ineffective."
+    }
+  },
+  {
+    "id": 58,
+    "domain": "Analyze Cues",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is receiving a continuous NG tube feeding. The nurse checks the gastric residual volume and obtains 450 mL. The patient is asymptomatic.",
+    "stem": "What is the most appropriate interpretation of this finding?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The feeding is being absorbed normally"
+      },
+      {
+        "letter": "B",
+        "text": "The patient is experiencing delayed gastric emptying"
+      },
+      {
+        "letter": "C",
+        "text": "The NG tube is displaced into the lungs"
+      },
+      {
+        "letter": "D",
+        "text": "The patient is at immediate risk for bowel perforation"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "A gastric residual volume of 450 mL suggests delayed gastric emptying and increased aspiration risk.",
+    "rationale_incorrect": {
+      "A": "450 mL is a high residual.",
+      "C": "A lung-displaced tube would not yield 450 mL of gastric contents.",
+      "D": "High residual indicates delayed emptying, not perforation."
+    }
+  },
+  {
+    "id": 59,
+    "domain": "Take Actions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": "ECG strip showing peaked T waves and wide QRS complexes from hyperkalemia.",
+    "scenario": "A patient with chronic kidney disease has a serum potassium of 7.2 mEq/L. Refer to the ECG strip above.",
+    "stem": "Which medication should the nurse administer first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sodium polystyrene sulfonate (Kayexalate)"
+      },
+      {
+        "letter": "B",
+        "text": "IV regular insulin and 50% dextrose"
+      },
+      {
+        "letter": "C",
+        "text": "IV calcium gluconate"
+      },
+      {
+        "letter": "D",
+        "text": "IV furosemide"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "With severe hyperkalemia and ECG changes, IV calcium gluconate is given first to stabilize the cardiac cell membrane.",
+    "rationale_incorrect": {
+      "A": "Kayexalate removes potassium slowly.",
+      "B": "Insulin/dextrose shifts potassium into cells but does not stabilize the myocardium.",
+      "D": "Furosemide depends on renal function and acts more slowly."
+    },
+    "image": "imported_images/scene_08_peaked_t_waves_1.png"
+  },
+  {
+    "id": 60,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with a T4 spinal cord injury suddenly develops a pounding headache, flushing above the level of injury, and a blood pressure of 210/110 mmHg. Heart rate is 52 bpm.",
+    "stem": "What is the priority hypothesis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hypertensive crisis secondary to medication noncompliance"
+      },
+      {
+        "letter": "B",
+        "text": "Autonomic dysreflexia triggered by a noxious stimulus"
+      },
+      {
+        "letter": "C",
+        "text": "Neurogenic shock due to spinal cord edema"
+      },
+      {
+        "letter": "D",
+        "text": "Ischemic stroke"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Pounding headache, severe hypertension, bradycardia, and flushing above a T6-level injury indicate autonomic dysreflexia.",
+    "rationale_incorrect": {
+      "A": "The presentation is specific to spinal cord injury.",
+      "C": "Neurogenic shock causes hypotension and bradycardia.",
+      "D": "Stroke is a risk, but autonomic dysreflexia is the primary hypothesis."
+    }
+  },
+  {
+    "id": 61,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": "Illustration of a chest tube drainage system with vigorous bubbling in the water-seal chamber.",
+    "scenario": "A patient has a chest tube connected to a water-seal drainage system for a pneumothorax. The nurse observes continuous, vigorous bubbling in the water-seal chamber.",
+    "stem": "How should the nurse evaluate this finding?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The system is functioning normally to remove air from the pleural space"
+      },
+      {
+        "letter": "B",
+        "text": "There is an air leak in the system or the patient's pleural space"
+      },
+      {
+        "letter": "C",
+        "text": "The suction control pressure is set too high"
+      },
+      {
+        "letter": "D",
+        "text": "The patient's pneumothorax has fully resolved"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Continuous bubbling in the water-seal chamber indicates an air leak.",
+    "rationale_incorrect": {
+      "A": "Continuous bubbling is not normal in the water-seal chamber.",
+      "C": "Vigorous bubbling in the suction control chamber indicates suction is too high.",
+      "D": "Resolution is indicated by cessation of bubbling and tidaling."
+    },
+    "image": "generated_images/main_plan_q61.jpg"
+  },
+  {
+    "id": 62,
+    "domain": "Generate Solutions",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": "12-lead ECG showing ST-segment elevation in anterior leads.",
+    "scenario": "A patient arrives at the ED with crushing, substernal chest pain radiating to the left jaw. Refer to the ECG above.",
+    "stem": "Which interventions should the nurse anticipate? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administer aspirin 325 mg chewed"
+      },
+      {
+        "letter": "B",
+        "text": "Administer sublingual nitroglycerin"
+      },
+      {
+        "letter": "C",
+        "text": "Prepare the patient for an immediate CT scan of the chest"
+      },
+      {
+        "letter": "D",
+        "text": "Administer oxygen if SpO2 is < 90%"
+      },
+      {
+        "letter": "E",
+        "text": "Prepare for percutaneous coronary intervention (PCI)"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Anterior STEMI interventions include aspirin, nitroglycerin, oxygen if hypoxic, and rapid PCI preparation.",
+    "rationale_incorrect": {
+      "C": "A CT scan delays definitive STEMI treatment."
+    },
+    "image": "imported_images/scene_05_stemi_ecg_1.png"
+  },
+  {
+    "id": 63,
+    "domain": "Take Actions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is admitted with suspected sepsis. Vital signs: Temp 39.2C, HR 122, BP 88/50, RR 24. The provider orders blood cultures, IV broad-spectrum antibiotics, a serum lactate level, and a 1000 mL normal saline bolus.",
+    "stem": "In what order should the nurse implement these actions?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Antibiotics, blood cultures, lactate, fluids"
+      },
+      {
+        "letter": "B",
+        "text": "Blood cultures, antibiotics, fluids, lactate"
+      },
+      {
+        "letter": "C",
+        "text": "Lactate, blood cultures, antibiotics, fluids"
+      },
+      {
+        "letter": "D",
+        "text": "Fluids, antibiotics, blood cultures, lactate"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "In the sepsis bundle, draw lactate and blood cultures before antibiotics, then begin antibiotics and fluids promptly.",
+    "rationale_incorrect": {
+      "A": "Antibiotics before cultures can skew organism identification.",
+      "B": "Lactate should be drawn early to assess tissue perfusion.",
+      "D": "Antibiotics before cultures is incorrect."
+    }
+  },
+  {
+    "id": 64,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with cirrhosis and hepatic encephalopathy is receiving oral lactulose.",
+    "stem": "Which finding indicates the medication is having its intended therapeutic effect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The patient has 3-4 soft bowel movements per day"
+      },
+      {
+        "letter": "B",
+        "text": "The patient's serum ammonia level increases"
+      },
+      {
+        "letter": "C",
+        "text": "The patient's abdominal ascites decreases"
+      },
+      {
+        "letter": "D",
+        "text": "The patient reports decreased nausea"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Lactulose traps ammonia in the gut and expels it through stool; several soft bowel movements daily indicate therapeutic effect.",
+    "rationale_incorrect": {
+      "B": "The goal is decreased ammonia.",
+      "C": "Lactulose does not treat ascites.",
+      "D": "Nausea is not the therapeutic target."
+    }
+  },
+  {
+    "id": 65,
+    "domain": "Basic Care and Comfort",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is admitted with acute pancreatitis. The patient is reporting severe, piercing abdominal pain.",
+    "stem": "Which nursing intervention will best promote comfort for this patient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Place the patient in a supine position with legs straight"
+      },
+      {
+        "letter": "B",
+        "text": "Maintain NPO status and insert an NG tube if ordered"
+      },
+      {
+        "letter": "C",
+        "text": "Offer small, frequent meals of high-fat foods"
+      },
+      {
+        "letter": "D",
+        "text": "Encourage deep breathing and coughing exercises every hour"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "NPO status decreases pancreatic enzyme secretion and reduces pancreatitis pain.",
+    "rationale_incorrect": {
+      "A": "Supine position can worsen abdominal pain.",
+      "C": "Food, especially fat, stimulates the pancreas.",
+      "D": "This supports respiratory status but does not directly reduce pancreatitis pain."
+    }
+  },
+  {
+    "id": 66,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Graves' disease is 12 hours post-thyroidectomy. The nurse notes the patient's temperature has risen to 39.8C, HR is 145 bpm, and the patient is extremely restless and agitated.",
+    "stem": "What is the priority hypothesis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Surgical site infection"
+      },
+      {
+        "letter": "B",
+        "text": "Hypocalcemia"
+      },
+      {
+        "letter": "C",
+        "text": "Thyroid storm (thyrotoxic crisis)"
+      },
+      {
+        "letter": "D",
+        "text": "Hemorrhage"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "High fever, severe tachycardia, and agitation after thyroidectomy indicate thyroid storm.",
+    "rationale_incorrect": {
+      "A": "Infection is less likely to present so dramatically at 12 hours.",
+      "B": "Hypocalcemia presents with tetany.",
+      "D": "Hemorrhage presents with hypotension and neck swelling/bleeding."
+    }
+  },
+  {
+    "id": 67,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Addison's disease is prescribed oral hydrocortisone.",
+    "stem": "Which instruction should the nurse include in the discharge teaching?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'Take the medication on an empty stomach.'"
+      },
+      {
+        "letter": "B",
+        "text": "'Stop taking the medication if you develop a fever.'"
+      },
+      {
+        "letter": "C",
+        "text": "'You will need to increase your dose during times of physical or emotional stress.'"
+      },
+      {
+        "letter": "D",
+        "text": "'Limit your sodium intake while on this medication.'"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Patients with Addison's disease need increased corticosteroid dosing during illness, surgery, or severe stress.",
+    "rationale_incorrect": {
+      "A": "Corticosteroids should be taken with food.",
+      "B": "Abrupt stopping can cause adrenal crisis.",
+      "D": "Addison's patients often need more sodium."
+    }
+  },
+  {
+    "id": 68,
+    "domain": "Analyze Cues",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A nurse is assessing a patient with suspected Cushing's syndrome.",
+    "stem": "Which clinical manifestations support this diagnosis? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Truncal obesity"
+      },
+      {
+        "letter": "B",
+        "text": "Hypotension"
+      },
+      {
+        "letter": "C",
+        "text": "Purple striae on the abdomen"
+      },
+      {
+        "letter": "D",
+        "text": "Hypoglycemia"
+      },
+      {
+        "letter": "E",
+        "text": "Moon face"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "C",
+      "E"
+    ],
+    "rationale_correct": "Cushing's syndrome signs include truncal obesity, purple striae, moon face, hypertension, and hyperglycemia.",
+    "rationale_incorrect": {
+      "B": "Hypertension is expected.",
+      "D": "Hyperglycemia is expected."
+    }
+  },
+  {
+    "id": 69,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Diabetes Insipidus (DI) is receiving desmopressin (DDAVP).",
+    "stem": "Which finding indicates the medication is effective?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Urine output increases from 100 mL/hr to 250 mL/hr"
+      },
+      {
+        "letter": "B",
+        "text": "Urine specific gravity increases from 1.002 to 1.015"
+      },
+      {
+        "letter": "C",
+        "text": "Serum sodium increases from 145 mEq/L to 152 mEq/L"
+      },
+      {
+        "letter": "D",
+        "text": "The patient reports increased thirst"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Desmopressin promotes water reabsorption; more concentrated urine with higher specific gravity indicates effectiveness.",
+    "rationale_incorrect": {
+      "A": "Urine output should decrease.",
+      "C": "Serum sodium should decrease toward normal.",
+      "D": "Thirst should decrease."
+    }
+  },
+  {
+    "id": 70,
+    "domain": "Reduction of Risk Potential",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Syndrome of Inappropriate Antidiuretic Hormone (SIADH) has a serum sodium of 118 mEq/L.",
+    "stem": "Which intervention is the highest priority to prevent complications?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administer a 0.45% NaCl IV bolus"
+      },
+      {
+        "letter": "B",
+        "text": "Encourage oral fluid intake"
+      },
+      {
+        "letter": "C",
+        "text": "Implement seizure precautions"
+      },
+      {
+        "letter": "D",
+        "text": "Administer IV potassium chloride"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Severe hyponatremia puts the patient at risk for cerebral edema, seizures, and coma.",
+    "rationale_incorrect": {
+      "A": "Hypotonic saline worsens hyponatremia.",
+      "B": "Fluid restriction is used in SIADH.",
+      "D": "Potassium is not the primary issue."
+    }
+  },
+  {
+    "id": 71,
+    "domain": "Take Actions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": "Burn patient with facial burns and airway risk cues.",
+    "scenario": "A 70 kg patient sustains deep partial-thickness burns over 40% of their total body surface area (TBSA). The provider orders fluid resuscitation using the Parkland formula (4 mL/kg/%TBSA).",
+    "stem": "How many mL of lactated Ringer's should the nurse administer in the first 8 hours?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "5,600 mL"
+      },
+      {
+        "letter": "B",
+        "text": "11,200 mL"
+      },
+      {
+        "letter": "C",
+        "text": "2,800 mL"
+      },
+      {
+        "letter": "D",
+        "text": "8,400 mL"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Parkland formula: 4 mL x 70 kg x 40 = 11,200 mL total in 24 hours. Half, 5,600 mL, is given in the first 8 hours.",
+    "rationale_incorrect": {
+      "B": "11,200 mL is the 24-hour total.",
+      "C": "2,800 mL is a quarter of the total.",
+      "D": "8,400 mL is incorrect."
+    },
+    "image": "imported_images/scene_13_facial_burns_airway_1.png"
+  },
+  {
+    "id": 72,
+    "domain": "Recognize Cues",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is admitted with a traumatic brain injury. The nurse notes the patient's blood pressure is 180/60 mmHg, heart rate is 48 bpm, and respirations are irregular at 10 breaths/min.",
+    "stem": "What do these vital signs indicate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hypovolemic shock"
+      },
+      {
+        "letter": "B",
+        "text": "Cushing's triad"
+      },
+      {
+        "letter": "C",
+        "text": "Brain death"
+      },
+      {
+        "letter": "D",
+        "text": "Autonomic dysreflexia"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Cushing's triad is widening pulse pressure, bradycardia, and irregular respirations, a late sign of increased ICP.",
+    "rationale_incorrect": {
+      "A": "Hypovolemic shock causes hypotension and tachycardia.",
+      "C": "Brain death requires formal neurological testing.",
+      "D": "Autonomic dysreflexia is associated with spinal cord injury."
+    }
+  },
+  {
+    "id": 73,
+    "domain": "Analyze Cues",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient presents to the ED with a severe headache, fever, and photophobia. When the nurse flexes the patient's neck forward, the patient involuntarily flexes their hips and knees.",
+    "stem": "How should the nurse document this finding?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Positive Kernig's sign"
+      },
+      {
+        "letter": "B",
+        "text": "Positive Brudzinski's sign"
+      },
+      {
+        "letter": "C",
+        "text": "Positive Babinski reflex"
+      },
+      {
+        "letter": "D",
+        "text": "Decorticate posturing"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Brudzinski's sign is positive when neck flexion causes involuntary hip and knee flexion.",
+    "rationale_incorrect": {
+      "A": "Kernig's sign involves pain/resistance with knee extension when the hip is flexed.",
+      "C": "Babinski is toe fanning with sole stimulation.",
+      "D": "Decorticate posturing is abnormal flexion."
+    }
+  },
+  {
+    "id": 74,
+    "domain": "Safety and Infection Control",
+    "difficulty": "Easy",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient with a history of tonic-clonic seizures is admitted to the medical-surgical unit.",
+    "stem": "Which actions should the nurse take to implement seizure precautions? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pad the side rails of the bed"
+      },
+      {
+        "letter": "B",
+        "text": "Keep a padded tongue blade at the bedside"
+      },
+      {
+        "letter": "C",
+        "text": "Ensure suction equipment is set up and functioning"
+      },
+      {
+        "letter": "D",
+        "text": "Keep the bed in the lowest position"
+      },
+      {
+        "letter": "E",
+        "text": "Restrain the patient's arms during a seizure"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "rationale_correct": "Seizure precautions include padded side rails, suction/oxygen availability, and low bed position.",
+    "rationale_incorrect": {
+      "B": "Nothing should be placed in the mouth during a seizure.",
+      "E": "Restraining can cause injury."
+    }
+  },
+  {
+    "id": 75,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Parkinson's disease is prescribed carbidopa/levodopa.",
+    "stem": "Which statement by the patient indicates a correct understanding of the medication?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'This medication will cure my Parkinson's disease.'"
+      },
+      {
+        "letter": "B",
+        "text": "'I should take this medication with a high-protein meal.'"
+      },
+      {
+        "letter": "C",
+        "text": "'It may take several weeks or months to see the full effect.'"
+      },
+      {
+        "letter": "D",
+        "text": "'I will stop taking it if my tremors get worse.'"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Carbidopa/levodopa can take weeks to months to reach maximum therapeutic effectiveness.",
+    "rationale_incorrect": {
+      "A": "It manages symptoms but does not cure Parkinson's.",
+      "B": "High-protein meals reduce levodopa absorption.",
+      "D": "Abrupt discontinuation can cause severe withdrawal effects."
+    }
+  },
+  {
+    "id": 76,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Myasthenia Gravis is undergoing a Tensilon (edrophonium) test to differentiate between a myasthenic crisis and a cholinergic crisis. After administration of the drug, the patient's muscle weakness worsens.",
+    "stem": "What is the correct interpretation of this outcome?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The patient is in a myasthenic crisis and needs more anticholinesterase medication"
+      },
+      {
+        "letter": "B",
+        "text": "The patient is in a cholinergic crisis and needs atropine"
+      },
+      {
+        "letter": "C",
+        "text": "The test is inconclusive and should be repeated"
+      },
+      {
+        "letter": "D",
+        "text": "The patient has developed Guillain-Barre syndrome"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Worsening weakness after edrophonium indicates cholinergic crisis from excess acetylcholine; atropine is needed.",
+    "rationale_incorrect": {
+      "A": "Improvement indicates myasthenic crisis.",
+      "C": "The test is conclusive.",
+      "D": "The test does not diagnose Guillain-Barre syndrome."
+    }
+  },
+  {
+    "id": 77,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is admitted with Guillain-Barre syndrome. The patient reports progressive weakness starting in the legs and moving upward.",
+    "stem": "Which assessment is the highest priority for this patient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Deep tendon reflexes"
+      },
+      {
+        "letter": "B",
+        "text": "Bowel sounds"
+      },
+      {
+        "letter": "C",
+        "text": "Respiratory rate and vital capacity"
+      },
+      {
+        "letter": "D",
+        "text": "Pupil response to light"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Ascending paralysis can reach the diaphragm and cause respiratory failure, so respiratory assessment is the priority.",
+    "rationale_incorrect": {
+      "A": "Absent DTRs are expected and less urgent.",
+      "B": "Bowel function is secondary.",
+      "D": "Pupil response is not the priority."
+    }
+  },
+  {
+    "id": 78,
+    "domain": "Health Promotion and Maintenance",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Multiple Sclerosis (MS) is experiencing frequent muscle spasticity and is prescribed baclofen.",
+    "stem": "Which instruction should the nurse provide?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'Take the medication on an empty stomach for better absorption.'"
+      },
+      {
+        "letter": "B",
+        "text": "'Do not stop taking this medication abruptly.'"
+      },
+      {
+        "letter": "C",
+        "text": "'This medication will cure your muscle spasms permanently.'"
+      },
+      {
+        "letter": "D",
+        "text": "'You can drink alcohol in moderation while taking this drug.'"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Abrupt baclofen withdrawal can cause severe rebound spasticity, hallucinations, and seizures.",
+    "rationale_incorrect": {
+      "A": "It may be taken with food to reduce GI upset.",
+      "C": "It manages symptoms but does not cure MS.",
+      "D": "Alcohol should be avoided due to additive CNS depression."
+    }
+  },
+  {
+    "id": 79,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Rheumatoid Arthritis is prescribed methotrexate.",
+    "stem": "Which laboratory test must the nurse monitor closely while the patient is on this medication?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Serum potassium"
+      },
+      {
+        "letter": "B",
+        "text": "Complete blood count (CBC)"
+      },
+      {
+        "letter": "C",
+        "text": "Thyroid stimulating hormone (TSH)"
+      },
+      {
+        "letter": "D",
+        "text": "Hemoglobin A1c"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Methotrexate can cause bone marrow suppression; CBC must be monitored regularly.",
+    "rationale_incorrect": {
+      "A": "Potassium is not the key monitoring lab.",
+      "C": "TSH is not affected.",
+      "D": "HbA1c is for diabetes monitoring."
+    }
+  },
+  {
+    "id": 80,
+    "domain": "Basic Care and Comfort",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with severe osteoarthritis of the knees asks the nurse for advice on managing morning stiffness.",
+    "stem": "Which recommendation is most appropriate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'Apply ice packs to your knees for 30 minutes right after waking up.'"
+      },
+      {
+        "letter": "B",
+        "text": "'Take a warm shower or apply a warm compress to your joints in the morning.'"
+      },
+      {
+        "letter": "C",
+        "text": "'Perform high-impact aerobic exercises to loosen the joints.'"
+      },
+      {
+        "letter": "D",
+        "text": "'Stay in bed until the stiffness completely goes away.'"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Heat therapy reduces morning stiffness in osteoarthritis by increasing blood flow and joint flexibility.",
+    "rationale_incorrect": {
+      "A": "Ice is better for acute inflammation.",
+      "C": "High-impact exercise worsens osteoarthritis.",
+      "D": "Immobility worsens stiffness."
+    }
+  },
+  {
+    "id": 81,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A postmenopausal woman is prescribed alendronate for osteoporosis.",
+    "stem": "Which instruction is crucial for the nurse to include in the teaching plan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'Take the medication right before going to bed.'"
+      },
+      {
+        "letter": "B",
+        "text": "'Take the medication with a full glass of milk.'"
+      },
+      {
+        "letter": "C",
+        "text": "'Remain upright for at least 30 minutes after taking the medication.'"
+      },
+      {
+        "letter": "D",
+        "text": "'Crush the tablet and mix it with applesauce if it's hard to swallow.'"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Alendronate can cause severe esophageal irritation; it must be taken with water and the patient must remain upright.",
+    "rationale_incorrect": {
+      "A": "Taking it before bed increases reflux risk.",
+      "B": "Calcium in milk interferes with absorption.",
+      "D": "Crushing increases esophageal damage risk."
+    }
+  },
+  {
+    "id": 82,
+    "domain": "Reduction of Risk Potential",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is 1 day post-op following a right total hip arthroplasty (posterior approach).",
+    "stem": "Which action by the nurse is most important to prevent dislocation of the new prosthesis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Elevate the head of the bed to 90 degrees for meals"
+      },
+      {
+        "letter": "B",
+        "text": "Place an abduction pillow between the patient's legs when turning"
+      },
+      {
+        "letter": "C",
+        "text": "Encourage the patient to cross their legs at the ankles to promote circulation"
+      },
+      {
+        "letter": "D",
+        "text": "Perform passive range of motion exercises flexing the hip past 90 degrees"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Posterior hip replacement precautions include keeping the hip abducted; an abduction pillow helps prevent dislocation.",
+    "rationale_incorrect": {
+      "A": "Hip flexion >90 degrees can cause dislocation.",
+      "C": "Crossing legs causes adduction.",
+      "D": "Flexion past 90 degrees is contraindicated."
+    }
+  },
+  {
+    "id": 83,
+    "domain": "Psychosocial Integrity",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient who had a below-the-knee amputation 3 days ago reports severe pain in the toes of the amputated foot.",
+    "stem": "How should the nurse respond?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'That is impossible because your foot is no longer there.'"
+      },
+      {
+        "letter": "B",
+        "text": "'You are experiencing phantom limb pain, which is real. I will get your pain medication.'"
+      },
+      {
+        "letter": "C",
+        "text": "'This is a psychological reaction to the loss of your limb.'"
+      },
+      {
+        "letter": "D",
+        "text": "'Let's unwrap the stump to see if there is an infection.'"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Phantom limb pain is a real neurological phenomenon and should be acknowledged and treated.",
+    "rationale_incorrect": {
+      "A": "This is dismissive and incorrect.",
+      "C": "It is not purely psychological.",
+      "D": "Unwrapping the stump does not address phantom pain."
+    }
+  },
+  {
+    "id": 84,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with primary open-angle glaucoma is prescribed timolol eye drops. The patient has a history of asthma and hypertension.",
+    "stem": "Which action should the nurse take before administering the medication?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administer the drops as ordered without concern"
+      },
+      {
+        "letter": "B",
+        "text": "Hold the medication and notify the provider about the patient's asthma history"
+      },
+      {
+        "letter": "C",
+        "text": "Check the patient's blood glucose level"
+      },
+      {
+        "letter": "D",
+        "text": "Instruct the patient to blink rapidly after instillation"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Timolol is a non-selective beta-blocker and can trigger bronchospasm in asthma.",
+    "rationale_incorrect": {
+      "A": "Administering it could trigger an asthma attack.",
+      "C": "Blood glucose is not the priority concern.",
+      "D": "Blinking rapidly washes out medication."
+    }
+  },
+  {
+    "id": 85,
+    "domain": "Reduction of Risk Potential",
+    "difficulty": "Easy",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient is being discharged after cataract extraction surgery on the left eye.",
+    "stem": "Which instructions should the nurse include in the discharge teaching? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Avoid bending over at the waist"
+      },
+      {
+        "letter": "B",
+        "text": "Sleep on the left side to promote drainage"
+      },
+      {
+        "letter": "C",
+        "text": "Do not lift anything heavier than 10 pounds"
+      },
+      {
+        "letter": "D",
+        "text": "Expect severe, throbbing pain in the eye for the first 24 hours"
+      },
+      {
+        "letter": "E",
+        "text": "Wear the protective eye shield at night"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "C",
+      "E"
+    ],
+    "rationale_correct": "After cataract surgery, avoid increased intraocular pressure by avoiding bending, lifting, and eye rubbing; use the shield at night.",
+    "rationale_incorrect": {
+      "B": "The patient should avoid pressure on the surgical eye.",
+      "D": "Severe throbbing pain is abnormal and should be reported."
+    }
+  },
+  {
+    "id": 86,
+    "domain": "Management of Care",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Meniere's disease is admitted with severe vertigo, tinnitus, and sensorineural hearing loss.",
+    "stem": "Which nursing intervention is the highest priority?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Provide a low-sodium diet"
+      },
+      {
+        "letter": "B",
+        "text": "Implement fall precautions"
+      },
+      {
+        "letter": "C",
+        "text": "Administer IV fluids"
+      },
+      {
+        "letter": "D",
+        "text": "Speak loudly and clearly into the patient's affected ear"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Severe vertigo creates a high fall risk; safety is the priority.",
+    "rationale_incorrect": {
+      "A": "Low sodium is long-term management.",
+      "C": "IV fluids are not routinely required unless vomiting/dehydration occurs.",
+      "D": "Speaking loudly into the affected ear is ineffective."
+    }
+  },
+  {
+    "id": 87,
+    "domain": "Health Promotion and Maintenance",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is diagnosed with iron deficiency anemia and prescribed oral ferrous sulfate.",
+    "stem": "Which dietary instruction will best enhance the absorption of this medication?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'Take the iron supplement with a glass of milk.'"
+      },
+      {
+        "letter": "B",
+        "text": "'Take the iron supplement with a glass of orange juice.'"
+      },
+      {
+        "letter": "C",
+        "text": "'Eat high-fiber foods at the same time you take the iron.'"
+      },
+      {
+        "letter": "D",
+        "text": "'Take the iron supplement with a cup of hot tea.'"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Vitamin C in orange juice enhances non-heme iron absorption.",
+    "rationale_incorrect": {
+      "A": "Calcium inhibits iron absorption.",
+      "C": "High-fiber foods can inhibit absorption.",
+      "D": "Tea tannins inhibit iron absorption."
+    }
+  },
+  {
+    "id": 88,
+    "domain": "Take Actions",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A 22-year-old patient with sickle cell anemia is admitted with a vaso-occlusive crisis. The patient reports pain as 10/10 in the joints and back.",
+    "stem": "Which intervention should the nurse implement first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administer high-flow oxygen via non-rebreather mask"
+      },
+      {
+        "letter": "B",
+        "text": "Start an IV line and administer normal saline at 150 mL/hr"
+      },
+      {
+        "letter": "C",
+        "text": "Administer IV morphine as ordered"
+      },
+      {
+        "letter": "D",
+        "text": "Apply cold compresses to the affected joints"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Aggressive IV hydration helps reverse sickling by improving perfusion and reducing blood viscosity.",
+    "rationale_incorrect": {
+      "A": "Oxygen is indicated if hypoxic.",
+      "C": "Pain control is essential but hydration treats a root contributor.",
+      "D": "Cold causes vasoconstriction and worsens sickling."
+    }
+  },
+  {
+    "id": 89,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Hemophilia A is admitted with hemarthrosis (bleeding into the joint) of the right knee. The nurse administers IV Factor VIII.",
+    "stem": "Which finding best indicates that the treatment is effective?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The patient's aPTT returns to a normal range"
+      },
+      {
+        "letter": "B",
+        "text": "The patient reports a decrease in knee pain and swelling"
+      },
+      {
+        "letter": "C",
+        "text": "The patient's platelet count increases"
+      },
+      {
+        "letter": "D",
+        "text": "The patient's PT/INR normalizes"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Clinical reduction in pain and swelling indicates bleeding into the joint has stopped.",
+    "rationale_incorrect": {
+      "A": "aPTT may improve, but clinical resolution is the best outcome.",
+      "C": "Hemophilia A is not a platelet disorder.",
+      "D": "PT/INR is usually normal in Hemophilia A."
+    }
+  },
+  {
+    "id": 90,
+    "domain": "Safety and Infection Control",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient with acute lymphocytic leukemia (ALL) has an absolute neutrophil count (ANC) of 400/mm3.",
+    "stem": "Which precautions should the nurse implement? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Place the patient in a negative pressure room"
+      },
+      {
+        "letter": "B",
+        "text": "Prohibit fresh flowers and potted plants in the room"
+      },
+      {
+        "letter": "C",
+        "text": "Ensure the patient eats only cooked foods (no raw fruits/vegetables)"
+      },
+      {
+        "letter": "D",
+        "text": "Require all staff and visitors to perform strict hand hygiene"
+      },
+      {
+        "letter": "E",
+        "text": "Restrict all visitors under the age of 16"
+      }
+    ],
+    "correct_answers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "rationale_correct": "Severe neutropenia requires strict hand hygiene and avoidance of microbial sources such as fresh flowers and raw foods.",
+    "rationale_incorrect": {
+      "A": "Positive pressure, not negative pressure, is used for protective isolation.",
+      "E": "Sick visitors are restricted; age alone is not always prohibited."
+    }
+  },
+  {
+    "id": 91,
+    "domain": "Reduction of Risk Potential",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is 24 hours post-op following a right modified radical mastectomy with axillary lymph node dissection.",
+    "stem": "Which action is contraindicated for this patient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Elevating the right arm on a pillow"
+      },
+      {
+        "letter": "B",
+        "text": "Taking blood pressure on the right arm"
+      },
+      {
+        "letter": "C",
+        "text": "Encouraging finger and wrist exercises on the right side"
+      },
+      {
+        "letter": "D",
+        "text": "Administering pain medication prior to ambulation"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Blood pressure, blood draws, and IVs on the operative side increase lymphedema risk and are contraindicated.",
+    "rationale_incorrect": {
+      "A": "Elevation promotes drainage.",
+      "C": "Exercises prevent stiffness and promote drainage.",
+      "D": "Pain management is appropriate."
+    }
+  },
+  {
+    "id": 92,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is receiving continuous bladder irrigation (CBI) following a transurethral resection of the prostate (TURP). The nurse notes the drainage in the catheter bag is bright red with numerous large clots.",
+    "stem": "What is the nurse's most appropriate action?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Decrease the rate of the CBI"
+      },
+      {
+        "letter": "B",
+        "text": "Increase the rate of the CBI"
+      },
+      {
+        "letter": "C",
+        "text": "Stop the CBI and notify the surgeon immediately"
+      },
+      {
+        "letter": "D",
+        "text": "Document the finding as normal post-op drainage"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "CBI should be titrated to keep output light pink and clot-free; bright red drainage with clots requires increasing the irrigation rate.",
+    "rationale_incorrect": {
+      "A": "Decreasing the rate allows more clot formation.",
+      "C": "Stopping CBI can cause clot retention.",
+      "D": "Bright red drainage with clots requires action."
+    }
+  },
+  {
+    "id": 93,
+    "domain": "Analyze Cues",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with a right-sided chest tube for a hemothorax suddenly complains of severe shortness of breath. The nurse notes the chest tube drainage has stopped, the trachea is deviated to the left, and there are absent breath sounds on the right.",
+    "stem": "What complication does the nurse suspect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pulmonary embolism"
+      },
+      {
+        "letter": "B",
+        "text": "Tension pneumothorax"
+      },
+      {
+        "letter": "C",
+        "text": "Cardiac tamponade"
+      },
+      {
+        "letter": "D",
+        "text": "Flail chest"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Severe dyspnea, absent breath sounds on the affected side, and tracheal deviation away from the affected side indicate tension pneumothorax.",
+    "rationale_incorrect": {
+      "A": "PE does not cause tracheal deviation.",
+      "C": "Tamponade causes muffled heart tones and JVD.",
+      "D": "Flail chest causes paradoxical chest movement."
+    }
+  },
+  {
+    "id": 94,
+    "domain": "Health Promotion and Maintenance",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with a new descending colostomy is receiving discharge teaching.",
+    "stem": "Which statement by the patient indicates a correct understanding of stoma care?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'My stoma should look pale pink and dry.'"
+      },
+      {
+        "letter": "B",
+        "text": "'I should empty the pouch when it is one-third to one-half full.'"
+      },
+      {
+        "letter": "C",
+        "text": "'I will clean the stoma with alcohol wipes to prevent infection.'"
+      },
+      {
+        "letter": "D",
+        "text": "'I can expect liquid stool to drain continuously.'"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "The pouch should be emptied when one-third to one-half full to prevent leakage and appliance detachment.",
+    "rationale_incorrect": {
+      "A": "A healthy stoma is beefy red and moist.",
+      "C": "Alcohol damages the stoma.",
+      "D": "Descending colostomies usually produce formed stool."
+    }
+  },
+  {
+    "id": 95,
+    "domain": "Safety and Infection Control",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse sustains a needle-stick injury after administering an IM injection to a patient with known HIV.",
+    "stem": "What is the nurse's immediate first action?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Report the incident to the charge nurse"
+      },
+      {
+        "letter": "B",
+        "text": "Wash the puncture site with soap and water"
+      },
+      {
+        "letter": "C",
+        "text": "Go to the employee health department for post-exposure prophylaxis (PEP)"
+      },
+      {
+        "letter": "D",
+        "text": "Ask the patient for consent to draw blood for viral load testing"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "The immediate first action after a needle-stick is to wash the puncture site thoroughly with soap and water.",
+    "rationale_incorrect": {
+      "A": "Reporting follows immediate decontamination.",
+      "C": "PEP follows immediate decontamination.",
+      "D": "Testing is part of protocol but not first."
+    }
+  },
+  {
+    "id": 96,
+    "domain": "Health Promotion and Maintenance",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A young adult female is newly diagnosed with Systemic Lupus Erythematosus (SLE).",
+    "stem": "Which lifestyle modification is most important for the nurse to teach this patient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'Avoid all physical exercise to prevent joint damage.'"
+      },
+      {
+        "letter": "B",
+        "text": "'Apply a high-SPF sunscreen and wear protective clothing when outdoors.'"
+      },
+      {
+        "letter": "C",
+        "text": "'Consume a diet high in purines.'"
+      },
+      {
+        "letter": "D",
+        "text": "'Limit your fluid intake to 1 liter per day.'"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "UV exposure can trigger SLE flares; strict sun protection is essential.",
+    "rationale_incorrect": {
+      "A": "Moderate exercise is encouraged.",
+      "C": "Low purine diet is for gout.",
+      "D": "Fluid restriction is not routine unless specific renal/cardiac indications exist."
+    }
+  },
+  {
+    "id": 97,
+    "domain": "Take Actions",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": "Patient experiencing anaphylaxis with facial swelling, wheezing, and hypotension.",
+    "scenario": "A patient receives a dose of IV penicillin and within 2 minutes develops wheezing, facial swelling, and a blood pressure of 80/40 mmHg.",
+    "stem": "Which medication should the nurse administer first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "IV diphenhydramine"
+      },
+      {
+        "letter": "B",
+        "text": "IV methylprednisolone"
+      },
+      {
+        "letter": "C",
+        "text": "IM epinephrine"
+      },
+      {
+        "letter": "D",
+        "text": "Albuterol nebulizer"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Anaphylaxis requires immediate IM epinephrine to reverse bronchospasm and vasodilation.",
+    "rationale_incorrect": {
+      "A": "Antihistamines are secondary.",
+      "B": "Corticosteroids are secondary.",
+      "D": "Bronchodilators are secondary."
+    },
+    "image": "imported_images/scene_15_anaphylaxis_1.png"
+  },
+  {
+    "id": 98,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with asthma is prescribed an albuterol inhaler and a fluticasone inhaler.",
+    "stem": "How should the nurse instruct the patient to use these medications?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'Use the fluticasone first, wait 5 minutes, then use the albuterol.'"
+      },
+      {
+        "letter": "B",
+        "text": "'Use the albuterol first, wait 5 minutes, then use the fluticasone.'"
+      },
+      {
+        "letter": "C",
+        "text": "'Mix the two medications in a spacer and inhale them together.'"
+      },
+      {
+        "letter": "D",
+        "text": "'Use the albuterol only at night and the fluticasone in the morning.'"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Albuterol opens airways first, allowing fluticasone to penetrate more deeply when given several minutes later.",
+    "rationale_incorrect": {
+      "A": "Steroid first is less effective when airways are constricted.",
+      "C": "They should not be mixed.",
+      "D": "Albuterol is a rescue inhaler used as needed."
+    }
+  },
+  {
+    "id": 99,
+    "domain": "Management of Care",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is admitted with community-acquired pneumonia. The provider orders a sputum culture, a chest X-ray, IV fluids, and IV ceftriaxone.",
+    "stem": "Which action must the nurse complete before starting the IV ceftriaxone?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Obtain the chest X-ray"
+      },
+      {
+        "letter": "B",
+        "text": "Administer the IV fluids"
+      },
+      {
+        "letter": "C",
+        "text": "Obtain the sputum culture"
+      },
+      {
+        "letter": "D",
+        "text": "Check the patient's oxygen saturation"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Cultures should be collected before antibiotics so the causative organism can be identified accurately.",
+    "rationale_incorrect": {
+      "A": "X-ray does not need to precede antibiotics the way cultures do.",
+      "B": "Fluids can be given concurrently.",
+      "D": "Oxygen saturation is important but does not determine antibiotic timing."
+    }
+  },
+  {
+    "id": 100,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is starting treatment for active tuberculosis with a regimen that includes Rifampin.",
+    "stem": "What specific side effect should the nurse warn the patient about?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "'This medication may cause your urine, sweat, and tears to turn a red-orange color.'"
+      },
+      {
+        "letter": "B",
+        "text": "'You may experience ringing in your ears and hearing loss.'"
+      },
+      {
+        "letter": "C",
+        "text": "'This medication can cause severe joint pain and swelling.'"
+      },
+      {
+        "letter": "D",
+        "text": "'You will need to avoid eating aged cheeses and cured meats.'"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Rifampin causes harmless red-orange discoloration of bodily fluids, including urine, sweat, tears, and saliva.",
+    "rationale_incorrect": {
+      "B": "Ototoxicity is associated with streptomycin.",
+      "C": "Joint pain is associated with pyrazinamide.",
+      "D": "Tyramine restriction is more relevant to MAOIs and sometimes INH counseling."
+    }
+  },
+  {
+    "id": 101,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with bacterial meningitis has fever, nuchal rigidity, photophobia, and a decreasing level of consciousness.",
+    "stem": "Which hypothesis is the priority?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Acute pain related to meningeal irritation"
+      },
+      {
+        "letter": "B",
+        "text": "Risk for increased intracranial pressure and neurological deterioration"
+      },
+      {
+        "letter": "C",
+        "text": "Fluid volume deficit related to fever"
+      },
+      {
+        "letter": "D",
+        "text": "Impaired physical mobility related to weakness"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "A decreasing level of consciousness in meningitis suggests worsening cerebral edema or increased ICP and requires immediate priority."
+  },
+  {
+    "id": 102,
+    "domain": "Safety and Infection Control",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient with suspected bacterial meningitis is being admitted from the ED.",
+    "stem": "Which actions should the nurse implement? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Initiate droplet precautions"
+      },
+      {
+        "letter": "B",
+        "text": "Wear a surgical mask when providing care"
+      },
+      {
+        "letter": "C",
+        "text": "Place the patient in negative pressure isolation"
+      },
+      {
+        "letter": "D",
+        "text": "Administer ordered antibiotics promptly after cultures"
+      },
+      {
+        "letter": "E",
+        "text": "Restrict visitors with respiratory symptoms"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Meningitis requires droplet precautions, prompt antibiotics after cultures, and limiting exposure to symptomatic visitors."
+  },
+  {
+    "id": 103,
+    "domain": "Take Actions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": "Nurse performing focused stroke assessment for facial droop and unilateral weakness.",
+    "scenario": "A patient with suspected stroke has facial droop and right arm weakness that began 45 minutes ago. Blood glucose is 108 mg/dL.",
+    "stem": "Which action should the nurse take next?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Give aspirin immediately"
+      },
+      {
+        "letter": "B",
+        "text": "Prepare for emergent noncontrast CT scan"
+      },
+      {
+        "letter": "C",
+        "text": "Administer alteplase before imaging"
+      },
+      {
+        "letter": "D",
+        "text": "Place the patient in Trendelenburg position"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "A noncontrast CT is required urgently to distinguish ischemic from hemorrhagic stroke before thrombolytic therapy.",
+    "image": "imported_images/scene_09_stroke_assessment_1.png"
+  },
+  {
+    "id": 104,
+    "domain": "Recognize Cues",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient receiving alteplase for ischemic stroke suddenly reports severe headache and becomes more confused.",
+    "stem": "Which complication should the nurse suspect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hypoglycemia"
+      },
+      {
+        "letter": "B",
+        "text": "Intracranial hemorrhage"
+      },
+      {
+        "letter": "C",
+        "text": "Seizure aura"
+      },
+      {
+        "letter": "D",
+        "text": "Aspiration pneumonia"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Sudden severe headache and neurological decline during thrombolysis are warning signs of intracranial bleeding."
+  },
+  {
+    "id": 105,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with heart failure is receiving IV furosemide for pulmonary edema.",
+    "stem": "Which finding best indicates effective treatment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Urine output 25 mL/hr"
+      },
+      {
+        "letter": "B",
+        "text": "Crackles decreased and SpO2 improved from 88% to 95%"
+      },
+      {
+        "letter": "C",
+        "text": "Serum potassium decreased to 3.1 mEq/L"
+      },
+      {
+        "letter": "D",
+        "text": "Blood pressure decreased from 138/84 to 118/76"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Improved oxygenation and decreased crackles show reduced pulmonary fluid volume and improved gas exchange."
+  },
+  {
+    "id": 106,
+    "domain": "Generate Solutions",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient with heart failure is preparing for discharge.",
+    "stem": "Which instructions should the nurse include? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Weigh yourself daily at the same time"
+      },
+      {
+        "letter": "B",
+        "text": "Report a weight gain of 2-3 lb in 24 hours"
+      },
+      {
+        "letter": "C",
+        "text": "Stop diuretics when swelling improves"
+      },
+      {
+        "letter": "D",
+        "text": "Follow sodium restriction as prescribed"
+      },
+      {
+        "letter": "E",
+        "text": "Take medications as prescribed even when feeling better"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Daily weights, sodium restriction, reporting rapid weight gain, and medication adherence reduce decompensation risk."
+  },
+  {
+    "id": 107,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient taking lisinopril reports swelling of the lips and tongue.",
+    "stem": "Which action should the nurse take first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Document a common expected side effect"
+      },
+      {
+        "letter": "B",
+        "text": "Hold the medication and seek emergency airway evaluation"
+      },
+      {
+        "letter": "C",
+        "text": "Give the next dose with food"
+      },
+      {
+        "letter": "D",
+        "text": "Encourage oral fluids"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Lip and tongue swelling indicate ACE-inhibitor angioedema, an airway emergency."
+  },
+  {
+    "id": 108,
+    "domain": "Analyze Cues",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient taking spironolactone has weakness and peaked T waves on telemetry.",
+    "stem": "Which lab finding does the nurse expect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Potassium 5.9 mEq/L"
+      },
+      {
+        "letter": "B",
+        "text": "Sodium 152 mEq/L"
+      },
+      {
+        "letter": "C",
+        "text": "Calcium 7.2 mg/dL"
+      },
+      {
+        "letter": "D",
+        "text": "Magnesium 1.1 mg/dL"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Spironolactone is potassium-sparing and can cause hyperkalemia with peaked T waves."
+  },
+  {
+    "id": 109,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with an abdominal aortic aneurysm reports sudden severe back pain and has BP 84/50, HR 132.",
+    "stem": "Which hypothesis is priority?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Renal colic"
+      },
+      {
+        "letter": "B",
+        "text": "Rupturing aneurysm with hemorrhagic shock"
+      },
+      {
+        "letter": "C",
+        "text": "Acute pancreatitis"
+      },
+      {
+        "letter": "D",
+        "text": "Bowel obstruction"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Sudden back pain with hypotension and tachycardia in AAA suggests rupture and hemorrhagic shock."
+  },
+  {
+    "id": 110,
+    "domain": "Take Actions",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with suspected pulmonary embolism suddenly becomes dyspneic and anxious. SpO2 is 86% on room air.",
+    "stem": "Which action should the nurse take first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apply oxygen and raise the head of bed"
+      },
+      {
+        "letter": "B",
+        "text": "Teach pursed-lip breathing"
+      },
+      {
+        "letter": "C",
+        "text": "Prepare discharge instructions"
+      },
+      {
+        "letter": "D",
+        "text": "Restrict oral fluids"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Immediate oxygenation and positioning address acute hypoxemia from suspected PE."
+  },
+  {
+    "id": 111,
+    "domain": "Reduction of Risk Potential",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient is prescribed enoxaparin after knee replacement.",
+    "stem": "Which teaching points are appropriate? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use an electric razor"
+      },
+      {
+        "letter": "B",
+        "text": "Report black or tarry stools"
+      },
+      {
+        "letter": "C",
+        "text": "Massage the injection site after administration"
+      },
+      {
+        "letter": "D",
+        "text": "Avoid NSAIDs unless approved"
+      },
+      {
+        "letter": "E",
+        "text": "Rotate subcutaneous injection sites"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Anticoagulant teaching includes bleeding precautions, avoiding NSAIDs, and rotating injection sites without massage."
+  },
+  {
+    "id": 112,
+    "domain": "Management of Care",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "Four patients call for assistance at the same time.",
+    "stem": "Which patient should the nurse see first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A patient with cellulitis requesting a snack"
+      },
+      {
+        "letter": "B",
+        "text": "A patient 1 hour post-op reporting throat tightness after cefazolin"
+      },
+      {
+        "letter": "C",
+        "text": "A patient with diabetes asking for discharge papers"
+      },
+      {
+        "letter": "D",
+        "text": "A patient with arthritis requesting help repositioning"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Throat tightness after antibiotic exposure suggests anaphylaxis and airway risk."
+  },
+  {
+    "id": 113,
+    "domain": "Physiological Adaptation",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": "Patient with septic shock receiving emergency resuscitation and monitoring.",
+    "scenario": "A patient with septic shock remains hypotensive after 30 mL/kg IV crystalloid bolus.",
+    "stem": "Which medication should the nurse anticipate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Norepinephrine infusion"
+      },
+      {
+        "letter": "B",
+        "text": "Metoprolol IV"
+      },
+      {
+        "letter": "C",
+        "text": "Furosemide IV"
+      },
+      {
+        "letter": "D",
+        "text": "Morphine IV"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Persistent hypotension after fluid resuscitation in septic shock requires vasopressor support, commonly norepinephrine.",
+    "image": "imported_images/scene_10_septic_shock_1.png"
+  },
+  {
+    "id": 114,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with septic shock is receiving norepinephrine.",
+    "stem": "Which finding indicates the medication is effective?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "MAP increased from 54 to 68 mmHg"
+      },
+      {
+        "letter": "B",
+        "text": "Heart rate increased to 142 bpm"
+      },
+      {
+        "letter": "C",
+        "text": "Urine output decreased to 10 mL/hr"
+      },
+      {
+        "letter": "D",
+        "text": "Lactate increased from 2.8 to 5.1 mmol/L"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "A MAP of at least 65 mmHg indicates improved perfusion pressure."
+  },
+  {
+    "id": 115,
+    "domain": "Safety and Infection Control",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient has profuse watery diarrhea after antibiotic use and tests positive for C. difficile.",
+    "stem": "Which precaution is required?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Airborne precautions with N95 respirator"
+      },
+      {
+        "letter": "B",
+        "text": "Contact precautions with soap-and-water hand hygiene"
+      },
+      {
+        "letter": "C",
+        "text": "Droplet precautions with surgical mask"
+      },
+      {
+        "letter": "D",
+        "text": "Standard precautions only"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "C. difficile requires contact precautions and soap-and-water hand hygiene because spores resist alcohol gel."
+  },
+  {
+    "id": 116,
+    "domain": "Generate Solutions",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient with C. difficile infection is being cared for on the unit.",
+    "stem": "Which actions are appropriate? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use bleach-based environmental cleaning"
+      },
+      {
+        "letter": "B",
+        "text": "Perform hand hygiene with soap and water"
+      },
+      {
+        "letter": "C",
+        "text": "Give antimotility agents routinely"
+      },
+      {
+        "letter": "D",
+        "text": "Use dedicated patient equipment"
+      },
+      {
+        "letter": "E",
+        "text": "Wear gown and gloves on room entry"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Spore control requires contact precautions, dedicated equipment, soap-and-water hand hygiene, and bleach cleaning."
+  },
+  {
+    "id": 117,
+    "domain": "Analyze Cues",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient receiving chemotherapy has a temperature of 38.4C and ANC of 300/mm3.",
+    "stem": "How should the nurse interpret this finding?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Expected response to chemotherapy"
+      },
+      {
+        "letter": "B",
+        "text": "Febrile neutropenia requiring immediate intervention"
+      },
+      {
+        "letter": "C",
+        "text": "Mild viral illness that can wait"
+      },
+      {
+        "letter": "D",
+        "text": "Medication side effect requiring no action"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Fever with severe neutropenia is an oncologic emergency requiring prompt cultures and antibiotics."
+  },
+  {
+    "id": 118,
+    "domain": "Take Actions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with neutropenia has fever and chills. Blood cultures and broad-spectrum antibiotics are ordered.",
+    "stem": "Which action is priority?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Wait until the fever is above 39.5C"
+      },
+      {
+        "letter": "B",
+        "text": "Obtain cultures and start antibiotics promptly"
+      },
+      {
+        "letter": "C",
+        "text": "Give rectal acetaminophen"
+      },
+      {
+        "letter": "D",
+        "text": "Place fresh flowers near the bed"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Febrile neutropenia requires rapid cultures and broad-spectrum antibiotics."
+  },
+  {
+    "id": 119,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient receiving gentamicin reports dizziness and ringing in the ears.",
+    "stem": "Which action is most important?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hold the medication and notify the provider"
+      },
+      {
+        "letter": "B",
+        "text": "Administer the dose with food"
+      },
+      {
+        "letter": "C",
+        "text": "Document this expected harmless effect"
+      },
+      {
+        "letter": "D",
+        "text": "Encourage increased salt intake"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Tinnitus and dizziness indicate aminoglycoside ototoxicity and require holding the drug and notifying the provider."
+  },
+  {
+    "id": 120,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with hypothyroidism has taken levothyroxine for 8 weeks.",
+    "stem": "Which finding indicates therapeutic effect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pulse 118 bpm and weight loss of 10 lb"
+      },
+      {
+        "letter": "B",
+        "text": "Improved energy and TSH trending toward normal"
+      },
+      {
+        "letter": "C",
+        "text": "Cold intolerance worsened"
+      },
+      {
+        "letter": "D",
+        "text": "Serum TSH increased further"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Improved symptoms and TSH normalization indicate effective levothyroxine therapy."
+  },
+  {
+    "id": 121,
+    "domain": "Health Promotion and Maintenance",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient is prescribed levothyroxine.",
+    "stem": "Which instruction is correct?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Take it at bedtime with calcium"
+      },
+      {
+        "letter": "B",
+        "text": "Take it in the morning on an empty stomach"
+      },
+      {
+        "letter": "C",
+        "text": "Stop it when symptoms improve"
+      },
+      {
+        "letter": "D",
+        "text": "Take extra doses for fatigue"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Levothyroxine is best taken consistently in the morning on an empty stomach, separated from calcium/iron."
+  },
+  {
+    "id": 122,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with a pheochromocytoma has sudden severe headache, sweating, palpitations, and BP 230/126.",
+    "stem": "What is the priority hypothesis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Adrenal catecholamine crisis"
+      },
+      {
+        "letter": "B",
+        "text": "Addisonian crisis"
+      },
+      {
+        "letter": "C",
+        "text": "Myxedema coma"
+      },
+      {
+        "letter": "D",
+        "text": "SIADH"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Pheochromocytoma can cause life-threatening catecholamine surges with severe hypertension."
+  },
+  {
+    "id": 123,
+    "domain": "Reduction of Risk Potential",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient is scheduled for adrenalectomy for pheochromocytoma.",
+    "stem": "Which preoperative interventions should the nurse anticipate? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Alpha-adrenergic blockade as prescribed"
+      },
+      {
+        "letter": "B",
+        "text": "Blood pressure monitoring"
+      },
+      {
+        "letter": "C",
+        "text": "High-dose corticosteroids for all patients"
+      },
+      {
+        "letter": "D",
+        "text": "Avoid abdominal palpation unless ordered"
+      },
+      {
+        "letter": "E",
+        "text": "Teach slow position changes"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Pheochromocytoma care includes BP control with alpha blockade, avoiding tumor stimulation, and preventing orthostatic hypotension."
+  },
+  {
+    "id": 124,
+    "domain": "Recognize Cues",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with ulcerative colitis develops fever, tachycardia, severe abdominal distention, and rebound tenderness.",
+    "stem": "Which complication should the nurse suspect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Toxic megacolon"
+      },
+      {
+        "letter": "B",
+        "text": "Dumping syndrome"
+      },
+      {
+        "letter": "C",
+        "text": "Pyloric stenosis"
+      },
+      {
+        "letter": "D",
+        "text": "Intussusception"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Severe distention, systemic toxicity, and peritoneal signs in ulcerative colitis suggest toxic megacolon."
+  },
+  {
+    "id": 125,
+    "domain": "Take Actions",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with Crohn's disease has a new prescription for prednisone during a flare.",
+    "stem": "Which instruction is most important?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stop the medication once diarrhea improves"
+      },
+      {
+        "letter": "B",
+        "text": "Taper the medication exactly as prescribed"
+      },
+      {
+        "letter": "C",
+        "text": "Take it with grapefruit juice"
+      },
+      {
+        "letter": "D",
+        "text": "Avoid checking blood glucose"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Prednisone must be tapered to avoid adrenal insufficiency and rebound inflammation."
+  },
+  {
+    "id": 126,
+    "domain": "Analyze Cues",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": "Coffee-ground emesis suggesting upper gastrointestinal bleeding.",
+    "scenario": "A patient with GERD reports black tarry stools and dizziness.",
+    "stem": "Which problem should the nurse suspect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Upper GI bleeding"
+      },
+      {
+        "letter": "B",
+        "text": "Improved gastric emptying"
+      },
+      {
+        "letter": "C",
+        "text": "Lactose intolerance"
+      },
+      {
+        "letter": "D",
+        "text": "Appendicitis"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Melena and dizziness suggest upper GI bleeding and possible hemodynamic compromise.",
+    "image": "imported_images/scene_07_coffee_ground_emesis_1.png"
+  },
+  {
+    "id": 127,
+    "domain": "Basic Care and Comfort",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient has nausea after surgery.",
+    "stem": "Which nursing action is most appropriate initially?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Offer a full meal"
+      },
+      {
+        "letter": "B",
+        "text": "Assess nausea triggers and administer antiemetic as ordered"
+      },
+      {
+        "letter": "C",
+        "text": "Place the patient flat"
+      },
+      {
+        "letter": "D",
+        "text": "Encourage rapid oral fluid intake"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Assessment and ordered antiemetic therapy are appropriate initial interventions."
+  },
+  {
+    "id": 128,
+    "domain": "Management of Care",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse receives a telephone order from a provider for morphine 4 mg IV now.",
+    "stem": "Which action is required?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Write and repeat back the order"
+      },
+      {
+        "letter": "B",
+        "text": "Ask the UAP to take the order"
+      },
+      {
+        "letter": "C",
+        "text": "Administer before clarifying dose"
+      },
+      {
+        "letter": "D",
+        "text": "Document only after the next shift"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Telephone orders must be written down and read back for verification."
+  },
+  {
+    "id": 129,
+    "domain": "Safety and Infection Control",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": "Confused patient with oxygen tubing disconnected and fall risk concerns.",
+    "scenario": "A confused patient repeatedly removes oxygen and attempts to get out of bed.",
+    "stem": "Which action should the nurse take before restraints?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apply wrist restraints immediately"
+      },
+      {
+        "letter": "B",
+        "text": "Use less restrictive safety measures and assess causes"
+      },
+      {
+        "letter": "C",
+        "text": "Ignore the behavior"
+      },
+      {
+        "letter": "D",
+        "text": "Sedate without an order"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Restraints are last resort; assess causes and use least restrictive safety measures first.",
+    "image": "imported_images/scene_11_oxygen_disconnected_1.png"
+  },
+  {
+    "id": 130,
+    "domain": "Generate Solutions",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient at high risk for pressure injury is admitted.",
+    "stem": "Which interventions are appropriate? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Reposition at least every 2 hours"
+      },
+      {
+        "letter": "B",
+        "text": "Keep skin clean and dry"
+      },
+      {
+        "letter": "C",
+        "text": "Massage reddened bony prominences"
+      },
+      {
+        "letter": "D",
+        "text": "Use pressure-relieving surfaces"
+      },
+      {
+        "letter": "E",
+        "text": "Assess nutrition and protein intake"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "rationale_correct": "Pressure injury prevention includes repositioning, moisture control, support surfaces, and nutrition optimization."
+  },
+  {
+    "id": 131,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with a stage 2 pressure injury has a wound care plan.",
+    "stem": "Which finding indicates improvement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Increased wound size and purulent drainage"
+      },
+      {
+        "letter": "B",
+        "text": "Granulation/epithelial tissue and decreased drainage"
+      },
+      {
+        "letter": "C",
+        "text": "Black eschar covering the wound"
+      },
+      {
+        "letter": "D",
+        "text": "New foul odor"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Healthy tissue growth and reduced drainage indicate wound healing."
+  },
+  {
+    "id": 132,
+    "domain": "Prioritize Hypotheses",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with a long-bone fracture develops dyspnea, confusion, petechiae on the chest, and SpO2 84%.",
+    "stem": "Which hypothesis is priority?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fat embolism syndrome"
+      },
+      {
+        "letter": "B",
+        "text": "Simple anxiety"
+      },
+      {
+        "letter": "C",
+        "text": "Deep vein thrombosis"
+      },
+      {
+        "letter": "D",
+        "text": "Wound infection"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Respiratory distress, neurologic changes, and petechiae after long-bone fracture indicate fat embolism syndrome."
+  },
+  {
+    "id": 133,
+    "domain": "Take Actions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with suspected fat embolism syndrome is acutely hypoxemic.",
+    "stem": "Which action should the nurse take first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apply high-flow oxygen and notify the provider"
+      },
+      {
+        "letter": "B",
+        "text": "Ambulate the patient"
+      },
+      {
+        "letter": "C",
+        "text": "Massage the affected extremity"
+      },
+      {
+        "letter": "D",
+        "text": "Restrict all fluids"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Oxygenation is the immediate priority in suspected fat embolism syndrome."
+  },
+  {
+    "id": 134,
+    "domain": "Recognize Cues",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": "Child sitting upright in tripod position with drooling and airway distress.",
+    "scenario": "A child with epiglottitis is drooling, sitting upright, and has inspiratory stridor.",
+    "stem": "Which cue is most concerning?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Drooling and tripod positioning"
+      },
+      {
+        "letter": "B",
+        "text": "Low-grade fever"
+      },
+      {
+        "letter": "C",
+        "text": "Mild sore throat"
+      },
+      {
+        "letter": "D",
+        "text": "Clear nasal drainage"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Drooling, tripod positioning, and stridor indicate potential airway obstruction.",
+    "image": "imported_images/scene_04_tripod_position_1.png"
+  },
+  {
+    "id": 135,
+    "domain": "Take Actions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A child is suspected of having epiglottitis.",
+    "stem": "Which action should the nurse avoid?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Keeping the child calm"
+      },
+      {
+        "letter": "B",
+        "text": "Preparing for airway management"
+      },
+      {
+        "letter": "C",
+        "text": "Inspecting the throat with a tongue blade"
+      },
+      {
+        "letter": "D",
+        "text": "Administering humidified oxygen as tolerated"
+      }
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "rationale_correct": "Throat inspection can trigger laryngospasm and complete airway obstruction."
+  },
+  {
+    "id": 136,
+    "domain": "Health Promotion and Maintenance",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A parent asks how to reduce SIDS risk.",
+    "stem": "Which instruction is best?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Place the infant prone for sleep"
+      },
+      {
+        "letter": "B",
+        "text": "Use a firm sleep surface and place infant supine"
+      },
+      {
+        "letter": "C",
+        "text": "Place pillows around the infant"
+      },
+      {
+        "letter": "D",
+        "text": "Bed-share to monitor breathing"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Back sleeping on a firm surface without soft bedding reduces SIDS risk."
+  },
+  {
+    "id": 137,
+    "domain": "Safety and Infection Control",
+    "difficulty": "Easy",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A nurse teaches parents about home poisoning prevention.",
+    "stem": "Which instructions are appropriate? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Keep medications in locked storage"
+      },
+      {
+        "letter": "B",
+        "text": "Store chemicals in original containers"
+      },
+      {
+        "letter": "C",
+        "text": "Call poison control for suspected ingestion"
+      },
+      {
+        "letter": "D",
+        "text": "Induce vomiting for all ingestions"
+      },
+      {
+        "letter": "E",
+        "text": "Keep button batteries away from children"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "rationale_correct": "Poison prevention includes locked storage, original containers, poison control consultation, and preventing battery ingestion."
+  },
+  {
+    "id": 138,
+    "domain": "Psychosocial Integrity",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient with panic disorder is hyperventilating and says, 'I am going to die.'",
+    "stem": "Which response is most therapeutic?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use short, calm statements and stay with the patient"
+      },
+      {
+        "letter": "B",
+        "text": "Explain the full pathophysiology of panic"
+      },
+      {
+        "letter": "C",
+        "text": "Leave the patient alone to calm down"
+      },
+      {
+        "letter": "D",
+        "text": "Tell the patient the fear is irrational"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "During panic, the nurse should remain present and use simple, calm communication."
+  },
+  {
+    "id": 139,
+    "domain": "Psychosocial Integrity",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient says, 'I have a plan to kill myself tonight when I get home.'",
+    "stem": "What is the nurse's priority action?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ask the patient to promise not to self-harm"
+      },
+      {
+        "letter": "B",
+        "text": "Ensure immediate safety and initiate suicide precautions"
+      },
+      {
+        "letter": "C",
+        "text": "Tell the patient to think positively"
+      },
+      {
+        "letter": "D",
+        "text": "Schedule a routine follow-up"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "A specific suicide plan requires immediate safety measures and suicide precautions."
+  },
+  {
+    "id": 140,
+    "domain": "Generate Solutions",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient is admitted for alcohol withdrawal.",
+    "stem": "Which interventions should the nurse anticipate? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Seizure precautions"
+      },
+      {
+        "letter": "B",
+        "text": "Benzodiazepines as prescribed"
+      },
+      {
+        "letter": "C",
+        "text": "Thiamine before glucose-containing fluids"
+      },
+      {
+        "letter": "D",
+        "text": "Frequent CIWA-Ar assessments"
+      },
+      {
+        "letter": "E",
+        "text": "Encourage caffeine intake"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "rationale_correct": "Alcohol withdrawal care includes seizure precautions, benzodiazepines, thiamine, and withdrawal scoring."
+  },
+  {
+    "id": 141,
+    "domain": "Recognize Cues",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient 48 hours after last alcohol use has severe agitation, hallucinations, fever, and BP 190/100.",
+    "stem": "Which complication is likely?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Delirium tremens"
+      },
+      {
+        "letter": "B",
+        "text": "Opioid withdrawal"
+      },
+      {
+        "letter": "C",
+        "text": "Serotonin syndrome from SSRI only"
+      },
+      {
+        "letter": "D",
+        "text": "Hypoglycemia only"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Severe autonomic instability, agitation, and hallucinations after alcohol cessation indicate delirium tremens."
+  },
+  {
+    "id": 142,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient taking lithium has vomiting, coarse tremor, confusion, and ataxia.",
+    "stem": "Which action should the nurse take?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Give the next dose with food"
+      },
+      {
+        "letter": "B",
+        "text": "Hold lithium and notify the provider"
+      },
+      {
+        "letter": "C",
+        "text": "Encourage sodium restriction"
+      },
+      {
+        "letter": "D",
+        "text": "Administer an extra dose"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "These are signs of lithium toxicity; the medication should be held and the provider notified."
+  },
+  {
+    "id": 143,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient newly started on haloperidol develops muscle rigidity, fever, altered mental status, and autonomic instability.",
+    "stem": "Which condition should the nurse suspect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Neuroleptic malignant syndrome"
+      },
+      {
+        "letter": "B",
+        "text": "Akathisia only"
+      },
+      {
+        "letter": "C",
+        "text": "Mild dystonia"
+      },
+      {
+        "letter": "D",
+        "text": "Therapeutic response"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Fever, rigidity, altered mental status, and autonomic instability indicate neuroleptic malignant syndrome."
+  },
+  {
+    "id": 144,
+    "domain": "Take Actions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient on clozapine reports fever and sore throat. WBC and ANC results are pending.",
+    "stem": "Which action is priority?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tell the patient this is expected"
+      },
+      {
+        "letter": "B",
+        "text": "Hold medication and notify the provider"
+      },
+      {
+        "letter": "C",
+        "text": "Administer aspirin and continue clozapine"
+      },
+      {
+        "letter": "D",
+        "text": "Encourage extra exercise"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Fever and sore throat may indicate agranulocytosis, a serious clozapine adverse effect."
+  },
+  {
+    "id": 145,
+    "domain": "Health Promotion and Maintenance",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient taking phenelzine asks about diet.",
+    "stem": "Which food should the nurse instruct the patient to avoid?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Aged cheese"
+      },
+      {
+        "letter": "B",
+        "text": "Fresh apples"
+      },
+      {
+        "letter": "C",
+        "text": "White rice"
+      },
+      {
+        "letter": "D",
+        "text": "Plain chicken breast"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "MAOIs require avoiding tyramine-rich foods such as aged cheese to prevent hypertensive crisis."
+  },
+  {
+    "id": 146,
+    "domain": "Pharmacological and Parenteral Therapies",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient prescribed isoniazid for latent TB asks about side effects.",
+    "stem": "Which supplement is commonly prescribed to prevent neuropathy?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vitamin B6 pyridoxine"
+      },
+      {
+        "letter": "B",
+        "text": "Vitamin K"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin D only"
+      },
+      {
+        "letter": "D",
+        "text": "Folic acid only"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Pyridoxine is given with isoniazid to prevent peripheral neuropathy."
+  },
+  {
+    "id": 147,
+    "domain": "Reduction of Risk Potential",
+    "difficulty": "Moderate",
+    "type": "SATA",
+    "image_prompt": null,
+    "scenario": "A patient is taking isoniazid and rifampin for TB.",
+    "stem": "Which teaching points are appropriate? Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Avoid alcohol"
+      },
+      {
+        "letter": "B",
+        "text": "Report yellowing of skin or eyes"
+      },
+      {
+        "letter": "C",
+        "text": "Expect rifampin to turn secretions orange"
+      },
+      {
+        "letter": "D",
+        "text": "Stop therapy when cough improves"
+      },
+      {
+        "letter": "E",
+        "text": "Use backup contraception if taking oral contraceptives"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "rationale_correct": "TB therapy teaching includes hepatotoxicity precautions, orange secretions with rifampin, adherence, and backup contraception."
+  },
+  {
+    "id": 148,
+    "domain": "Management of Care",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A nurse is caring for a patient who refuses a blood transfusion due to religious beliefs despite severe anemia.",
+    "stem": "What is the nurse's best action?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administer the transfusion because it is life-saving"
+      },
+      {
+        "letter": "B",
+        "text": "Respect the refusal and notify the provider"
+      },
+      {
+        "letter": "C",
+        "text": "Ask family to override the refusal"
+      },
+      {
+        "letter": "D",
+        "text": "Document noncompliance and leave"
+      }
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "rationale_correct": "Competent patients have the right to refuse treatment; the nurse should respect the decision and notify the provider."
+  },
+  {
+    "id": 149,
+    "domain": "Psychosocial Integrity",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A terminally ill patient says, 'I just want to be comfortable and at home.'",
+    "stem": "Which response is most appropriate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hospice may help support comfort-focused care at home"
+      },
+      {
+        "letter": "B",
+        "text": "You should continue aggressive treatment"
+      },
+      {
+        "letter": "C",
+        "text": "Do not talk that way"
+      },
+      {
+        "letter": "D",
+        "text": "Comfort care means we stop caring for you"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Hospice supports comfort-focused care and quality of life for terminal illness."
+  },
+  {
+    "id": 150,
+    "domain": "Evaluate Outcomes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "image_prompt": null,
+    "scenario": "A patient receiving palliative morphine has RR 14/min, pain decreased from 9/10 to 3/10, and is easily arousable.",
+    "stem": "How should the nurse evaluate this outcome?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Therapeutic pain relief without significant respiratory depression"
+      },
+      {
+        "letter": "B",
+        "text": "Opioid overdose requiring naloxone immediately"
+      },
+      {
+        "letter": "C",
+        "text": "Ineffective treatment"
+      },
+      {
+        "letter": "D",
+        "text": "All opioids must now be stopped"
+      }
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "rationale_correct": "Improved pain with adequate respirations and arousability indicates therapeutic effect without dangerous respiratory depression."
+  }
+]

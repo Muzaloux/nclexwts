@@ -1,0 +1,20 @@
+{% extends 'base.html' %}{% block title %}Candidate Agreement · NCLEX Secure{% endblock %}
+{% block content %}
+<section class="narrow-shell">
+  <div class="stepper"><span class="active">1</span><i></i><span>2</span><i></i><span>3</span><small>Agreement</small><small>Orientation</small><small>Exam</small></div>
+  <div class="section-heading entrance"><span class="eyebrow">Required acknowledgement</span><h1>Candidate agreement</h1><p>Read every rule before accepting. Your acceptance is timestamped to this session.</p></div>
+  <div class="glass-card agreement entrance delay-1">
+    <div class="agreement-scroll" tabindex="0">
+      <h2>NCLEX Simulation Rules & Candidate Statement</h2>
+      <h3>1. Identity and authorisation</h3><p>I certify that the identity information supplied is accurate and belongs to me. I will not share access to this session.</p>
+      <h3>2. One-way progression</h3><p>I understand that submitted answers are final. I cannot return to, view, or modify a previous response.</p>
+      <h3>3. Session and break policy</h3><p>The exam session is valid for five hours. A saved break is available only after three continuous hours. Exiting early invalidates the attempt and returns it to Question 1.</p>
+      <h3>4. Exam integrity</h3><p>I will remain in fullscreen, keep the exam tab active, avoid copying content, and use no unauthorised resources or assistance. Security events may be logged.</p>
+    </div>
+    <form method="post" class="agreement-action">
+      <label class="check-row"><input type="checkbox" name="accept" value="yes" required><span>I have read every rule, understand the conditions, and agree to comply.</span></label>
+      <button class="button primary" type="submit">I agree — continue <span>→</span></button>
+    </form>
+  </div>
+</section>
+{% endblock %}

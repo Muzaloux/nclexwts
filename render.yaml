@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: nclex-exam
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --workers 2 --timeout 120
+    disk:
+      name: nclex-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: DB_PATH
+        value: /data/nclex_exam.db
+      - key: FLASK_ENV
+        value: production
+      - key: NCLEX_SECRET_KEY
+        generateValue: true
+      - key: NCLEX_ADMIN_PASSWORD
+        sync: false

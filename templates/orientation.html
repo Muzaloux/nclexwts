@@ -1,0 +1,18 @@
+{% extends 'base.html' %}{% block title %}Exam Orientation · NCLEX Secure{% endblock %}
+{% block content %}
+<section class="orientation-shell" data-orientation>
+  <div class="orientation-head"><div><span class="eyebrow">Candidate orientation</span><h1>Before you begin</h1></div><strong><span data-slide-number>1</span> / {{ slides|length }}</strong></div>
+  <div class="slide-progress"><i data-slide-progress></i></div>
+  <div class="slides glass-card">
+    {% for title,body in slides %}<article class="orientation-slide {% if loop.first %}active{% endif %}" data-slide="{{ loop.index0 }}">
+      <div class="slide-number">0{{ loop.index }}</div><span class="eyebrow">Orientation {{ loop.index }}</span><h2>{{ title }}</h2><p>{{ body }}</p>
+      {% if loop.index == 3 %}<div class="rule-visual"><span>Question 1</span><b>→</b><span>Question 2</span><b>→</b><span>Question 3</span></div>{% endif %}
+      {% if loop.index == 4 %}<div class="notice amber">Break eligibility unlocks after 03:00:00 of continuous exam time.</div>{% endif %}
+      {% if loop.index == 5 %}<div class="integrity-grid"><span>Fullscreen required</span><span>Tab activity logged</span><span>Answers auto-saved</span></div>{% endif %}
+    </article>{% endfor %}
+  </div>
+  <div class="slide-actions"><button class="button ghost" data-slide-prev disabled>← Previous</button><button class="button primary" data-slide-next>Next instruction →</button>
+    <form method="post" action="{{ url_for('complete_orientation') }}" data-slide-complete hidden><button class="button primary" type="submit">Complete orientation →</button></form>
+  </div>
+</section>
+{% endblock %}

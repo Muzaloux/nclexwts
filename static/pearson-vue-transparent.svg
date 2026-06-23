@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 250" role="img" aria-labelledby="title desc">
+  <title id="title">Pearson VUE</title>
+  <desc id="desc">Transparent Pearson VUE-style testing provider mark.</desc>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="118" cy="118" r="108" fill="#008FAA"/>
+    <path fill="#FFFFFF" d="M68 95c18-30 53-49 91-43 36 6 61 30 63 62 3 38-24 69-68 78-10 2-19-5-20-15-1-9 5-17 14-19 26-6 41-21 39-41-1-17-15-29-36-33-25-4-47 8-58 29-5 9-16 12-25 7-9-4-12-16-7-25h7z"/>
+    <rect x="90" y="104" width="38" height="92" rx="17" fill="#FFFFFF"/>
+    <circle cx="109" cy="218" r="17" fill="#FFFFFF"/>
+    <text x="270" y="118" fill="#1D1D1F" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="500">Pearson</text>
+    <text x="274" y="214" fill="#1D1D1F" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="900" letter-spacing="7">VUE</text>
+  </g>
+</svg>

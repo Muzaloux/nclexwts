@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+local_accounts.json
+nclex_exam.db
+*.db
+

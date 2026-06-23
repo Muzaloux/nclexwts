@@ -1,0 +1,27 @@
+{% extends 'base.html' %}{% block title %}NCLEX Candidate Login{% endblock %}
+{% block content %}
+<section class="auth-layout">
+  <div class="auth-copy entrance">
+    <span class="eyebrow">Computerized Adaptive Testing Environment</span>
+    <h1>Candidate<br><span>Authorization</span></h1>
+    <p>Access is restricted to verified candidates with scheduled examination details. Once admitted, the testing session is monitored and progression is final.</p>
+    <div class="exam-warning-strip"><b>Official exam conditions simulated</b><span>No backtracking · Timed session · Activity recorded</span></div>
+    <div class="provider-card" aria-label="Handled by Pearson VUE">
+      <span>Handled by</span>
+      <img src="{{ url_for('static', filename='pearson-vue-transparent.svg') }}" alt="Pearson VUE">
+    </div>
+  </div>
+  <form method="post" class="glass-card auth-card exam-login-card entrance delay-1">
+    <span class="eyebrow">Candidate login required</span>
+    <h2>Examination sign-in</h2><p class="muted">Enter the exact details from your <b class="record-phrase">issued candidate authorization record</b>.</p>
+    <label>Full legal name<input name="full_name" placeholder="Full name on record" autocomplete="name" required></label>
+    <label>Email address<input type="email" name="email" placeholder="candidate@example.com" autocomplete="email" required></label>
+    <label>Registration ID<input name="registration_id" placeholder="Registration ID" autocomplete="off" required></label>
+    <label>ATT number<input name="att_number" placeholder="ATT number" autocomplete="off" minlength="8" required></label>
+    <label>Exam type<select name="exam_type" required><option value="">Select exam type</option><option value="RN">RN</option><option value="PN">PN</option></select></label>
+    <label>Phone number<input name="phone" placeholder="Phone number on record" autocomplete="tel" required></label>
+    <button class="button primary wide" type="submit">Begin candidate verification <span>→</span></button>
+    <p class="exam-disclaimer">Unauthorized access, identity sharing, screen capture, or use of outside resources may invalidate the session.</p>
+  </form>
+</section>
+{% endblock %}

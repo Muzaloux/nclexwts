@@ -1,0 +1,2097 @@
+[
+  {
+    "id": 1,
+    "question": "A nurse is caring for a client 2 hours after a thyroidectomy. Which finding requires immediate follow-up?",
+    "options": [
+      "Tingling around the mouth",
+      "Hoarse voice after talking",
+      "Pain rated 6 out of 10",
+      "Small amount of serosanguineous drainage"
+    ],
+    "answer": "Tingling around the mouth",
+    "explanation": "Perioral tingling indicates hypocalcemia from accidental parathyroid injury and requires prompt assessment.",
+    "type": "single",
+    "image": "imported_images/scene_14_postop_neck_swelling_1.png",
+    "image_prompt": "Post-thyroidectomy patient with concerning neck swelling."
+  },
+  {
+    "id": 2,
+    "question": "A client with chronic heart failure suddenly reports severe shortness of breath while lying flat. Which action should the nurse take first?",
+    "options": [
+      "Raise the head of the bed",
+      "Obtain a daily weight",
+      "Restrict oral fluids",
+      "Check the apical pulse for 1 full minute"
+    ],
+    "answer": "Raise the head of the bed",
+    "explanation": "Positioning the client upright helps reduce venous return and improves ventilation.",
+    "type": "single"
+  },
+  {
+    "id": 3,
+    "question": "A nurse is reinforcing teaching for a client taking warfarin. Which statements by the client show understanding? (Select all that apply)",
+    "options": [
+      "I will use an electric razor when shaving.",
+      "I should double the dose if I miss one.",
+      "I can start aspirin for headaches anytime.",
+      "I will avoid contact sports."
+    ],
+    "answer": [
+      "I will use an electric razor when shaving.",
+      "I will avoid contact sports."
+    ],
+    "explanation": "Warfarin increases bleeding risk; use electric razor and avoid contact sports. Do not double doses or start aspirin without guidance.",
+    "type": "SATA"
+  },
+  {
+    "id": 4,
+    "question": "A postoperative client becomes restless, anxious, and reports feeling short of breath. Which assessment should the nurse obtain first?",
+    "options": [
+      "Oxygen saturation",
+      "Bowel sounds",
+      "Pain history",
+      "Capillary blood glucose"
+    ],
+    "answer": "Oxygen saturation",
+    "explanation": "Restlessness and dyspnea may signal hypoxemia; oxygenation assessment is priority.",
+    "type": "single"
+  },
+  {
+    "id": 5,
+    "question": "Which clients should the nurse assess first at the beginning of the shift? (Select all that apply)",
+    "options": [
+      "A client with pneumonia and oxygen saturation of 88%",
+      "A client needing foot care teaching",
+      "A client awaiting discharge instructions",
+      "A client with acute chest pain and diaphoresis"
+    ],
+    "answer": [
+      "A client with pneumonia and oxygen saturation of 88%",
+      "A client with acute chest pain and diaphoresis"
+    ],
+    "explanation": "Airway/breathing and acute cardiac symptoms are highest priority.",
+    "type": "SATA"
+  },
+  {
+    "id": 6,
+    "question": "A client receiving furosemide reports weakness and palpitations. Which laboratory value is most important for the nurse to review?",
+    "options": [
+      "Potassium",
+      "Calcium",
+      "Amylase",
+      "Hemoglobin"
+    ],
+    "answer": "Potassium",
+    "explanation": "Loop diuretics cause potassium loss; weakness and palpitations indicate hypokalemia.",
+    "type": "single"
+  },
+  {
+    "id": 7,
+    "question": "A nurse is planning care for a client with neutropenia after chemotherapy. Which interventions are appropriate? (Select all that apply)",
+    "options": [
+      "Avoid fresh flowers in the room",
+      "Take axillary or oral temperatures only",
+      "Encourage cooked foods",
+      "Assign a roommate for monitoring"
+    ],
+    "answer": [
+      "Avoid fresh flowers in the room",
+      "Take axillary or oral temperatures only",
+      "Encourage cooked foods"
+    ],
+    "explanation": "Protect from infection sources; avoid rectal temps; provide safe food. Assigning roommate with potential illness increases infection risk.",
+    "type": "SATA"
+  },
+  {
+    "id": 8,
+    "question": "A client with COPD receiving oxygen at 2 L/min becomes increasingly drowsy. Which finding is priority for the nurse to report?",
+    "options": [
+      "Respiratory rate of 8/min",
+      "Heart rate of 104/min",
+      "Blood pressure of 146/84 mm Hg",
+      "Temperature of 37.2\u00b0C"
+    ],
+    "answer": "Respiratory rate of 8/min",
+    "explanation": "Respiratory depression with drowsiness suggests CO2 retention and requires immediate intervention.",
+    "type": "single"
+  },
+  {
+    "id": 9,
+    "question": "A client with type 1 diabetes is confused, diaphoretic, and shaky. Which action should the nurse take first?",
+    "options": [
+      "Check capillary blood glucose",
+      "Administer long-acting insulin",
+      "Encourage exercise",
+      "Obtain a urine specimen"
+    ],
+    "answer": "Check capillary blood glucose",
+    "explanation": "These findings suggest hypoglycemia; glucose verification guides treatment.",
+    "type": "single"
+  },
+  {
+    "id": 10,
+    "question": "A nurse is caring for a client with a chest tube. Which findings are normal? (Select all that apply)",
+    "options": [
+      "Tidaling with respirations",
+      "Continuous bubbling in water-seal chamber",
+      "Drainage of 50 mL over 8 hours",
+      "Occlusive dressing intact"
+    ],
+    "answer": [
+      "Tidaling with respirations",
+      "Drainage of 50 mL over 8 hours",
+      "Occlusive dressing intact"
+    ],
+    "explanation": "Normal: tidaling, minimal drainage, intact dressing. Continuous bubbling indicates air leak requiring intervention.",
+    "type": "SATA"
+  },
+  {
+    "id": 11,
+    "question": "A client with cirrhosis shows confusion and difficulty arousing. Which medication should the nurse expect to administer?",
+    "options": [
+      "Lactulose",
+      "Furosemide",
+      "Ibuprofen",
+      "Diphenhydramine"
+    ],
+    "answer": "Lactulose",
+    "explanation": "Lactulose lowers ammonia levels; used for hepatic encephalopathy.",
+    "type": "single"
+  },
+  {
+    "id": 12,
+    "question": "A nurse is teaching a client with iron-deficiency anemia about dietary choices. Which foods should be recommended? (Select all that apply)",
+    "options": [
+      "Lean beef",
+      "Spinach",
+      "White rice",
+      "Fortified cereals with vitamin C"
+    ],
+    "answer": [
+      "Lean beef",
+      "Spinach",
+      "Fortified cereals with vitamin C"
+    ],
+    "explanation": "Red meat, dark leafy greens, and fortified cereals are iron-rich. Vitamin C enhances absorption.",
+    "type": "SATA"
+  },
+  {
+    "id": 13,
+    "question": "A postoperative client reports calf pain. Which action should the nurse take first?",
+    "options": [
+      "Assess for warmth and swelling",
+      "Massage the calf gently",
+      "Apply heat to the area",
+      "Assist to ambulate immediately"
+    ],
+    "answer": "Assess for warmth and swelling",
+    "explanation": "Calf pain may indicate DVT; assess first and avoid massage or aggressive movement.",
+    "type": "single"
+  },
+  {
+    "id": 14,
+    "question": "A nurse is caring for a client with SIADH. Which findings does the nurse expect? (Select all that apply)",
+    "options": [
+      "Low serum sodium",
+      "High urine output",
+      "Decreased serum osmolality",
+      "Weight gain"
+    ],
+    "answer": [
+      "Low serum sodium",
+      "Decreased serum osmolality",
+      "Weight gain"
+    ],
+    "explanation": "SIADH causes water retention, dilutional hyponatremia, low osmolality, and weight gain. Output is decreased.",
+    "type": "SATA"
+  },
+  {
+    "id": 15,
+    "question": "A client receiving IV morphine is difficult to arouse with respiratory rate of 7/min. Which medication should the nurse prepare?",
+    "options": [
+      "Naloxone",
+      "Flumazenil",
+      "Protamine sulfate",
+      "Atropine"
+    ],
+    "answer": "Naloxone",
+    "explanation": "Naloxone reverses opioid-induced respiratory depression.",
+    "type": "single"
+  },
+  {
+    "id": 16,
+    "question": "A nurse is caring for a client with a new tracheostomy. Which items must be kept at bedside? (Select all that apply)",
+    "options": [
+      "Obturator",
+      "Spare tracheostomy tube",
+      "Suctioning equipment",
+      "Heating device"
+    ],
+    "answer": [
+      "Obturator",
+      "Spare tracheostomy tube",
+      "Suctioning equipment"
+    ],
+    "explanation": "Emergency supplies are essential for accidental decannulation. Heating device is not an emergency item.",
+    "type": "SATA",
+    "image": "imported_images/scene_12_tracheostomy_obstruction_1.png",
+    "image_prompt": "Patient with new tracheostomy and concern for airway obstruction."
+  },
+  {
+    "id": 17,
+    "question": "A nurse is delegating care. Which tasks are appropriate for an AP? (Select all that apply)",
+    "options": [
+      "Ambulate stable postoperative client",
+      "Help with bathing",
+      "Teach incentive spirometer use",
+      "Measure intake and output"
+    ],
+    "answer": [
+      "Ambulate stable postoperative client",
+      "Help with bathing",
+      "Measure intake and output"
+    ],
+    "explanation": "AP can perform routine tasks and ADL assistance. RN must do teaching.",
+    "type": "SATA"
+  },
+  {
+    "id": 18,
+    "question": "Which statements by a client prescribed alendronate need further teaching? (Select all that apply)",
+    "options": [
+      "I will lie down 30 minutes after taking",
+      "I will take with plain water on empty stomach",
+      "I will stay upright after taking",
+      "I will take with orange juice"
+    ],
+    "answer": [
+      "I will lie down 30 minutes after taking",
+      "I will take with orange juice"
+    ],
+    "explanation": "Client must stay upright; take with plain water on empty stomach. Juice and lying down cause esophageal irritation.",
+    "type": "SATA"
+  },
+  {
+    "id": 19,
+    "question": "A nurse caring for a client with Addison disease should report which findings immediately? (Select all that apply)",
+    "options": [
+      "BP 84/50 mm Hg",
+      "Confusion and lethargy",
+      "Bronze skin discoloration",
+      "Weight loss"
+    ],
+    "answer": [
+      "BP 84/50 mm Hg",
+      "Confusion and lethargy"
+    ],
+    "explanation": "Hypotension and altered mental status indicate adrenal crisis (emergency). Discoloration and weight loss are chronic signs.",
+    "type": "SATA"
+  },
+  {
+    "id": 20,
+    "question": "A client with pancreatitis reports severe pain. Which interventions should the nurse question? (Select all that apply)",
+    "options": [
+      "Regular diet as tolerated",
+      "IV fluids",
+      "Fried foods encouraged",
+      "NPO status"
+    ],
+    "answer": [
+      "Regular diet as tolerated",
+      "Fried foods encouraged"
+    ],
+    "explanation": "Acute pancreatitis requires NPO and IV fluids. Regular or fried foods stimulate pancreatic secretion.",
+    "type": "SATA"
+  },
+  {
+    "id": 21,
+    "question": "A nurse is caring for a client with increased ICP. Which actions are appropriate? (Select all that apply)",
+    "options": [
+      "Elevate head of bed 30 degrees",
+      "Cluster care for long sleep periods",
+      "Avoid forceful coughing",
+      "Place flat in bed"
+    ],
+    "answer": [
+      "Elevate head of bed 30 degrees",
+      "Avoid forceful coughing"
+    ],
+    "explanation": "Head elevation promotes venous drainage. Avoid coughing and clustering. Flat positioning increases ICP.",
+    "type": "SATA"
+  },
+  {
+    "id": 22,
+    "question": "A client on heparin has increased aPTT and bleeding gums. Which action should the nurse anticipate?",
+    "options": [
+      "Stop infusion and prepare protamine sulfate",
+      "Administer vitamin K",
+      "Encourage potassium-rich foods",
+      "Increase heparin rate"
+    ],
+    "answer": "Stop infusion and prepare protamine sulfate",
+    "explanation": "Protamine sulfate is the antidote for heparin overdose.",
+    "type": "single"
+  },
+  {
+    "id": 23,
+    "question": "A nurse assesses a client with suspected stroke. Which finding requires most urgent intervention?",
+    "options": [
+      "Difficulty swallowing secretions",
+      "Facial droop",
+      "Arm weakness",
+      "Slurred speech"
+    ],
+    "answer": "Difficulty swallowing secretions",
+    "explanation": "Difficulty managing airway is the priority; threatens oxygenation.",
+    "type": "single"
+  },
+  {
+    "id": 24,
+    "question": "A nurse is teaching a client with new colostomy. Which statement indicates understanding?",
+    "options": [
+      "Stoma should be moist and pink to red",
+      "Stoma should be pale and dry",
+      "Report stool daily as abnormal",
+      "Scrub stoma with alcohol each change"
+    ],
+    "answer": "Stoma should be moist and pink to red",
+    "explanation": "Healthy stoma is moist, pink-red. Pale, dark, or dry tissue indicates impaired perfusion.",
+    "type": "single"
+  },
+  {
+    "id": 25,
+    "question": "A client with T4 spinal cord injury develops severe headache, flushing, nasal congestion. Which action should the nurse take first?",
+    "options": [
+      "Sit client upright",
+      "Apply warming blanket",
+      "Check pedal pulses",
+      "Give high-protein snack"
+    ],
+    "answer": "Sit client upright",
+    "explanation": "Signs of autonomic dysreflexia; upright positioning lowers BP immediately.",
+    "type": "single"
+  },
+  {
+    "id": 26,
+    "question": "A nurse caring for post-hip arthroplasty client at 24 hours should prevent which movements? (Select all that apply)",
+    "options": [
+      "Crossing legs",
+      "Hip adduction beyond midline",
+      "Using elevated toilet seat",
+      "Sitting in firm chair"
+    ],
+    "answer": [
+      "Crossing legs",
+      "Hip adduction beyond midline"
+    ],
+    "explanation": "Adduction causes dislocation. Elevated seat and firm chair are beneficial.",
+    "type": "SATA"
+  },
+  {
+    "id": 27,
+    "question": "A client with peptic ulcer disease has sudden severe pain and rigid abdomen. Which complication should the nurse suspect?",
+    "options": [
+      "Perforation",
+      "Dumping syndrome",
+      "Constipation",
+      "Hiatal hernia"
+    ],
+    "answer": "Perforation",
+    "explanation": "Sudden severe pain with rigid abdomen indicates perforation (surgical emergency).",
+    "type": "single"
+  },
+  {
+    "id": 28,
+    "question": "A client with CKD is on low-potassium diet. Which foods should be avoided? (Select all that apply)",
+    "options": [
+      "Bananas",
+      "Rice",
+      "Orange juice",
+      "White bread"
+    ],
+    "answer": [
+      "Bananas",
+      "Orange juice"
+    ],
+    "explanation": "Bananas and citrus juices are high in potassium. Rice and white bread are low.",
+    "type": "SATA"
+  },
+  {
+    "id": 29,
+    "question": "A nurse cares for a client with serum potassium 6.2 mEq/L. Which finding is most concerning?",
+    "options": [
+      "Peaked T waves",
+      "Muscle cramps",
+      "Hypoactive bowel sounds",
+      "Dry skin"
+    ],
+    "answer": "Peaked T waves",
+    "explanation": "Hyperkalemia causes life-threatening dysrhythmias; peaked T waves are critical ECG finding.",
+    "type": "single"
+  },
+  {
+    "id": 30,
+    "question": "A client with seizure disorder says 'I think a seizure is about to happen.' Which action first?",
+    "options": [
+      "Lower to floor/bed and protect",
+      "Insert tongue blade",
+      "Restrain arms and legs",
+      "Offer water"
+    ],
+    "answer": "Lower to floor/bed and protect",
+    "explanation": "Safety first. Never insert tongue blade or restrain client.",
+    "type": "single"
+  },
+  {
+    "id": 31,
+    "question": "A nurse is caring for a client with active TB. Which PPE is required?",
+    "options": [
+      "N95 respirator",
+      "Sterile gloves only",
+      "Surgical mask on nurse",
+      "Face shield only"
+    ],
+    "answer": "N95 respirator",
+    "explanation": "TB requires airborne precautions including N95 respirator.",
+    "type": "single"
+  },
+  {
+    "id": 32,
+    "question": "A client reports crushing chest pain 9/10. Which actions should the nurse implement? (Select all that apply)",
+    "options": [
+      "Obtain 12-lead ECG",
+      "Check vital signs and O2 sat",
+      "Teach relaxation breathing",
+      "Encourage ambulation"
+    ],
+    "answer": [
+      "Obtain 12-lead ECG",
+      "Check vital signs and O2 sat"
+    ],
+    "explanation": "Acute coronary syndrome requires rapid ECG and vital signs. Relaxation and ambulation are not immediate priorities.",
+    "type": "SATA"
+  },
+  {
+    "id": 33,
+    "question": "A nurse is caring for a client with C. difficile. Which action is appropriate?",
+    "options": [
+      "Use soap and water for hygiene",
+      "Place on airborne precautions",
+      "Use alcohol-based sanitizer only",
+      "Room with influenza client"
+    ],
+    "answer": "Use soap and water for hygiene",
+    "explanation": "C. difficile requires contact precautions; soap/water removes spores better than alcohol.",
+    "type": "single"
+  },
+  {
+    "id": 34,
+    "question": "A client with bacterial meningitis is admitted. Which interventions are priorities? (Select all that apply)",
+    "options": [
+      "Initiate droplet precautions",
+      "Administer antibiotics within 1 hour",
+      "Provide high-fiber diet",
+      "Reassess frequently"
+    ],
+    "answer": [
+      "Initiate droplet precautions",
+      "Administer antibiotics within 1 hour",
+      "Reassess frequently"
+    ],
+    "explanation": "Isolation, rapid antibiotics, and close monitoring are critical. Diet is not immediate priority.",
+    "type": "SATA"
+  },
+  {
+    "id": 35,
+    "question": "A client receiving PRBCs develops chills, low back pain, fever after 15 minutes. Which action first?",
+    "options": [
+      "Stop transfusion",
+      "Increase rate",
+      "Discard IV line",
+      "Document after"
+    ],
+    "answer": "Stop transfusion",
+    "explanation": "Signs of transfusion reaction; stop immediately.",
+    "type": "single"
+  },
+  {
+    "id": 36,
+    "question": "A client with asthma develops wheezing. Which medications/actions expected? (Select all that apply)",
+    "options": [
+      "Administer albuterol",
+      "Provide O2 if sat drops",
+      "Administer prednisone immediately",
+      "Use peak flow meter"
+    ],
+    "answer": [
+      "Administer albuterol",
+      "Provide O2 if sat drops",
+      "Use peak flow meter"
+    ],
+    "explanation": "Albuterol for rapid relief, O2 if needed, peak flow assessment. Prednisone is for long-term control.",
+    "type": "SATA",
+    "image": "imported_images/scene_03_wheezing_auscultation_1.png",
+    "image_prompt": "Nurse auscultating wheezing in a patient with asthma."
+  },
+  {
+    "id": 37,
+    "question": "A nurse evaluates teaching for MDI use. Which shows correct technique?",
+    "options": [
+      "Holds breath for several seconds after",
+      "Exhales into inhaler before pressing",
+      "Uses steroid before bronchodilator",
+      "Takes rapid shallow breaths"
+    ],
+    "answer": "Holds breath for several seconds after",
+    "explanation": "Breath holding improves lung delivery of medication.",
+    "type": "single"
+  },
+  {
+    "id": 38,
+    "question": "A client with NG tube feedings starts coughing with O2 sat 89%. Which actions? (Select all that apply)",
+    "options": [
+      "Stop feeding",
+      "Increase rate",
+      "Assess for aspiration",
+      "Elevate HOB"
+    ],
+    "answer": [
+      "Stop feeding",
+      "Assess for aspiration",
+      "Elevate HOB"
+    ],
+    "explanation": "Stop, assess, position upright. Never increase rate with aspiration concerns.",
+    "type": "SATA"
+  },
+  {
+    "id": 39,
+    "question": "A client with Crohn disease has frequent diarrhea. Which finding is priority to monitor?",
+    "options": [
+      "Signs of dehydration",
+      "Hair texture",
+      "Pupil size",
+      "Hearing"
+    ],
+    "answer": "Signs of dehydration",
+    "explanation": "Diarrhea causes fluid/electrolyte imbalance quickly.",
+    "type": "single"
+  },
+  {
+    "id": 40,
+    "question": "A nurse teaches a client on digoxin. Which statements show understanding? (Select all that apply)",
+    "options": [
+      "I will check pulse before dose",
+      "I will report if HR below 60 or above 100",
+      "Blurred vision is expected",
+      "I will report visual changes"
+    ],
+    "answer": [
+      "I will check pulse before dose",
+      "I will report if HR below 60 or above 100",
+      "I will report visual changes"
+    ],
+    "explanation": "Check pulse, report abnormal rates and visual changes (signs of toxicity). Visual changes are NOT harmless.",
+    "type": "SATA"
+  },
+  {
+    "id": 41,
+    "question": "A nurse is caring for a client with DKA. Which lab finding is expected?",
+    "options": [
+      "Metabolic acidosis",
+      "Severe hypoglycemia",
+      "Low serum glucose",
+      "Low urine ketones"
+    ],
+    "answer": "Metabolic acidosis",
+    "explanation": "DKA: hyperglycemia, ketonemia, metabolic acidosis.",
+    "type": "single"
+  },
+  {
+    "id": 42,
+    "question": "A client prescribed enoxaparin. Which statements are correct? (Select all that apply)",
+    "options": [
+      "Do not expel air bubble",
+      "Do not massage site",
+      "Inject in deltoid muscle",
+      "Inject subcutaneously"
+    ],
+    "answer": [
+      "Do not expel air bubble",
+      "Do not massage site",
+      "Inject subcutaneously"
+    ],
+    "explanation": "Keep bubble, don't massage (reduces bruising), give SC not IM.",
+    "type": "SATA"
+  },
+  {
+    "id": 43,
+    "question": "A nurse teaches a client post-cataract surgery. Which indicates understanding?",
+    "options": [
+      "Avoid bending at waist",
+      "Rub eye if itchy",
+      "Lift groceries tomorrow",
+      "Sleep on operative side"
+    ],
+    "answer": "Avoid bending at waist",
+    "explanation": "Avoid bending, lifting, straining to reduce intraocular pressure.",
+    "type": "single"
+  },
+  {
+    "id": 44,
+    "question": "A client with PAD reports leg pain with walking, relieved by rest. This is:",
+    "options": [
+      "Intermittent claudication",
+      "Deep vein thrombosis",
+      "Orthopnea",
+      "Venous stasis"
+    ],
+    "answer": "Intermittent claudication",
+    "explanation": "Ischemic pain with activity, relieved by rest.",
+    "type": "single"
+  },
+  {
+    "id": 45,
+    "question": "A nurse caring for stage 3 pressure injury. Which interventions appropriate? (Select all that apply)",
+    "options": [
+      "Reposition every 2 hours",
+      "Massage bony areas",
+      "Use donut cushion",
+      "Provide high protein"
+    ],
+    "answer": [
+      "Reposition every 2 hours",
+      "Provide high protein"
+    ],
+    "explanation": "Repositioning and protein support healing. Massage and donut cushions worsen damage.",
+    "type": "SATA"
+  },
+  {
+    "id": 46,
+    "question": "A nurse caring for client post-bronchoscopy. Which finding requires provider notification?",
+    "options": [
+      "Absent gag reflex",
+      "Sore throat",
+      "Mild drowsiness",
+      "Small blood-tinged sputum"
+    ],
+    "answer": "Absent gag reflex",
+    "explanation": "Gag reflex must return before oral intake to prevent aspiration.",
+    "type": "single"
+  },
+  {
+    "id": 47,
+    "question": "A nurse teaches client with glaucoma on eye drops. Which action correct?",
+    "options": [
+      "Applies pressure to inner canthus after",
+      "Touches dropper to eye",
+      "Instills on cornea",
+      "Closes eyes 30 minutes"
+    ],
+    "answer": "Applies pressure to inner canthus after",
+    "explanation": "Pressure on nasolacrimal duct reduces systemic absorption.",
+    "type": "single"
+  },
+  {
+    "id": 48,
+    "question": "A nurse caring for indwelling catheter client. Which actions reduce infection risk? (Select all that apply)",
+    "options": [
+      "Keep bag below bladder",
+      "Disconnect tubing for cleaning",
+      "Maintain closed system",
+      "Ensure proper anchoring"
+    ],
+    "answer": [
+      "Keep bag below bladder",
+      "Maintain closed system",
+      "Ensure proper anchoring"
+    ],
+    "explanation": "Below-bag placement, closed systems, and anchoring prevent infection. Don't routinely disconnect.",
+    "type": "SATA"
+  },
+  {
+    "id": 49,
+    "question": "A client with new hypertension asks why lifestyle changes matter. Which is best?",
+    "options": [
+      "Improve BP control and reduce CV risk",
+      "Replace need for visits",
+      "Work only if meds stopped",
+      "For clients over 70"
+    ],
+    "answer": "Improve BP control and reduce CV risk",
+    "explanation": "Lifestyle changes are evidence-based and reduce long-term risk.",
+    "type": "single"
+  },
+  {
+    "id": 50,
+    "question": "A nurse planning care for AAA client. Which findings report immediately? (Select all that apply)",
+    "options": [
+      "Sudden severe back pain",
+      "Abdominal bruit",
+      "Sudden severe abdominal pain",
+      "Mild anxiety"
+    ],
+    "answer": [
+      "Sudden severe back pain",
+      "Sudden severe abdominal pain"
+    ],
+    "explanation": "Sudden pain suggests expansion/rupture (life-threatening). Bruits and anxiety are less urgent.",
+    "type": "SATA"
+  },
+  {
+    "id": 51,
+    "question": "A postpartum client saturates pad in 15 minutes with boggy uterus. Which action first?",
+    "options": [
+      "Massage fundus",
+      "Prepare discharge",
+      "Obtain urine sample",
+      "Offer fluids only"
+    ],
+    "answer": "Massage fundus",
+    "explanation": "Boggy uterus with heavy bleeding suggests atony; fundal massage is first action.",
+    "type": "single"
+  },
+  {
+    "id": 52,
+    "question": "A nurse caring for laboring client with late decelerations. Which action first?",
+    "options": [
+      "Turn to side",
+      "Encourage pushing",
+      "Apply internal monitor",
+      "Prepare warmer"
+    ],
+    "answer": "Turn to side",
+    "explanation": "Late decelerations indicate uteroplacental insufficiency; repositioning improves blood flow.",
+    "type": "single"
+  },
+  {
+    "id": 53,
+    "question": "A client at 38 weeks has vaginal fluid gush. Which assessment is priority?",
+    "options": [
+      "Fetal heart rate",
+      "Maternal weight",
+      "Deep tendon reflexes",
+      "Fundal height"
+    ],
+    "answer": "Fetal heart rate",
+    "explanation": "After ROM, assess fetal well-being and cord complications immediately.",
+    "type": "single"
+  },
+  {
+    "id": 54,
+    "question": "A nurse caring for postpartum client on magnesium sulfate. Which requires action? (Select all that apply)",
+    "options": [
+      "Respiratory rate 10/min",
+      "Urine output 45 mL/hr",
+      "DTR 2+",
+      "BP 150/92"
+    ],
+    "answer": [
+      "Respiratory rate 10/min"
+    ],
+    "explanation": "RR 10 suggests magnesium toxicity (danger). DTR 2+ and output acceptable. BP elevated but not toxicity.",
+    "type": "SATA"
+  },
+  {
+    "id": 55,
+    "question": "A nurse teaches about breastfeeding. Which shows understanding?",
+    "options": [
+      "Baby has wide latch including areola",
+      "Wash nipples with soap before feeds",
+      "Limit feeds to 5 minutes per side",
+      "Formula after feeds helps milk"
+    ],
+    "answer": "Baby has wide latch including areola",
+    "explanation": "Deep latch helps transfer and reduces trauma. Other statements are incorrect.",
+    "type": "single"
+  },
+  {
+    "id": 56,
+    "question": "A nurse caring for newborn 1 hour after delivery. Which requires intervention?",
+    "options": [
+      "Central cyanosis",
+      "Acrocyanosis",
+      "RR 46/min",
+      "HR 138/min"
+    ],
+    "answer": "Central cyanosis",
+    "explanation": "Central cyanosis is abnormal; indicates inadequate oxygenation.",
+    "type": "single"
+  },
+  {
+    "id": 57,
+    "question": "A nurse caring for client at 32 weeks with painless bleeding. Which should question?",
+    "options": [
+      "Digital vaginal exam",
+      "External fetal monitor",
+      "Check vitals",
+      "Prepare ultrasound"
+    ],
+    "answer": "Digital vaginal exam",
+    "explanation": "Painless bleeding suggests placenta previa; vaginal exam risks hemorrhage.",
+    "type": "single"
+  },
+  {
+    "id": 58,
+    "question": "A nurse caring for newborn on phototherapy. Which intervention appropriate?",
+    "options": [
+      "Cover eyes",
+      "Apply lotion hourly",
+      "Keep fully wrapped",
+      "Discontinue feeds"
+    ],
+    "answer": "Cover eyes",
+    "explanation": "Protect eyes while maximizing skin exposure to light.",
+    "type": "single"
+  },
+  {
+    "id": 59,
+    "question": "A nurse teaching pregnant client at 28 weeks. Which warning sign included? (Select all that apply)",
+    "options": [
+      "Report bleeding immediately",
+      "Mild face swelling normal",
+      "Decreased fetal movement normal",
+      "Severe headache wait"
+    ],
+    "answer": [
+      "Report bleeding immediately"
+    ],
+    "explanation": "Bleeding is abnormal. Face swelling, decreased movement, and headache require immediate reporting.",
+    "type": "SATA"
+  },
+  {
+    "id": 60,
+    "question": "A postpartum nurse assesses client 12 hours after delivery. Which is expected?",
+    "options": [
+      "Lochia rubra",
+      "Lochia alba",
+      "Fundus 3 fingerbreadths above umbilicus",
+      "Absent bowel sounds"
+    ],
+    "answer": "Lochia rubra",
+    "explanation": "Lochia rubra is normal during first few postpartum days.",
+    "type": "single"
+  },
+  {
+    "id": 61,
+    "question": "A nurse caring for 6-month-old infant. Which is expected?",
+    "options": [
+      "Posterior fontanel closed",
+      "Birth weight doubled",
+      "Pincer grasp",
+      "Walks independently"
+    ],
+    "answer": "Birth weight doubled",
+    "explanation": "Birth weight typically doubles by 6 months.",
+    "type": "single"
+  },
+  {
+    "id": 62,
+    "question": "A nurse planning care for toddler with dehydration. Which assessment useful? (Select all that apply)",
+    "options": [
+      "Daily weight",
+      "Head circumference",
+      "Chest expansion",
+      "Skin turgor"
+    ],
+    "answer": [
+      "Daily weight",
+      "Skin turgor"
+    ],
+    "explanation": "Weight and skin turgor assess hydration. Head circumference and chest expansion assess other parameters.",
+    "type": "SATA"
+  },
+  {
+    "id": 63,
+    "question": "A nurse reinforcing teaching for child with otitis media on amoxicillin. Which shows understanding?",
+    "options": [
+      "Give full prescribed course",
+      "Stop after fever gone",
+      "Save for next infection",
+      "Give aspirin for pain"
+    ],
+    "answer": "Give full prescribed course",
+    "explanation": "Complete antibiotic course ensures treatment and reduces resistance.",
+    "type": "single"
+  },
+  {
+    "id": 64,
+    "question": "A nurse caring for child during tonic-clonic seizure. Which action appropriate?",
+    "options": [
+      "Turn to side",
+      "Insert tongue blade",
+      "Hold child still",
+      "Offer juice"
+    ],
+    "answer": "Turn to side",
+    "explanation": "Side positioning maintains airway and reduces aspiration risk.",
+    "type": "single"
+  },
+  {
+    "id": 65,
+    "question": "A nurse teaches about SIDS prevention. Which should include? (Select all that apply)",
+    "options": [
+      "Back sleeping position",
+      "Use fluffy blankets",
+      "Bed-share for monitoring",
+      "Avoid tummy sleep"
+    ],
+    "answer": [
+      "Back sleeping position",
+      "Avoid tummy sleep"
+    ],
+    "explanation": "Back sleeping is recommended. Fluffy blankets and bed-sharing increase SIDS risk.",
+    "type": "SATA"
+  },
+  {
+    "id": 66,
+    "question": "A nurse caring for child with croup. Which finding most concerning?",
+    "options": [
+      "Stridor at rest",
+      "Hoarse cough",
+      "Temp 37.8\u00b0C",
+      "Mild irritability"
+    ],
+    "answer": "Stridor at rest",
+    "explanation": "Stridor at rest suggests worsening airway obstruction.",
+    "type": "single"
+  },
+  {
+    "id": 67,
+    "question": "A nurse teaching parents about child with cast. Which needs further teaching? (Select all that apply)",
+    "options": [
+      "Use hair dryer cool setting",
+      "Check fingers for color",
+      "Insert pencil to scratch",
+      "Keep cast dry"
+    ],
+    "answer": [
+      "Insert pencil to scratch"
+    ],
+    "explanation": "Never insert objects; can injure skin. Other statements correct.",
+    "type": "SATA"
+  },
+  {
+    "id": 68,
+    "question": "A nurse caring for adolescent with appendicitis. Which prescription question?",
+    "options": [
+      "Apply heating pad",
+      "Maintain NPO",
+      "Start IV",
+      "Monitor pain"
+    ],
+    "answer": "Apply heating pad",
+    "explanation": "Heat may increase inflammation/rupture risk.",
+    "type": "single"
+  },
+  {
+    "id": 69,
+    "question": "A nurse teaching parents about child with diabetes. Which symptom watch for?",
+    "options": [
+      "Tremors and sweating",
+      "Warm dry skin",
+      "Fruity breath",
+      "Deep respirations"
+    ],
+    "answer": "Tremors and sweating",
+    "explanation": "Tremors and sweating are signs of hypoglycemia.",
+    "type": "single"
+  },
+  {
+    "id": 70,
+    "question": "A nurse assessing 2-year-old. Which developmental behavior expected?",
+    "options": [
+      "Uses 2-word phrases",
+      "Writes name clearly",
+      "Rides bike without wheels",
+      "Cuts food independently"
+    ],
+    "answer": "Uses 2-word phrases",
+    "explanation": "Toddlers combine words into simple 2-word phrases.",
+    "type": "single"
+  },
+  {
+    "id": 71,
+    "question": "A mental health nurse with client saying 'voices tell me to hurt myself.' Which action first?",
+    "options": [
+      "Assess plan and ensure safety",
+      "Tell client voices not real",
+      "Leave alone",
+      "Ask roommate stay"
+    ],
+    "answer": "Assess plan and ensure safety",
+    "explanation": "Command hallucinations increase self-harm risk; safety is priority.",
+    "type": "single"
+  },
+  {
+    "id": 72,
+    "question": "A client with major depression says 'Everyone better without me.' Best response?",
+    "options": [
+      "Are you thinking of hurting yourself?",
+      "You shouldn't talk that way",
+      "Why feel like burden?",
+      "Things better tomorrow"
+    ],
+    "answer": "Are you thinking of hurting yourself?",
+    "explanation": "Direct questioning about suicide is safe and therapeutic.",
+    "type": "single"
+  },
+  {
+    "id": 73,
+    "question": "A nurse caring for client with panic attack. Which intervention appropriate?",
+    "options": [
+      "Remain and use short statements",
+      "Teach detailed coping",
+      "Leave room",
+      "Explain trigger in depth"
+    ],
+    "answer": "Remain and use short statements",
+    "explanation": "Presence, calm demeanor, and simple communication help during acute panic.",
+    "type": "single"
+  },
+  {
+    "id": 74,
+    "question": "A client with bipolar mania. Which snack best offered?",
+    "options": [
+      "Sandwich and juice",
+      "Three-course hot meal",
+      "Coffee and cookies",
+      "Diet soda"
+    ],
+    "answer": "Sandwich and juice",
+    "explanation": "Manic clients need high-calorie finger foods they can eat while mobile.",
+    "type": "single"
+  },
+  {
+    "id": 75,
+    "question": "A nurse caring for client in alcohol withdrawal. Which requires intervention? (Select all that apply)",
+    "options": [
+      "Disorientation and tremors",
+      "Mild anxiety",
+      "Request coffee",
+      "Sleepiness"
+    ],
+    "answer": [
+      "Disorientation and tremors"
+    ],
+    "explanation": "Disorientation and coarse tremors signal progressing withdrawal/delirium tremens.",
+    "type": "SATA"
+  },
+  {
+    "id": 76,
+    "question": "A client with OCD washes hands until cracked. Which nursing intervention appropriate?",
+    "options": [
+      "Set limits while offering support",
+      "Force stop immediately",
+      "Provide criticism",
+      "Ignore all behaviors"
+    ],
+    "answer": "Set limits while offering support",
+    "explanation": "Gradually limit compulsion with support; avoid harsh criticism.",
+    "type": "single"
+  },
+  {
+    "id": 77,
+    "question": "A nurse caring for withdrawn client with schizophrenia avoiding eye contact. Best response?",
+    "options": [
+      "I will sit quietly with you",
+      "Why won't talk?",
+      "You need group now",
+      "Nothing to fear"
+    ],
+    "answer": "I will sit quietly with you",
+    "explanation": "Presence without pressure is therapeutic for withdrawn clients.",
+    "type": "single"
+  },
+  {
+    "id": 78,
+    "question": "A client with BPD says 'You only nurse who cares.' Best response?",
+    "options": [
+      "We work together for care",
+      "I care more",
+      "Others less patient",
+      "Tell charge I'm favorite"
+    ],
+    "answer": "We work together for care",
+    "explanation": "Maintains appropriate boundaries; prevents staff splitting.",
+    "type": "single"
+  },
+  {
+    "id": 79,
+    "question": "A client on lithium reports vomiting and tremors. Which action first?",
+    "options": [
+      "Hold and notify provider",
+      "Give with milk",
+      "Encourage low sodium",
+      "Reassure continue"
+    ],
+    "answer": "Hold and notify provider",
+    "explanation": "Vomiting and tremors may indicate lithium toxicity.",
+    "type": "single"
+  },
+  {
+    "id": 80,
+    "question": "A nurse with severe anxiety client. Which statement most therapeutic?",
+    "options": [
+      "Focus on one thing",
+      "Calm down now",
+      "Nothing to worry about",
+      "Tell childhood details"
+    ],
+    "answer": "Focus on one thing",
+    "explanation": "Simple, focused communication helps anxious clients process information.",
+    "type": "single"
+  },
+  {
+    "id": 81,
+    "question": "A nurse delegating for LPN/LVN. Which is appropriate task?",
+    "options": [
+      "Reinforce spirometer teaching",
+      "Initial chest pain assessment",
+      "Develop care plan",
+      "Admit from PACU"
+    ],
+    "answer": "Reinforce spirometer teaching",
+    "explanation": "LPN can reinforce previously taught info for stable clients.",
+    "type": "single"
+  },
+  {
+    "id": 82,
+    "question": "After shift report, which client see first? (Select all that apply)",
+    "options": [
+      "Diabetic diaphoretic confused",
+      "Awaiting dressing change",
+      "Requesting discharge papers",
+      "Asking for sleep aid"
+    ],
+    "answer": [
+      "Diabetic diaphoretic confused"
+    ],
+    "explanation": "Diaphoresis and confusion may indicate hypoglycemia (urgent).",
+    "type": "SATA"
+  },
+  {
+    "id": 83,
+    "question": "A nurse receives prescriptions. Which clarify first?",
+    "options": [
+      "Morphine 2mg IV q2h PRN for RR 8",
+      "Acetaminophen 650 mg PO PRN",
+      "0.9% NS at 75 mL/hr",
+      "Check glucose before meals"
+    ],
+    "answer": "Morphine 2mg IV q2h PRN for RR 8",
+    "explanation": "Opioids worsen respiratory depression; unsafe with RR 8/min.",
+    "type": "single"
+  },
+  {
+    "id": 84,
+    "question": "A nurse supervising AP. Which requires intervention? (Select all that apply)",
+    "options": [
+      "BP on stable client",
+      "Glucose 54, gives juice without reporting",
+      "Helps with bath",
+      "Measures I&O"
+    ],
+    "answer": [
+      "Glucose 54, gives juice without reporting"
+    ],
+    "explanation": "Assessment findings and treatment decisions must be reported to nurse; AP shouldn't independently treat.",
+    "type": "SATA"
+  },
+  {
+    "id": 85,
+    "question": "A nurse in external disaster triage. Which is delayed priority?",
+    "options": [
+      "Closed arm fracture stable vitals",
+      "Absent respirations after airway",
+      "Severe respiratory distress",
+      "Uncontrolled leg bleeding"
+    ],
+    "answer": "Closed arm fracture stable vitals",
+    "explanation": "Stable fractures are delayed priority in disaster settings.",
+    "type": "single"
+  },
+  {
+    "id": 86,
+    "question": "A nurse administering oral med to older adult with dysphagia. Which best?",
+    "options": [
+      "Verify crush ability; thicken if approved",
+      "Mix all meds in water",
+      "Place at back throat",
+      "Skip if swallowing hard"
+    ],
+    "answer": "Verify crush ability; thicken if approved",
+    "explanation": "Medication safety requires confirming modification and adaptation to abilities.",
+    "type": "single"
+  },
+  {
+    "id": 87,
+    "question": "A nurse documents medication error reaching client, no harm. Which appropriate?",
+    "options": [
+      "Complete incident report per policy",
+      "Chart in medical record",
+      "Change MAR time",
+      "Tell other affected clients"
+    ],
+    "answer": "Complete incident report per policy",
+    "explanation": "Incident reports for safety review, not charted in medical record.",
+    "type": "single"
+  },
+  {
+    "id": 88,
+    "question": "A nurse finds fire in trash can. Which action first?",
+    "options": [
+      "Rescue client",
+      "Pull alarm",
+      "Contain by doors",
+      "Extinguish fire"
+    ],
+    "answer": "Rescue client",
+    "explanation": "RACE: Rescue, Alarm, Contain, Extinguish/Evacuate.",
+    "type": "single"
+  },
+  {
+    "id": 89,
+    "question": "A nurse administering PRBCs. Which action correct? (Select all that apply)",
+    "options": [
+      "Start slowly, remain initially",
+      "Add dextrose to tubing",
+      "Reuse tubing for other solutions",
+      "Hang for 8 hours"
+    ],
+    "answer": [
+      "Start slowly, remain initially"
+    ],
+    "explanation": "Start slow, monitor for reaction. Don't add dextrose or reuse tubing; hang max 4 hours.",
+    "type": "SATA"
+  },
+  {
+    "id": 90,
+    "question": "A nurse teaching transplant client about infection prevention. Which shows understanding?",
+    "options": [
+      "Avoid crowds and ill people",
+      "Fresh flowers okay with water change",
+      "Receive live vaccines always",
+      "Stop meds when feel well"
+    ],
+    "answer": "Avoid crowds and ill people",
+    "explanation": "Immunosuppressed clients reduce exposure and continue medications.",
+    "type": "single"
+  },
+  {
+    "id": 91,
+    "question": "A nurse caring for suspected sepsis. Which finding most urgent report?",
+    "options": [
+      "BP 82/46",
+      "WBC 15,000",
+      "Temp 38.3\u00b0C",
+      "HR 108"
+    ],
+    "answer": "BP 82/46",
+    "explanation": "Hypotension indicates septic shock; most urgent.",
+    "type": "single"
+  },
+  {
+    "id": 92,
+    "question": "A nurse reinforcing teaching for GERD client. Which indicates understanding?",
+    "options": [
+      "Avoid lying down after meals",
+      "Eat large meals before bed",
+      "Peppermint tea is best evening drink",
+      "Tight belts support stomach"
+    ],
+    "answer": "Avoid lying down after meals",
+    "explanation": "Staying upright reduces reflux symptoms.",
+    "type": "single"
+  },
+  {
+    "id": 93,
+    "question": "A nurse caring for NG tube decompression. Which indicates correct placement? (Select all that apply)",
+    "options": [
+      "Facility-approved method completed",
+      "Tube length looks same as yesterday",
+      "Client says feels normal",
+      "Drainage appears yellow"
+    ],
+    "answer": [
+      "Facility-approved method completed"
+    ],
+    "explanation": "Placement verified with approved method before meds. Visual/subjective assessment insufficient.",
+    "type": "SATA"
+  },
+  {
+    "id": 94,
+    "question": "A nurse caring for hyperthyroid client. Which assessment finding expected?",
+    "options": [
+      "Heat intolerance",
+      "Bradycardia",
+      "Weight gain despite poor appetite",
+      "Constipation"
+    ],
+    "answer": "Heat intolerance",
+    "explanation": "Hyperthyroidism causes heat intolerance, tachycardia, weight loss.",
+    "type": "single",
+    "image": "imported_images/scene_01_sinus_tachycardia_1.png",
+    "image_prompt": "ECG monitor-style scene showing sinus tachycardia in a hyperthyroid patient."
+  },
+  {
+    "id": 95,
+    "question": "A nurse teaching hypothyroid client on levothyroxine. Which indicates understanding?",
+    "options": [
+      "Take same time daily",
+      "Stop when feel better",
+      "Take with iron supplements",
+      "Take only if symptomatic"
+    ],
+    "answer": "Take same time daily",
+    "explanation": "Levothyroxine taken consistently, usually empty stomach, not stopped abruptly.",
+    "type": "single"
+  },
+  {
+    "id": 96,
+    "question": "A nurse caring for adrenal insufficiency client after viral illness with vomiting. Which complication suspect?",
+    "options": [
+      "Adrenal crisis",
+      "Thyroid storm",
+      "Myxedema coma",
+      "Hyperosmolar syndrome"
+    ],
+    "answer": "Adrenal crisis",
+    "explanation": "Stress or illness can precipitate adrenal crisis.",
+    "type": "single"
+  },
+  {
+    "id": 97,
+    "question": "A nurse caring for diabetic foot ulcer. Which intervention appropriate?",
+    "options": [
+      "Inspect daily",
+      "Soak in hot water nightly",
+      "Walk barefoot at home",
+      "Trim nails deeply"
+    ],
+    "answer": "Inspect daily",
+    "explanation": "Daily inspection identifies injury early in neuropathic clients.",
+    "type": "single"
+  },
+  {
+    "id": 98,
+    "question": "A nurse caring for acute glomerulonephritis client. Which finding expected? (Select all that apply)",
+    "options": [
+      "Tea-colored urine",
+      "Polyuria clear urine",
+      "Low BP",
+      "Excessive thirst alone"
+    ],
+    "answer": [
+      "Tea-colored urine"
+    ],
+    "explanation": "Acute GN causes hematuria (tea-colored), edema, hypertension.",
+    "type": "SATA"
+  },
+  {
+    "id": 99,
+    "question": "A nurse caring for post-TURP client. Which finding most important report?",
+    "options": [
+      "Large clots in drainage",
+      "Light pink urine",
+      "Mild bladder spasms",
+      "Catheter draining"
+    ],
+    "answer": "Large clots in drainage",
+    "explanation": "Large clots can obstruct flow and cause complications.",
+    "type": "single"
+  },
+  {
+    "id": 100,
+    "question": "A client with kidney stones reports severe flank pain. Which nursing action?",
+    "options": [
+      "Strain all urine",
+      "Limit fluids",
+      "Keep flat in bed",
+      "Give potassium"
+    ],
+    "answer": "Strain all urine",
+    "explanation": "Straining urine detects stone passage for analysis.",
+    "type": "single"
+  },
+  {
+    "id": 101,
+    "question": "A nurse caring for post-surgery Foley catheter. Which suggests obstruction? (Select all that apply)",
+    "options": [
+      "No output 2 hours with distention",
+      "Urine output 40 mL/hr",
+      "Pale yellow urine",
+      "Bag below bladder"
+    ],
+    "answer": [
+      "No output 2 hours with distention"
+    ],
+    "explanation": "No output with distention suggests obstruction. Others normal.",
+    "type": "SATA"
+  },
+  {
+    "id": 102,
+    "question": "A nurse teaching UTI prevention. Which shows understanding?",
+    "options": [
+      "Wipe front to back",
+      "Delay voiding as long as possible",
+      "Drink less all day",
+      "Daily bubble baths"
+    ],
+    "answer": "Wipe front to back",
+    "explanation": "Front-to-back wiping prevents contamination.",
+    "type": "single"
+  },
+  {
+    "id": 103,
+    "question": "A nurse reinforcing colonoscopy prep teaching. Which shows understanding? (Select all that apply)",
+    "options": [
+      "Expect frequent stools",
+      "Eat heavy breakfast morning of",
+      "Follow diet instructions",
+      "Procedure needs overnight stay"
+    ],
+    "answer": [
+      "Expect frequent stools",
+      "Follow diet instructions"
+    ],
+    "explanation": "Prep causes stools; follow diet. Heavy meal and overnight stay incorrect.",
+    "type": "SATA"
+  },
+  {
+    "id": 104,
+    "question": "A nurse caring for post-abdominal surgery. Which suggests ileus?",
+    "options": [
+      "Absent bowel sounds with distention",
+      "Frequent stools",
+      "Increased appetite",
+      "Bradycardia without nausea"
+    ],
+    "answer": "Absent bowel sounds with distention",
+    "explanation": "Paralytic ileus: decreased activity and distention.",
+    "type": "single"
+  },
+  {
+    "id": 105,
+    "question": "A nurse caring for ulcerative colitis acute flare. Which diet appropriate?",
+    "options": [
+      "Low-residue",
+      "High-fiber bran",
+      "Raw vegetables",
+      "Spicy fried"
+    ],
+    "answer": "Low-residue",
+    "explanation": "Low-residue reduces bowel stimulation during acute inflammation.",
+    "type": "single"
+  },
+  {
+    "id": 106,
+    "question": "A nurse teaching acute diverticulitis. Which instruction appropriate?",
+    "options": [
+      "Follow bowel rest and diet",
+      "Increase popcorn and seeds",
+      "Use stimulant laxatives daily",
+      "Avoid all fluids"
+    ],
+    "answer": "Follow bowel rest and diet",
+    "explanation": "Acute diverticulitis requires bowel rest and dietary modification.",
+    "type": "single"
+  },
+  {
+    "id": 107,
+    "question": "A nurse caring for hepatitis client. Which lab reflects clotting ability? (Select all that apply)",
+    "options": [
+      "PT/INR",
+      "Serum sodium",
+      "Platelet count",
+      "Urine specific gravity"
+    ],
+    "answer": [
+      "PT/INR"
+    ],
+    "explanation": "Liver synthesizes clotting factors; PT/INR reflects synthetic function.",
+    "type": "SATA"
+  },
+  {
+    "id": 108,
+    "question": "A nurse planning care for ascites client. Which intervention appropriate?",
+    "options": [
+      "Measure girth daily",
+      "Place flat always",
+      "Encourage high sodium",
+      "Limit skin assessment"
+    ],
+    "answer": "Measure girth daily",
+    "explanation": "Daily girth monitors fluid accumulation.",
+    "type": "single"
+  },
+  {
+    "id": 109,
+    "question": "A nurse caring for new ileostomy. Which requires follow-up?",
+    "options": [
+      "Stoma dusky",
+      "Liquid stool",
+      "Mild skin redness",
+      "Client asks teaching"
+    ],
+    "answer": "Stoma dusky",
+    "explanation": "Dusky stoma indicates impaired perfusion.",
+    "type": "single"
+  },
+  {
+    "id": 110,
+    "question": "A nurse caring for chronic pain client. Which statement best?",
+    "options": [
+      "Pain is what you say it is",
+      "You don't look in pain",
+      "Avoid meds unless unbearable",
+      "Sleeping means controlled"
+    ],
+    "answer": "Pain is what you say it is",
+    "explanation": "Pain is subjective; validates client experience.",
+    "type": "single"
+  },
+  {
+    "id": 111,
+    "question": "A nurse teaching client on PCA. Which statement included?",
+    "options": [
+      "Only you push button",
+      "Family can push if sleeping",
+      "Replaces monitoring need",
+      "Wait until severe pain"
+    ],
+    "answer": "Only you push button",
+    "explanation": "Only client activates PCA to prevent oversedation.",
+    "type": "single"
+  },
+  {
+    "id": 112,
+    "question": "A nurse caring for post-op pain control. Which action first? (Select all that apply)",
+    "options": [
+      "Assess pain characteristics",
+      "Tell cannot give more",
+      "Document and return later",
+      "Suggest stop talking about"
+    ],
+    "answer": [
+      "Assess pain characteristics"
+    ],
+    "explanation": "Assessment is foundation for individualized pain management.",
+    "type": "SATA"
+  },
+  {
+    "id": 113,
+    "question": "A nurse caring for rheumatoid arthritis. Which indicates understanding?",
+    "options": [
+      "Balance rest with activity",
+      "Stay in bed during stiffness",
+      "Exercise only painful joints",
+      "Avoid assistive devices"
+    ],
+    "answer": "Balance rest with activity",
+    "explanation": "RA benefits from pacing, rest/activity balance, and joint protection.",
+    "type": "single"
+  },
+  {
+    "id": 114,
+    "question": "A nurse caring for IV antibiotic home therapy for osteomyelitis. Which needs teaching?",
+    "options": [
+      "Stop when pain gone",
+      "Keep appointments",
+      "Report IV site redness",
+      "Take as prescribed"
+    ],
+    "answer": "Stop when pain gone",
+    "explanation": "Osteomyelitis requires prolonged antibiotics; stopping early worsens infection.",
+    "type": "single"
+  },
+  {
+    "id": 115,
+    "question": "A nurse teaching prevention hip flexion contracture post-amputation. Which included?",
+    "options": [
+      "Lie prone periods",
+      "Pillow under knee always",
+      "Sit most of day",
+      "Avoid limb stretch"
+    ],
+    "answer": "Lie prone periods",
+    "explanation": "Prone positioning reduces hip flexion contracture risk.",
+    "type": "single"
+  },
+  {
+    "id": 116,
+    "question": "A nurse caring for pressure injury with low albumin. Which nutritional encourage? (Select all that apply)",
+    "options": [
+      "Protein-rich foods",
+      "Clear liquids only",
+      "Low-calorie snacks",
+      "High-fat foods only"
+    ],
+    "answer": [
+      "Protein-rich foods"
+    ],
+    "explanation": "Protein supports wound healing.",
+    "type": "SATA"
+  },
+  {
+    "id": 117,
+    "question": "A nurse caring for Parkinson disease. Which intervention reduce aspiration?",
+    "options": [
+      "Upright position for meals",
+      "Offer thin liquids",
+      "Rush meals",
+      "Food far side of tray"
+    ],
+    "answer": "Upright position for meals",
+    "explanation": "Upright positioning during meals reduces aspiration risk.",
+    "type": "single"
+  },
+  {
+    "id": 118,
+    "question": "A nurse teaching carbidopa-levodopa. Which indicates understanding?",
+    "options": [
+      "Don't stop suddenly",
+      "Expect immediate cure",
+      "Dark urine means kidney failure",
+      "Double if symptoms return"
+    ],
+    "answer": "Don't stop suddenly",
+    "explanation": "Abrupt discontinuation worsens symptoms and causes complications.",
+    "type": "single"
+  },
+  {
+    "id": 119,
+    "question": "A nurse caring post-lumbar puncture. Which action appropriate? (Select all that apply)",
+    "options": [
+      "Monitor headache",
+      "Encourage fluids",
+      "Place high Fowler",
+      "Encourage exercise"
+    ],
+    "answer": [
+      "Monitor headache",
+      "Encourage fluids"
+    ],
+    "explanation": "Post-LP headache common; monitoring and fluids help. High Fowler and exercise not recommended.",
+    "type": "SATA"
+  },
+  {
+    "id": 120,
+    "question": "A nurse caring for Bell palsy. Which intervention important?",
+    "options": [
+      "Protect eye",
+      "Limit oral care",
+      "Keep dark",
+      "Restrict exercises"
+    ],
+    "answer": "Protect eye",
+    "explanation": "Incomplete eyelid closure risks corneal injury; protection essential.",
+    "type": "single"
+  },
+  {
+    "id": 121,
+    "question": "A nurse teaching M\u00e9ni\u00e8re disease. Which instruction included?",
+    "options": [
+      "Move slowly changing positions",
+      "Increase sodium",
+      "Drive during vertigo",
+      "Use aspirin for tinnitus"
+    ],
+    "answer": "Move slowly changing positions",
+    "explanation": "Slow position changes reduce vertigo symptoms and injury risk.",
+    "type": "single"
+  },
+  {
+    "id": 122,
+    "question": "A nurse caring for acute angle-closure glaucoma. Which symptom expected?",
+    "options": [
+      "Severe eye pain with halos",
+      "Painless central vision loss",
+      "Chronic hearing loss",
+      "Dry cough"
+    ],
+    "answer": "Severe eye pain with halos",
+    "explanation": "Acute angle-closure is ocular emergency with pain, halos, vision changes.",
+    "type": "single"
+  },
+  {
+    "id": 123,
+    "question": "A nurse prepping client for surgery with unsigned consent. Which action?",
+    "options": [
+      "Notify provider for consent",
+      "Have family sign",
+      "Explain instead of surgeon",
+      "Witness after sedative"
+    ],
+    "answer": "Notify provider for consent",
+    "explanation": "Surgeon obtains informed consent; nurse verifies and witnesses appropriately.",
+    "type": "single"
+  },
+  {
+    "id": 124,
+    "question": "A nurse caring for Jehovah's Witness refusing transfusion. Which appropriate? (Select all that apply)",
+    "options": [
+      "Respect refusal and notify",
+      "Transfuse for life-saving",
+      "Ask family override",
+      "Delay documentation"
+    ],
+    "answer": [
+      "Respect refusal and notify"
+    ],
+    "explanation": "Competent adults have right to refuse; nurse advocates and communicates refusal.",
+    "type": "SATA"
+  },
+  {
+    "id": 125,
+    "question": "A nurse notes unusually high med dose. Which action first?",
+    "options": [
+      "Verify and clarify with provider",
+      "Administer as ordered",
+      "Ask AP to confirm",
+      "Wait until next shift"
+    ],
+    "answer": "Verify and clarify with provider",
+    "explanation": "Medication safety requires clarifying potentially unsafe prescriptions.",
+    "type": "single"
+  },
+  {
+    "id": 126,
+    "question": "A nurse teaching about advance directives. Which is accurate?",
+    "options": [
+      "Communicate wishes if unable",
+      "Replace informed consent",
+      "Only for terminal",
+      "Allow staff choice"
+    ],
+    "answer": "Communicate wishes if unable",
+    "explanation": "Advance directives guide decisions when client loses capacity.",
+    "type": "single"
+  },
+  {
+    "id": 127,
+    "question": "A nurse caring for client on restraints. Which action appropriate? (Select all that apply)",
+    "options": [
+      "Use when less restrictive fail",
+      "Tie to side rail",
+      "Remove once per shift",
+      "Use for punishment"
+    ],
+    "answer": [
+      "Use when less restrictive fail"
+    ],
+    "explanation": "Restraints are last resort used safely and per policy; never for punishment.",
+    "type": "SATA"
+  },
+  {
+    "id": 128,
+    "question": "A nurse finds client on floor after bed. Which action first?",
+    "options": [
+      "Assess for injury",
+      "Return to bed",
+      "Complete incident report",
+      "Ask to stand if able"
+    ],
+    "answer": "Assess for injury",
+    "explanation": "Post-fall priority is assessing condition and possible injuries.",
+    "type": "single"
+  },
+  {
+    "id": 129,
+    "question": "A nurse doing discharge teaching on antibiotic. Which instruction?",
+    "options": [
+      "Take until finished",
+      "Stop when better",
+      "Share with family",
+      "Save for later"
+    ],
+    "answer": "Take until finished",
+    "explanation": "Complete course supports full treatment and reduces resistance.",
+    "type": "single"
+  },
+  {
+    "id": 130,
+    "question": "A nurse caring for older adult with delirium. Which intervention? (Select all that apply)",
+    "options": [
+      "Reorient frequently",
+      "Move to different room",
+      "Use restraints routinely",
+      "Keep dark and quiet"
+    ],
+    "answer": [
+      "Reorient frequently"
+    ],
+    "explanation": "Delirium care: reorientation, safety, underlying cause treatment. Avoid changes, restraints, dark.",
+    "type": "SATA"
+  },
+  {
+    "id": 131,
+    "question": "A nurse teaching falls prevention at home. Which indicates understanding?",
+    "options": [
+      "Remove loose rugs",
+      "Keep stairs dim",
+      "Wear slippery socks",
+      "Use chair for reaching"
+    ],
+    "answer": "Remove loose rugs",
+    "explanation": "Removing trip hazards reduces fall risk.",
+    "type": "single"
+  },
+  {
+    "id": 132,
+    "question": "A nurse caring for dehydrated client. Which indicates improvement?",
+    "options": [
+      "Urine output adequate",
+      "Skin darker",
+      "RR increases",
+      "Cap refill slower"
+    ],
+    "answer": "Urine output adequate",
+    "explanation": "Improved output indicates improved hydration and perfusion.",
+    "type": "single"
+  },
+  {
+    "id": 133,
+    "question": "A nurse caring for IV potassium chloride. Which action appropriate?",
+    "options": [
+      "Use infusion pump",
+      "IV push for cramps",
+      "Add to hanging bag",
+      "Give without checking kidney"
+    ],
+    "answer": "Use infusion pump",
+    "explanation": "IV potassium diluted and given carefully via pump; never IV push.",
+    "type": "single"
+  },
+  {
+    "id": 134,
+    "question": "A nurse teaching hypertensive client diet. Which recommend? (Select all that apply)",
+    "options": [
+      "Fresh grilled chicken vegetables",
+      "Canned soup deli sandwich",
+      "Salted chips sausage",
+      "Instant noodles soy sauce"
+    ],
+    "answer": [
+      "Fresh grilled chicken vegetables"
+    ],
+    "explanation": "Fresh, lower-sodium foods for BP management.",
+    "type": "SATA"
+  },
+  {
+    "id": 135,
+    "question": "A nurse caring for heart failure. Which needs teaching?",
+    "options": [
+      "Call if gain 2 pounds/day",
+      "Weigh same time morning",
+      "Skip diuretic when going out",
+      "Watch ankle swelling"
+    ],
+    "answer": "Skip diuretic when going out",
+    "explanation": "Skipping diuretics worsens fluid retention and HF.",
+    "type": "single"
+  },
+  {
+    "id": 136,
+    "question": "A nurse teaching nitroglycerin sublingual. Which indicates understanding?",
+    "options": [
+      "Sit before taking",
+      "Keep in glove box",
+      "Take one, wait 24 hours",
+      "Chew for faster effect"
+    ],
+    "answer": "Sit before taking",
+    "explanation": "Nitroglycerin causes dizziness/hypotension; sit first.",
+    "type": "single"
+  },
+  {
+    "id": 137,
+    "question": "A nurse caring for stable angina. Which needs teaching? (Select all that apply)",
+    "options": [
+      "Report unrelieved pain immediately",
+      "Stop and rest if pain begins",
+      "Use prescribed nitro as directed",
+      "New pain can wait until visit"
+    ],
+    "answer": [
+      "New pain can wait until visit"
+    ],
+    "explanation": "New/worsening pain requires prompt evaluation. Others correct.",
+    "type": "SATA"
+  },
+  {
+    "id": 138,
+    "question": "A nurse caring for post-cardiac cath femoral approach. Which assessment priority?",
+    "options": [
+      "Distal pulses",
+      "Bowel sounds",
+      "Lung expansion",
+      "Hand grip"
+    ],
+    "answer": "Distal pulses",
+    "explanation": "Monitor circulation to affected extremity after femoral cath.",
+    "type": "single"
+  },
+  {
+    "id": 139,
+    "question": "A nurse teaching peripheral venous disease. Which appropriate? (Select all that apply)",
+    "options": [
+      "Elevate legs when resting",
+      "Apply heating pads",
+      "Cross legs sitting",
+      "Wear restrictive socks"
+    ],
+    "answer": [
+      "Elevate legs when resting"
+    ],
+    "explanation": "Elevation reduces venous pooling. Heat, crossing, tight socks worsen.",
+    "type": "SATA"
+  },
+  {
+    "id": 140,
+    "question": "A nurse caring for stroke client with expressive aphasia. Which best?",
+    "options": [
+      "Ask yes/no questions",
+      "Speak loudly",
+      "Finish sentences rapidly",
+      "Assume cannot understand"
+    ],
+    "answer": "Ask yes/no questions",
+    "explanation": "May understand language but struggle speaking; simple communication helps.",
+    "type": "single"
+  },
+  {
+    "id": 141,
+    "question": "A nurse reinforcing dysphagia post-stroke teaching. Which shows understanding?",
+    "options": [
+      "Tuck chin when swallowing",
+      "Use straws for liquids",
+      "Lie flat after meals",
+      "Thin liquids always safer"
+    ],
+    "answer": "Tuck chin when swallowing",
+    "explanation": "Chin tuck may reduce aspiration risk when recommended.",
+    "type": "single"
+  },
+  {
+    "id": 142,
+    "question": "A nurse caring for MS client after hot shower with worsening weakness. Best response?",
+    "options": [
+      "Heat can temporarily worsen",
+      "Disease permanently worsening",
+      "Hot showers cure spasms",
+      "Stop all hygiene"
+    ],
+    "answer": "Heat can temporarily worsen",
+    "explanation": "Heat sensitivity temporarily exacerbates MS symptoms.",
+    "type": "single"
+  },
+  {
+    "id": 143,
+    "question": "A nurse teaching phenytoin to epilepsy client. Which shows understanding? (Select all that apply)",
+    "options": [
+      "Good oral hygiene see dentist",
+      "Stop after no seizures month",
+      "Double if dose missed",
+      "Rash expected no report"
+    ],
+    "answer": [
+      "Good oral hygiene see dentist"
+    ],
+    "explanation": "Phenytoin causes gingival hyperplasia; others incorrect.",
+    "type": "SATA"
+  },
+  {
+    "id": 144,
+    "question": "A nurse caring for NG tube client who becomes short of breath. Which action?",
+    "options": [
+      "Stop feeding",
+      "Increase rate",
+      "Turn flat",
+      "Flush tube"
+    ],
+    "answer": "Stop feeding",
+    "explanation": "Respiratory distress during feeding suggests aspiration.",
+    "type": "single"
+  },
+  {
+    "id": 145,
+    "question": "A nurse caring for pneumonia client. Which prevents atelectasis? (Select all that apply)",
+    "options": [
+      "Encourage spirometer",
+      "Limit coughing",
+      "Bed rest continuous",
+      "Avoid position changes"
+    ],
+    "answer": [
+      "Encourage spirometer"
+    ],
+    "explanation": "Spirometry promotes lung expansion. Coughing, movement, position change help.",
+    "type": "SATA"
+  },
+  {
+    "id": 146,
+    "question": "A nurse reinforcing influenza teaching. Which appropriate?",
+    "options": [
+      "Cover mouth/nose coughing",
+      "Antibiotics for every fever",
+      "Return to work with aches",
+      "No hand rub after nose"
+    ],
+    "answer": "Cover mouth/nose coughing",
+    "explanation": "Respiratory hygiene reduces spread.",
+    "type": "single"
+  },
+  {
+    "id": 147,
+    "question": "A nurse caring for suspected PE. Which finding most concerning?",
+    "options": [
+      "Sudden dyspnea and chest pain",
+      "Mild ankle edema",
+      "Chronic productive cough",
+      "Heartburn"
+    ],
+    "answer": "Sudden dyspnea and chest pain",
+    "explanation": "PE presents suddenly with dyspnea, chest pain (emergency).",
+    "type": "single"
+  },
+  {
+    "id": 148,
+    "question": "A nurse caring for sickle cell crisis. Which intervention appropriate? (Select all that apply)",
+    "options": [
+      "Provide hydration and O2",
+      "Restrict fluids",
+      "Cold packs to pain",
+      "Encourage altitude travel"
+    ],
+    "answer": [
+      "Provide hydration and O2"
+    ],
+    "explanation": "Hydration and oxygen support perfusion during crisis.",
+    "type": "SATA"
+  },
+  {
+    "id": 149,
+    "question": "A nurse teaching thrombocytopenia safety. Which indicates understanding?",
+    "options": [
+      "Use soft toothbrush",
+      "Take ibuprofen for headache",
+      "Use straight razor carefully",
+      "Floss aggressively"
+    ],
+    "answer": "Use soft toothbrush",
+    "explanation": "Soft toothbrush reduces bleeding risk.",
+    "type": "single"
+  },
+  {
+    "id": 150,
+    "question": "A nurse caring for chemo client with oral mucositis. Which intervention?",
+    "options": [
+      "Frequent oral care soft brush",
+      "Alcohol mouthwash daily",
+      "Serve spicy citrus",
+      "Discourage fluids before meals"
+    ],
+    "answer": "Frequent oral care soft brush",
+    "explanation": "Gentle care supports comfort and reduces infection risk.",
+    "type": "single"
+  }
+]

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}{% block title %}Awaiting Authorization · NCLEX Secure{% endblock %}
+{% block content %}
+<meta http-equiv="refresh" content="30">
+<section class="auth-layout">
+  <div class="auth-copy entrance">
+    <span class="eyebrow">Pearson VUE Authorization</span>
+    <h1>Awaiting<br><span>Exam Access</span></h1>
+    <p>Your registration has been received. A Pearson VUE NCLEX administrator must authorize your exam access before you can proceed to questions.</p>
+    <div class="exam-warning-strip" style="border-color:#f59e0b;background:rgba(245,158,11,.07);">
+      <b style="color:#f59e0b;">Access pending authorization</b>
+      <span>Please wait — this page refreshes automatically every 30 seconds</span>
+    </div>
+    <div style="margin-top:1.5rem;display:flex;flex-direction:column;gap:.65rem;">
+      <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:var(--muted);"><span style="font-size:1rem;">🕐</span> Your five-hour timer has <b style="color:var(--text);">not started</b> yet</div>
+      <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:var(--muted);"><span style="font-size:1rem;">🔒</span> Questions are locked until authorization is granted</div>
+      <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:var(--muted);"><span style="font-size:1rem;">📋</span> Authorization is issued by the NCLEX administrator</div>
+    </div>
+  </div>
+
+  <div class="glass-card auth-card entrance delay-1" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:1.5rem;">
+    <div style="width:72px;height:72px;border-radius:50%;background:rgba(245,158,11,.12);border:2px solid #f59e0b;display:flex;align-items:center;justify-content:center;font-size:2rem;">⏳</div>
+    <div>
+      <span class="eyebrow">Status</span>
+      <h2 style="margin:.25rem 0 .5rem;">Pending Authorization</h2>
+      <p class="muted" style="font-size:.88rem;line-height:1.6;">Your request is in the queue. Once the NCLEX administrator grants your access, you will be automatically redirected to begin your exam.</p>
+    </div>
+
+    <div style="width:100%;background:var(--surface-alt,rgba(0,0,0,.04));border-radius:12px;padding:1rem 1.25rem;text-align:left;border:1px solid var(--border);">
+      <div style="font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.65rem;">What to do now</div>
+      <ol style="margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:.45rem;font-size:.84rem;color:var(--text);line-height:1.5;">
+        <li>Remain at your testing workstation</li>
+        <li>Do not close this browser window</li>
+        <li>Your administrator will authorize access shortly</li>
+        <li>This page will redirect automatically once authorized</li>
+      </ol>
+    </div>
+
+    <form method="get" action="{{ url_for('exam_waiting') }}" style="width:100%;">
+      <button class="button wide" type="submit" style="background:var(--surface);color:var(--text);border:1.5px solid var(--border);">Check status now →</button>
+    </form>
+
+    <div style="border-top:1px solid var(--border);padding-top:1.25rem;width:100%;">
+      <a class="text-link" href="{{ url_for('logout') }}" style="font-size:.82rem;">Sign out and return later</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

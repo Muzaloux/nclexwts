@@ -197,6 +197,7 @@ def init_db() -> None:
         END $$""",
         "ALTER TABLE candidates ADD COLUMN IF NOT EXISTS session_token TEXT",
         "ALTER TABLE exam_sessions ADD COLUMN IF NOT EXISTS token_verified INTEGER NOT NULL DEFAULT 0",
+        "ALTER TABLE candidates ADD COLUMN IF NOT EXISTS access_granted INTEGER NOT NULL DEFAULT 0",
     ]
     with db() as connection:
         for stmt in schema_statements:
@@ -572,9 +573,25 @@ def complete_orientation():
         connection.execute("UPDATE exam_sessions SET orientation_complete=1 WHERE id=?", (exam["id"],))
     log_event("orientation_completed", "All seven slides viewed")
     candidate = current_candidate()
+    if not candidate.get("access_granted"):
+        return redirect(url_for("exam_waiting"))
     if candidate.get("session_token") and not exam.get("token_verified"):
         return redirect(url_for("exam_token"))
     return redirect(url_for("dashboard"))
+
+
+@app.route("/exam/waiting")
+@candidate_required
+def exam_waiting():
+    exam = current_exam()
+    if not exam or not exam["agreement_accepted_at"] or not exam["orientation_complete"]:
+        return redirect(url_for("agreement"))
+    candidate = current_candidate()
+    if candidate.get("access_granted"):
+        if candidate.get("session_token") and not exam.get("token_verified"):
+            return redirect(url_for("exam_token"))
+        return redirect(url_for("dashboard"))
+    return render_template("waiting.html")
 
 
 @app.route("/")
@@ -589,6 +606,8 @@ def dashboard():
     if not exam["orientation_complete"]:
         return redirect(url_for("orientation"))
     candidate = current_candidate()
+    if not candidate.get("access_granted"):
+        return redirect(url_for("exam_waiting"))
     if candidate.get("session_token") and not exam.get("token_verified"):
         return redirect(url_for("exam_token"))
     questions = load_questions(candidate["plan"])
@@ -640,6 +659,8 @@ def exam_token():
 def start_exam():
     exam = current_exam()
     candidate = current_candidate()
+    if not candidate.get("access_granted"):
+        return redirect(url_for("exam_waiting"))
     if candidate["session_token"] and not exam["token_verified"]:
         return redirect(url_for("exam_token"))
     if exam["status"] == "created":
@@ -660,6 +681,8 @@ def start_exam():
 def exam_question(qid: int):
     exam = current_exam()
     candidate = current_candidate()
+    if not candidate.get("access_granted"):
+        return redirect(url_for("exam_waiting"))
     if candidate.get("session_token") and not exam.get("token_verified"):
         return redirect(url_for("exam_token"))
     questions = load_questions(candidate["plan"])
@@ -911,6 +934,16 @@ def admin_dashboard():
         average=average,
         learning_mode=setting("show_answers_immediately") == "1",
     )
+
+
+@app.post("/admin/candidate/<int:candidate_id>/grant")
+@admin_required
+def admin_grant_access(candidate_id):
+    grant = request.form.get("grant") == "1"
+    with db() as connection:
+        connection.execute("UPDATE candidates SET access_granted=? WHERE id=?", (1 if grant else 0, candidate_id))
+    flash(f"Access {'granted' if grant else 'revoked'} for candidate.", "success")
+    return redirect(url_for("admin_dashboard"))
 
 
 @app.post("/admin/candidate/<int:candidate_id>/token")

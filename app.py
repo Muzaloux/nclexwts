@@ -555,6 +555,9 @@ def complete_orientation():
     with db() as connection:
         connection.execute("UPDATE exam_sessions SET orientation_complete=1 WHERE id=?", (exam["id"],))
     log_event("orientation_completed", "All seven slides viewed")
+    candidate = current_candidate()
+    if candidate.get("session_token") and not exam.get("token_verified"):
+        return redirect(url_for("exam_token"))
     return redirect(url_for("dashboard"))
 
 
@@ -570,6 +573,8 @@ def dashboard():
     if not exam["orientation_complete"]:
         return redirect(url_for("orientation"))
     candidate = current_candidate()
+    if candidate.get("session_token") and not exam.get("token_verified"):
+        return redirect(url_for("exam_token"))
     questions = load_questions(candidate["plan"])
     with db() as connection:
         answered = connection.execute("SELECT COUNT(*) count FROM answers WHERE session_id=?", (exam["id"],)).fetchone()["count"]
@@ -600,8 +605,8 @@ def exam_token():
     exam = current_exam()
     candidate = current_candidate()
     if not exam or not exam["agreement_accepted_at"] or not exam["orientation_complete"]:
-        return redirect(url_for("dashboard"))
-    if not candidate["session_token"] or exam["token_verified"]:
+        return redirect(url_for("agreement"))
+    if not candidate.get("session_token") or exam.get("token_verified"):
         return redirect(url_for("dashboard"))
     if request.method == "POST":
         entered = request.form.get("token", "").strip()
@@ -610,9 +615,8 @@ def exam_token():
                 connection.execute("UPDATE exam_sessions SET token_verified=1 WHERE id=?", (exam["id"],))
             log_event("token_verified", "Session token accepted")
             return redirect(url_for("dashboard"))
-        flash("Incorrect session token. Contact your administrator.", "error")
-        return redirect(url_for("dashboard"))
-    return redirect(url_for("dashboard"))
+        flash("Incorrect session token. Please contact your administrator.", "error")
+    return render_template("token.html")
 
 
 @app.post("/exam/start")
@@ -640,6 +644,8 @@ def start_exam():
 def exam_question(qid: int):
     exam = current_exam()
     candidate = current_candidate()
+    if candidate.get("session_token") and not exam.get("token_verified"):
+        return redirect(url_for("exam_token"))
     questions = load_questions(candidate["plan"])
     if exam["status"] == "created":
         return redirect(url_for("dashboard"))

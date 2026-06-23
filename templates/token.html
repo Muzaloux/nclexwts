@@ -1,33 +1,61 @@
-{% extends 'base.html' %}{% block title %}Session Token Required · NCLEX Secure{% endblock %}
+{% extends 'base.html' %}{% block title %}Session Authorization Required · NCLEX Secure{% endblock %}
 {% block content %}
-<section class="narrow-shell">
-  <div class="section-heading entrance">
-    <span class="eyebrow">Access verification</span>
-    <h1>Session token required</h1>
-    <p>Your administrator has assigned a unique session token to your examination. Enter it exactly as provided to unlock your exam.</p>
+<section class="auth-layout">
+  <div class="auth-copy entrance">
+    <span class="eyebrow">Security checkpoint</span>
+    <h1>Session<br><span>Authorization</span></h1>
+    <p>Access to your examination is protected by an administrator-issued session token. You cannot view questions or begin the timer until your token is verified.</p>
+    <div class="exam-warning-strip" style="border-color:#ef4444;background:rgba(239,68,68,.07);">
+      <b style="color:#ef4444;">Exam access is locked</b>
+      <span>Enter your session token to unlock the secure environment</span>
+    </div>
+    <div style="margin-top:1.5rem;display:flex;flex-direction:column;gap:.65rem;">
+      <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:var(--muted);"><span style="font-size:1rem;">🔒</span> Five-hour timer has <b style="color:var(--text);">not started</b> yet</div>
+      <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:var(--muted);"><span style="font-size:1rem;">🛡️</span> Token is unique to your candidate record</div>
+      <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:var(--muted);"><span style="font-size:1rem;">📋</span> Issued by your administrator before the exam</div>
+    </div>
   </div>
-  <div class="glass-card entrance delay-1">
-    <form method="post" autocomplete="off" style="display:flex;flex-direction:column;gap:1.25rem;">
-      <div class="field-group">
-        <label for="token" style="display:block;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem;">Session token</label>
+
+  <div class="glass-card auth-card entrance delay-1" style="display:flex;flex-direction:column;justify-content:center;">
+    <span class="eyebrow">Step 3 of 3</span>
+    <h2>Enter session token</h2>
+    <p class="muted" style="margin-bottom:1.5rem;">Your administrator has assigned a unique code to your examination slot. Enter it exactly as provided to unlock access.</p>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for cat, msg in messages %}
+      <div class="flash-banner {{ cat }}" style="margin-bottom:1.25rem;">
+        <b>Access denied —</b> {{ msg }}
+      </div>
+      {% endfor %}
+    {% endwith %}
+
+    <form method="post" autocomplete="off" style="display:flex;flex-direction:column;gap:1.1rem;">
+      <label style="display:flex;flex-direction:column;gap:.45rem;">
+        <span style="font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);">Session token</span>
         <input
-          id="token"
-          name="token"
           type="text"
+          name="token"
           inputmode="numeric"
           autocomplete="off"
           spellcheck="false"
-          placeholder="Enter your token code"
+          placeholder="· · · · · · · ·"
           required
-          style="width:100%;font-size:1.4rem;font-weight:700;letter-spacing:.15em;text-align:center;padding:.85rem 1rem;border-radius:12px;border:2px solid var(--border);background:var(--surface);color:var(--text);outline:none;"
+          autofocus
+          style="font-size:1.75rem;font-weight:800;letter-spacing:.25em;text-align:center;padding:.85rem 1rem;border-radius:14px;border:2.5px solid var(--border);background:var(--surface);color:var(--text);width:100%;box-sizing:border-box;transition:border-color .2s;"
+          onfocus="this.style.borderColor='var(--accent,#0ea5e9)'"
+          onblur="this.style.borderColor='var(--border)'"
         >
-      </div>
-      <button class="button primary" type="submit">Verify token <span>→</span></button>
+      </label>
+      <button class="button primary wide" type="submit">Verify &amp; Unlock Exam <span>→</span></button>
     </form>
-    <p style="margin-top:1.25rem;font-size:.82rem;color:var(--muted);text-align:center;">Contact your administrator if you have not received your token.</p>
-  </div>
-  <div style="margin-top:1.25rem;text-align:center;">
-    <a class="text-link" href="{{ url_for('logout') }}">Sign out</a>
+
+    <p style="margin-top:1.5rem;font-size:.8rem;color:var(--muted);text-align:center;line-height:1.6;">
+      Token not received? Contact your administrator before attempting to enter.<br>
+      Multiple failed attempts are logged.
+    </p>
+    <div style="margin-top:1.5rem;text-align:center;border-top:1px solid var(--border);padding-top:1.25rem;">
+      <a class="text-link" href="{{ url_for('logout') }}">Sign out and return later</a>
+    </div>
   </div>
 </section>
 {% endblock %}

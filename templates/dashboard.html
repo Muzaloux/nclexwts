@@ -1,6 +1,7 @@
 {% extends 'base.html' %}{% block title %}Candidate Dashboard · NCLEX Secure{% endblock %}
 {% block top_actions %}<a class="text-link" href="{{ url_for('logout') }}">Sign out</a>{% endblock %}
 {% block content %}
+{% with messages = get_flashed_messages(with_categories=true) %}{% for cat, msg in messages %}<div class="flash-banner {{ cat }}">{{ msg }}</div>{% endfor %}{% endwith %}
 <section class="dashboard-shell">
   <div class="dashboard-welcome entrance"><div><span class="eyebrow">Candidate dashboard</span><h1>Welcome, {{ candidate['full_name'].split()[0] }}.</h1><p>Your secure exam environment is ready.</p></div><div class="status-badge {{ exam['status'] }}"><i></i>{{ exam['status']|title }}</div></div>
   <div class="dashboard-grid">
@@ -9,12 +10,7 @@
       <div class="card-label">Current simulation</div><div class="exam-title-row"><div class="icon-tile">✚</div><div><h2>NCLEX–{{ candidate['exam_type'] }}</h2><p>{{ total }} questions · 5 hour limit</p></div></div>
       <div class="metric-grid"><div><strong>{{ answered }}</strong><span>Answered</span></div><div><strong>{{ total-answered }}</strong><span>Remaining</span></div><div><strong data-countdown="{{ remaining_seconds }}">05:00:00</strong><span>Time available</span></div></div>
       <div class="progress-meta"><span>Exam progress</span><b>{{ ((answered/total)*100)|round|int if total else 0 }}%</b></div><div class="progress"><i style="width:{{ ((answered/total)*100) if total else 0 }}%"></i></div>
-      {% if exam['status'] == 'created' %}
-        {% if candidate.get('session_token') and not exam.get('token_verified') %}
-          <button class="button primary wide" type="button" id="open-token-gate">Enter secure exam <span>→</span></button>
-        {% else %}
-          <form method="post" action="{{ url_for('start_exam') }}" data-start-exam><input type="hidden" name="device_fingerprint"><button class="button primary wide" type="submit">Enter secure exam <span>→</span></button></form>
-        {% endif %}
+      {% if exam['status'] == 'created' %}<form method="post" action="{{ url_for('start_exam') }}" data-start-exam><input type="hidden" name="device_fingerprint"><button class="button primary wide" type="submit">Enter secure exam <span>→</span></button></form>
       {% elif exam['status'] == 'active' %}<a class="button primary wide" href="{{ url_for('exam_question', qid=exam['current_qid']) }}">Resume active exam →</a>
       {% elif exam['status'] == 'break' %}<form method="post" action="{{ url_for('resume_exam') }}"><button class="button primary wide">Resume from break →</button></form>
       {% elif exam['status'] == 'completed' %}<a class="button primary wide" href="{{ url_for('results') }}">View completion report →</a>
@@ -24,49 +20,4 @@
   </div>
   <div class="rule-strip entrance delay-3"><div><b>One-way navigation</b><span>Answers lock on submission</span></div><div><b>Break after 3 hours</b><span>Eligible position is securely saved</span></div><div><b>Session monitoring</b><span>Focus and fullscreen events logged</span></div></div>
 </section>
-
-{% if candidate.get('session_token') and not exam.get('token_verified') and exam['status'] == 'created' %}
-{% set flash_msgs = get_flashed_messages(with_categories=true) %}
-<div id="token-gate-overlay" style="display:none;position:fixed;inset:0;z-index:9000;background:rgba(10,12,20,0.82);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:1rem;">
-  <div class="glass-card" style="max-width:420px;width:100%;padding:2.5rem 2rem;text-align:center;animation:fadeInUp .28s ease both;">
-    <div style="font-size:3rem;line-height:1;margin-bottom:1rem;">🔒</div>
-    <h2 style="margin:0 0 .5rem;font-size:1.35rem;">Session Access Required</h2>
-    <p style="color:var(--muted);font-size:.87rem;margin-bottom:1.5rem;line-height:1.55;">A session token has been assigned to your exam. Enter it exactly as issued by your administrator. The five-hour timer will not start until your token is accepted.</p>
-    {% for cat, msg in flash_msgs %}
-    <div class="flash-banner {{ cat }}" style="margin-bottom:1rem;text-align:left;">{{ msg }}</div>
-    {% endfor %}
-    <form method="post" action="{{ url_for('exam_token') }}" style="display:flex;flex-direction:column;gap:.85rem;">
-      <input
-        type="text"
-        name="token"
-        id="token-input"
-        inputmode="numeric"
-        autocomplete="off"
-        spellcheck="false"
-        placeholder="Enter session token"
-        required
-        style="font-size:1.5rem;font-weight:700;letter-spacing:.2em;text-align:center;padding:.8rem 1rem;border-radius:12px;border:2px solid var(--border);background:var(--surface);color:var(--text);width:100%;box-sizing:border-box;"
-      >
-      <button class="button primary" type="submit" style="width:100%;">Unlock &amp; Begin Session <span>→</span></button>
-    </form>
-    <p style="margin-top:1.25rem;font-size:.78rem;color:var(--muted);">Contact your administrator if you have not received a session token.</p>
-  </div>
-</div>
-<script>
-  (function(){
-    var overlay = document.getElementById('token-gate-overlay');
-    var openBtn = document.getElementById('open-token-gate');
-    var hasError = {{ 'true' if flash_msgs else 'false' }};
-    function openGate(){
-      overlay.style.display = 'flex';
-      setTimeout(function(){ var inp = document.getElementById('token-input'); if(inp) inp.focus(); }, 60);
-    }
-    if(openBtn) openBtn.addEventListener('click', openGate);
-    if(hasError) openGate();
-    overlay.addEventListener('click', function(e){ if(e.target === overlay) overlay.style.display = 'none'; });
-  })();
-</script>
-{% else %}
-{% with messages = get_flashed_messages(with_categories=true) %}{% for cat, msg in messages %}<div class="flash-banner {{ cat }}">{{ msg }}</div>{% endfor %}{% endwith %}
-{% endif %}
 {% endblock %}

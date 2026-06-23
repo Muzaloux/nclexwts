@@ -231,6 +231,8 @@ def init_db() -> None:
 
 
 def normalize_question(raw: dict) -> dict:
+    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
     if "stem" in raw:
         return {
             "id": raw["id"],
@@ -246,21 +248,35 @@ def normalize_question(raw: dict) -> dict:
             "answer": raw["correct_answers"],
             "explanation": raw.get("rationale_correct", ""),
         }
-    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    options = [{"letter": letters[i], "text": text} for i, text in enumerate(raw["options"])]
-    answer_text = raw["answer"] if isinstance(raw["answer"], list) else [raw["answer"]]
+
+    # Normalise options — may be plain strings or already {"letter":…,"text":…} dicts
+    raw_opts = raw["options"]
+    if raw_opts and isinstance(raw_opts[0], dict):
+        options = [{"letter": o.get("letter", letters[i]), "text": o["text"]} for i, o in enumerate(raw_opts)]
+    else:
+        options = [{"letter": letters[i], "text": str(text)} for i, text in enumerate(raw_opts)]
+
+    # Normalise answer — may be a letter list ["B"] or text string/list
+    raw_ans = raw["answer"]
+    ans_list = raw_ans if isinstance(raw_ans, list) else [raw_ans]
+    valid_letters = {o["letter"] for o in options}
+    if all(a in valid_letters for a in ans_list):
+        answer = ans_list  # already letter-coded
+    else:
+        answer = [o["letter"] for o in options if o["text"] in ans_list]
+
     return {
         "id": raw["id"],
         "domain": raw.get("domain"),
         "difficulty": raw.get("difficulty"),
         "type": raw.get("type", "single"),
-        "is_sata": isinstance(raw["answer"], list) or raw.get("type", "").upper() == "SATA",
+        "is_sata": raw.get("type", "").upper() == "SATA" or len(answer) > 1,
         "image_prompt": raw.get("image_prompt"),
         "image": raw.get("image"),
         "scenario": raw.get("scenario"),
         "question": raw["question"],
         "options": options,
-        "answer": [o["letter"] for o in options if o["text"] in answer_text],
+        "answer": answer,
         "explanation": raw.get("explanation", ""),
     }
 

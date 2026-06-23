@@ -15,7 +15,7 @@
     <h1>{{ question['question'] }}</h1>
     <form method="post" class="answers-form" data-answer-form>
       <div class="answers-list">{% for option in question['options'] %}{% set correct = option['letter'] in question['answer'] %}{% set chosen = option['letter'] in selected %}<label class="answer-option {% if show_feedback and correct %}correct{% elif show_feedback and chosen %}incorrect{% endif %}">
-        <input type="{{ 'checkbox' if question['is_sata'] else 'radio' }}" name="answer" value="{{ option['letter'] }}" {% if chosen %}checked{% endif %} {% if answer_row %}disabled{% endif %}><span class="answer-letter">{{ option['letter'] }}</span><span>{{ option['text'] }}</span>{% if show_feedback and correct %}<b class="answer-state">Correct</b>{% elif show_feedback and chosen %}<b class="answer-state">Selected</b>{% endif %}
+        <input type="{{ 'checkbox' if question['is_sata'] else 'radio' }}" name="answer" value="{{ option['letter'] }}" {% if chosen %}checked{% endif %} {% if answer_row %}disabled{% endif %}><span>{{ option['text'] }}</span>{% if show_feedback and correct %}<b class="answer-state">Correct</b>{% elif show_feedback and chosen %}<b class="answer-state">Selected</b>{% endif %}
       </label>{% endfor %}</div>
       {% if not answer_row %}<div class="submit-row"><p>Your selection cannot be changed after submission.</p><button class="button primary" type="submit" disabled data-submit-answer>Submit & lock answer →</button></div>{% endif %}
     </form>

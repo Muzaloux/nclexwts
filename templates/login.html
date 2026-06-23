@@ -13,13 +13,9 @@
   </div>
   <form method="post" class="glass-card auth-card exam-login-card entrance delay-1">
     <span class="eyebrow">Candidate login required</span>
-    <h2>Examination sign-in</h2><p class="muted">Enter the exact details from your <b class="record-phrase">issued candidate authorization record</b>.</p>
-    <label>Full legal name<input name="full_name" placeholder="Full name on record" autocomplete="name" required></label>
-    <label>Email address<input type="email" name="email" placeholder="candidate@example.com" autocomplete="email" required></label>
+    <h2>Examination sign-in</h2><p class="muted">Enter your <b class="record-phrase">Registration ID</b> and <b class="record-phrase">ATT Number</b> exactly as issued.</p>
     <label>Registration ID<input name="registration_id" placeholder="Registration ID" autocomplete="off" required></label>
     <label>ATT number<input name="att_number" placeholder="ATT number" autocomplete="off" minlength="8" required></label>
-    <label>Exam type<select name="exam_type" required><option value="">Select exam type</option><option value="RN">RN</option><option value="PN">PN</option></select></label>
-    <label>Phone number<input name="phone" placeholder="Phone number on record" autocomplete="tel" required></label>
     <button class="button primary wide" type="submit">Begin candidate verification <span>→</span></button>
     <p class="exam-disclaimer">Unauthorized access, identity sharing, screen capture, or use of outside resources may invalidate the session.</p>
   </form>

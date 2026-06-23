@@ -405,19 +405,6 @@ def compact(value: str | None) -> str:
     return re.sub(r"[^a-z0-9]+", "", (value or "").strip().lower())
 
 
-def candidate_details_match(candidate, form) -> bool:
-    return all(
-        (
-            candidate["full_name"].strip() == form.get("full_name", "").strip(),
-            candidate["email"].strip().lower() == form.get("email", "").strip().lower(),
-            compact(candidate["registration_id"]) == compact(form.get("registration_id")),
-            compact(candidate["att_number"]) == compact(form.get("att_number")),
-            candidate["exam_type"] == form.get("exam_type"),
-            compact(candidate["phone"]) == compact(form.get("phone")),
-        )
-    )
-
-
 @app.context_processor
 def template_context():
     return {"candidate": current_candidate(), "exam": current_exam(), "now_year": utcnow().year}
@@ -426,13 +413,22 @@ def template_context():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        email = request.form.get("email", "").strip().lower()
-        att = request.form.get("att_number", "").strip().upper()
+        reg = compact(request.form.get("registration_id", ""))
+        att = compact(request.form.get("att_number", ""))
         with db() as connection:
             candidate = connection.execute(
-                "SELECT * FROM candidates WHERE email=? AND att_number=?", (email, att)
+                "SELECT * FROM candidates WHERE att_number=? AND registration_id=?",
+                (att.upper(), reg.upper()),
             ).fetchone()
-        if candidate and candidate_details_match(candidate, request.form):
+        if not candidate:
+            # Fallback: compare normalised values in Python to tolerate case/spacing
+            with db() as connection:
+                rows = connection.execute("SELECT * FROM candidates").fetchall()
+            candidate = next(
+                (r for r in rows if compact(r["att_number"]) == att and compact(r["registration_id"]) == reg),
+                None,
+            )
+        if candidate:
             session.clear()
             session.permanent = True
             session["candidate_id"] = candidate["id"]
@@ -441,7 +437,7 @@ def login():
                 connection.execute("UPDATE candidates SET last_login_at=? WHERE id=?", (iso(), candidate["id"]))
             log_event("login", "Candidate identity verified")
             return post_login_destination()
-        flash("No issued candidate record matches those examination details.", "error")
+        flash("No candidate record matches those credentials.", "error")
     return render_template("login.html")
 
 

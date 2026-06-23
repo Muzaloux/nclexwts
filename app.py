@@ -610,8 +610,9 @@ def exam_token():
                 connection.execute("UPDATE exam_sessions SET token_verified=1 WHERE id=?", (exam["id"],))
             log_event("token_verified", "Session token accepted")
             return redirect(url_for("dashboard"))
-        flash("Incorrect session token. Please contact your administrator.", "error")
-    return render_template("token.html")
+        flash("Incorrect session token. Contact your administrator.", "error")
+        return redirect(url_for("dashboard"))
+    return redirect(url_for("dashboard"))
 
 
 @app.post("/exam/start")

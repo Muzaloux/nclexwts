@@ -7,12 +7,13 @@ import json
 import os
 import re
 import secrets
-import sqlite3
 import uuid
 from datetime import datetime, timedelta, timezone
 from functools import wraps
 from pathlib import Path
 
+import psycopg2
+import psycopg2.extras
 from flask import (
     Flask,
     Response,
@@ -25,11 +26,10 @@ from flask import (
     session,
     url_for,
 )
-from werkzeug.security import check_password_hash, generate_password_hash
+from werkzeug.security import generate_password_hash
 
 
 BASE_DIR = Path(__file__).resolve().parent
-DB_FILE = Path(os.getenv("DB_PATH", str(BASE_DIR / "nclex_exam.db")))
 LEGACY_ACCOUNTS_FILE = BASE_DIR / "local_accounts.json"
 
 app = Flask(__name__)
@@ -75,76 +75,103 @@ def parse_dt(value: str | None) -> datetime | None:
     return datetime.fromisoformat(value) if value else None
 
 
-def db() -> sqlite3.Connection:
-    connection = sqlite3.connect(DB_FILE, timeout=10)
-    connection.row_factory = sqlite3.Row
-    connection.execute("PRAGMA foreign_keys = ON")
-    return connection
+# ---------------------------------------------------------------------------
+# Database — PostgreSQL via psycopg2
+# ---------------------------------------------------------------------------
+
+class _PGConn:
+    """Thin wrapper that gives psycopg2 the same connection.execute() interface
+    used throughout the app (originally written against sqlite3)."""
+
+    def __init__(self) -> None:
+        self._conn = psycopg2.connect(
+            os.environ["DATABASE_URL"],
+            cursor_factory=psycopg2.extras.RealDictCursor,
+        )
+
+    def execute(self, sql: str, params=()):
+        # sqlite3 uses ? placeholders; psycopg2 uses %s
+        sql = sql.replace("?", "%s")
+        cur = self._conn.cursor()
+        cur.execute(sql, params if params else None)
+        return cur
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, *_):
+        if exc_type:
+            self._conn.rollback()
+        else:
+            self._conn.commit()
+        self._conn.close()
+
+
+def db() -> _PGConn:
+    return _PGConn()
 
 
 def init_db() -> None:
-    schema = """
-    CREATE TABLE IF NOT EXISTS candidates (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        full_name TEXT NOT NULL,
-        email TEXT NOT NULL COLLATE NOCASE,
-        password_hash TEXT,
-        registration_id TEXT NOT NULL,
-        att_number TEXT NOT NULL COLLATE NOCASE,
-        exam_type TEXT NOT NULL CHECK(exam_type IN ('RN','PN')),
-        phone TEXT NOT NULL,
-        plan TEXT NOT NULL,
-        last_login_at TEXT,
-        created_at TEXT NOT NULL,
-        UNIQUE(email, att_number)
-    );
-    CREATE TABLE IF NOT EXISTS exam_sessions (
-        id TEXT PRIMARY KEY,
-        candidate_id INTEGER NOT NULL REFERENCES candidates(id),
-        device_hash TEXT,
-        status TEXT NOT NULL DEFAULT 'created',
-        agreement_accepted_at TEXT,
-        orientation_complete INTEGER NOT NULL DEFAULT 0,
-        started_at TEXT,
-        expires_at TEXT,
-        break_started_at TEXT,
-        break_seconds INTEGER NOT NULL DEFAULT 0,
-        current_qid INTEGER NOT NULL DEFAULT 1,
-        completed_at TEXT,
-        invalidated_at TEXT,
-        score REAL,
-        created_at TEXT NOT NULL
-    );
-    CREATE TABLE IF NOT EXISTS answers (
-        session_id TEXT NOT NULL REFERENCES exam_sessions(id) ON DELETE CASCADE,
-        qid INTEGER NOT NULL,
-        answer_json TEXT NOT NULL,
-        is_correct INTEGER NOT NULL,
-        answered_at TEXT NOT NULL,
-        PRIMARY KEY(session_id, qid)
-    );
-    CREATE TABLE IF NOT EXISTS activity_log (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        session_id TEXT,
-        candidate_id INTEGER,
-        event TEXT NOT NULL,
-        details TEXT,
-        ip_hash TEXT,
-        created_at TEXT NOT NULL
-    );
-    CREATE TABLE IF NOT EXISTS settings (
-        key TEXT PRIMARY KEY,
-        value TEXT NOT NULL
-    );
-    INSERT OR IGNORE INTO settings(key, value) VALUES ('show_answers_immediately', '0');
-    """
+    schema_statements = [
+        """CREATE TABLE IF NOT EXISTS candidates (
+            id SERIAL PRIMARY KEY,
+            full_name TEXT NOT NULL,
+            email TEXT NOT NULL,
+            password_hash TEXT,
+            registration_id TEXT NOT NULL,
+            att_number TEXT NOT NULL,
+            exam_type TEXT NOT NULL CHECK(exam_type IN ('RN','PN')),
+            phone TEXT NOT NULL,
+            plan TEXT NOT NULL,
+            last_login_at TEXT,
+            created_at TEXT NOT NULL,
+            UNIQUE(email, att_number)
+        )""",
+        """CREATE TABLE IF NOT EXISTS exam_sessions (
+            id TEXT PRIMARY KEY,
+            candidate_id INTEGER NOT NULL REFERENCES candidates(id),
+            device_hash TEXT,
+            status TEXT NOT NULL DEFAULT 'created',
+            agreement_accepted_at TEXT,
+            orientation_complete INTEGER NOT NULL DEFAULT 0,
+            started_at TEXT,
+            expires_at TEXT,
+            break_started_at TEXT,
+            break_seconds INTEGER NOT NULL DEFAULT 0,
+            current_qid INTEGER NOT NULL DEFAULT 1,
+            completed_at TEXT,
+            invalidated_at TEXT,
+            score REAL,
+            created_at TEXT NOT NULL
+        )""",
+        """CREATE TABLE IF NOT EXISTS answers (
+            session_id TEXT NOT NULL REFERENCES exam_sessions(id) ON DELETE CASCADE,
+            qid INTEGER NOT NULL,
+            answer_json TEXT NOT NULL,
+            is_correct INTEGER NOT NULL,
+            answered_at TEXT NOT NULL,
+            PRIMARY KEY(session_id, qid)
+        )""",
+        """CREATE TABLE IF NOT EXISTS activity_log (
+            id SERIAL PRIMARY KEY,
+            session_id TEXT,
+            candidate_id INTEGER,
+            event TEXT NOT NULL,
+            details TEXT,
+            ip_hash TEXT,
+            created_at TEXT NOT NULL
+        )""",
+        """CREATE TABLE IF NOT EXISTS settings (
+            key TEXT PRIMARY KEY,
+            value TEXT NOT NULL
+        )""",
+        "INSERT INTO settings(key,value) VALUES ('show_answers_immediately','0') ON CONFLICT DO NOTHING",
+    ]
     with db() as connection:
-        connection.executescript(schema)
-        candidate_columns = {row["name"] for row in connection.execute("PRAGMA table_info(candidates)").fetchall()}
-        if "password_hash" not in candidate_columns:
-            connection.execute("ALTER TABLE candidates ADD COLUMN password_hash TEXT")
-        if "last_login_at" not in candidate_columns:
-            connection.execute("ALTER TABLE candidates ADD COLUMN last_login_at TEXT")
+        for stmt in schema_statements:
+            connection.execute(stmt)
+
+        # Migrate legacy JSON accounts if the file exists locally
         if LEGACY_ACCOUNTS_FILE.exists():
             try:
                 legacy = json.loads(LEGACY_ACCOUNTS_FILE.read_text(encoding="utf-8"))
@@ -155,9 +182,10 @@ def init_db() -> None:
                 att = account.get("att_number", "").strip().upper()
                 if email and att:
                     connection.execute(
-                        """INSERT OR IGNORE INTO candidates
+                        """INSERT INTO candidates
                            (full_name,email,registration_id,att_number,exam_type,phone,plan,created_at)
-                           VALUES (?,?,?,?,?,?,?,?)""",
+                           VALUES (?,?,?,?,?,?,?,?)
+                           ON CONFLICT DO NOTHING""",
                         (
                             account.get("candidate_name") or "Legacy Candidate",
                             email,
@@ -415,10 +443,11 @@ def register():
                 with db() as connection:
                     cursor = connection.execute(
                         """INSERT INTO candidates(full_name,email,password_hash,registration_id,att_number,exam_type,phone,plan,created_at)
-                           VALUES(?,?,?,?,?,?,?,?,?)""", values
+                           VALUES(?,?,?,?,?,?,?,?,?) RETURNING id""",
+                        values,
                     )
-                    candidate_id = cursor.lastrowid
-            except sqlite3.IntegrityError:
+                    candidate_id = cursor.fetchone()["id"]
+            except psycopg2.IntegrityError:
                 with db() as connection:
                     existing = connection.execute(
                         "SELECT * FROM candidates WHERE email=? AND att_number=?",
@@ -817,7 +846,7 @@ def admin_settings():
     value = "1" if request.form.get("show_answers_immediately") == "on" else "0"
     with db() as connection:
         connection.execute(
-            "INSERT INTO settings(key,value) VALUES('show_answers_immediately',?) ON CONFLICT(key) DO UPDATE SET value=excluded.value",
+            "INSERT INTO settings(key,value) VALUES('show_answers_immediately',?) ON CONFLICT(key) DO UPDATE SET value=EXCLUDED.value",
             (value,),
         )
     flash("Answer visibility setting updated.", "success")
@@ -836,14 +865,19 @@ def admin_export():
         ).fetchall()
     output = io.StringIO()
     writer = csv.writer(output)
-    writer.writerow(rows[0].keys() if rows else ["full_name", "email", "registration_id", "att_number", "exam_type", "phone", "session_id", "status", "started_at", "completed_at", "score"])
-    writer.writerows([tuple(row) for row in rows])
+    writer.writerow(["full_name", "email", "registration_id", "att_number", "exam_type", "phone", "session_id", "status", "started_at", "completed_at", "score"])
+    writer.writerows([tuple(row.values()) for row in rows])
     return Response(output.getvalue(), mimetype="text/csv", headers={"Content-Disposition": "attachment; filename=nclex-results.csv"})
 
 
 @app.route("/health")
 def health():
-    return jsonify(status="ok", database=DB_FILE.exists())
+    try:
+        with db() as connection:
+            connection.execute("SELECT 1")
+        return jsonify(status="ok", database=True)
+    except Exception:
+        return jsonify(status="error", database=False), 500
 
 
 init_db()

@@ -923,6 +923,38 @@ def admin_set_token(candidate_id):
     return redirect(url_for("admin_dashboard"))
 
 
+@app.post("/admin/candidates/create")
+@admin_required
+def admin_create_candidate():
+    full_name = request.form.get("full_name", "").strip()
+    registration_id = request.form.get("registration_id", "").strip().upper()
+    att_number = request.form.get("att_number", "").strip().upper()
+    exam_type = request.form.get("exam_type", "RN")
+    plan = request.form.get("plan", "type_one")
+    session_token = request.form.get("session_token", "").strip() or None
+    if not full_name or not registration_id or not att_number:
+        flash("Full name, Registration ID, and ATT Number are required.", "error")
+        return redirect(url_for("admin_dashboard"))
+    if exam_type not in {"RN", "CNA", "LPN"}:
+        flash("Invalid exam type.", "error")
+        return redirect(url_for("admin_dashboard"))
+    try:
+        with db() as connection:
+            cur = connection.execute(
+                """INSERT INTO candidates
+                   (full_name,email,registration_id,att_number,exam_type,phone,plan,session_token,created_at)
+                   VALUES (?,?,?,?,?,?,?,?,?)
+                   RETURNING id""",
+                (full_name, f"{att_number.lower()}@exam.local", registration_id,
+                 att_number, exam_type, "Not provided", plan, session_token, iso()),
+            )
+            candidate_id = cur.fetchone()["id"]
+        flash(f"Candidate '{full_name}' created successfully (ID #{candidate_id}).", "success")
+    except Exception as e:
+        flash(f"Could not create candidate: {e}", "error")
+    return redirect(url_for("admin_dashboard"))
+
+
 @app.post("/admin/settings")
 @admin_required
 def admin_settings():

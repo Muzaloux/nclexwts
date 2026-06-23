@@ -1,8 +1,91 @@
 {% extends 'base.html' %}{% block title %}Administration · NCLEX Secure{% endblock %}
 {% block top_actions %}<a class="button compact ghost" href="{{ url_for('admin_export') }}">Export CSV</a><a class="text-link" href="{{ url_for('logout') }}">Sign out</a>{% endblock %}
-{% block content %}<section class="admin-shell"><div class="dashboard-welcome"><div><span class="eyebrow">Operations console</span><h1>Exam administration</h1><p>Candidate records, live sessions, completion analytics, and security activity.</p></div></div>
+{% block content %}
+{% with messages = get_flashed_messages(with_categories=true) %}{% for cat, msg in messages %}<div class="flash-banner {{ cat }}">{{ msg }}</div>{% endfor %}{% endwith %}
+<section class="admin-shell">
+<div class="dashboard-welcome"><div><span class="eyebrow">Operations console</span><h1>Exam administration</h1><p>Manage candidates, assign session tokens, monitor live sessions.</p></div></div>
 <div class="metric-grid admin-metrics"><div><strong>{{ candidates|length }}</strong><span>Candidates</span></div><div><strong>{{ sessions|selectattr('status','equalto','active')|list|length }}</strong><span>Active now</span></div><div><strong>{{ sessions|selectattr('status','equalto','completed')|list|length }}</strong><span>Completed</span></div><div><strong>{{ average }}%</strong><span>Average score</span></div></div>
-<form method="post" action="{{ url_for('admin_settings') }}" class="glass-card setting-row"><div><b>Show Answers Immediately</b><span>Learning Mode displays rationale after each answer. OFF preserves Exam Mode.</span></div><label class="switch"><input type="checkbox" name="show_answers_immediately" {% if learning_mode %}checked{% endif %} onchange="this.form.submit()"><i></i></label></form>
-<article class="glass-card table-card" style="margin-bottom:1.5rem;"><div class="card-label">Candidates &amp; session tokens</div><div class="table-wrap"><table><thead><tr><th>Name</th><th>Email</th><th>ATT</th><th>Type</th><th>Session token</th><th>Action</th></tr></thead><tbody>{% for c in candidates %}<tr><td><b>{{ c['full_name'] }}</b></td><td><small>{{ c['email'] }}</small></td><td><small>{{ c['att_number'] }}</small></td><td>{{ c['exam_type'] }}</td><td><code style="font-size:.85rem;">{{ c['session_token'] or '—' }}</code></td><td><form method="post" action="{{ url_for('admin_set_token', candidate_id=c['id']) }}" style="display:flex;gap:.4rem;align-items:center;"><input type="text" name="session_token" value="{{ c['session_token'] or '' }}" placeholder="Set token…" style="width:120px;font-size:.8rem;padding:.3rem .5rem;border-radius:6px;border:1px solid var(--border);background:var(--surface);color:var(--text);"><button class="button compact" type="submit">Save</button></form></td></tr>{% endfor %}</tbody></table></div></article>
-<div class="admin-grid"><article class="glass-card table-card"><div class="card-label">Session monitoring</div><div class="table-wrap"><table><thead><tr><th>Candidate</th><th>Status</th><th>Progress</th><th>Score</th><th>Started</th></tr></thead><tbody>{% for row in sessions %}<tr><td><b>{{ row['full_name'] }}</b><small>{{ row['registration_id'] }} · {{ row['exam_type'] }}</small></td><td><span class="status-badge {{ row['status'] }}">{{ row['status'] }}</span></td><td>{{ row['answered'] }}</td><td>{{ row['score'] if row['score'] is not none else '—' }}</td><td>{{ row['started_at'][:16]|replace('T',' ') if row['started_at'] else 'Not started' }}</td></tr>{% endfor %}</tbody></table></div></article>
-<aside class="glass-card activity-card"><div class="card-label">Recent activity</div>{% for row in activities %}<div class="activity-item"><i class="{{ 'alert' if row['event'] in ['tab_hidden','fullscreen_exit','browser_exit'] else '' }}"></i><div><b>{{ row['event']|replace('_',' ')|title }}</b><span>{{ row['full_name'] or 'System' }}</span><small>{{ row['created_at'][:16]|replace('T',' ') }}</small></div></div>{% else %}<p class="muted">No activity yet.</p>{% endfor %}</aside></div></section>{% endblock %}
+
+<!-- ============================================================
+     SESSION TOKEN CONTROL — assign access codes to candidates
+     ============================================================ -->
+<div class="glass-card" style="border:2px solid #f59e0b;background:rgba(245,158,11,.05);margin-bottom:1.5rem;">
+  <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem;">
+    <span style="font-size:1.6rem;line-height:1;">🔑</span>
+    <div>
+      <div style="font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#f59e0b;">Security control</div>
+      <h2 style="margin:0;font-size:1.15rem;">Session Token Assignment</h2>
+    </div>
+    <span style="margin-left:auto;font-size:.75rem;color:var(--muted);max-width:280px;text-align:right;line-height:1.4;">Candidates <b>cannot access any exam questions</b> until the correct token is entered. Leave blank to grant open access.</span>
+  </div>
+  {% if candidates %}
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Candidate</th><th>Reg ID</th><th>ATT Number</th><th>Type</th><th style="min-width:160px;">Current Token</th><th style="min-width:200px;">Set / Change Token</th></tr></thead>
+      <tbody>
+      {% for c in candidates %}
+      <tr>
+        <td><b>{{ c['full_name'] }}</b></td>
+        <td><code style="font-size:.82rem;">{{ c['registration_id'] }}</code></td>
+        <td><code style="font-size:.82rem;">{{ c['att_number'] }}</code></td>
+        <td><span style="font-size:.75rem;font-weight:700;">{{ c['exam_type'] }}</span></td>
+        <td>
+          {% if c['session_token'] %}
+          <span style="display:inline-flex;align-items:center;gap:.4rem;background:rgba(245,158,11,.15);border:1px solid #f59e0b;border-radius:8px;padding:.3rem .65rem;font-weight:800;letter-spacing:.1em;font-size:.9rem;color:#f59e0b;">🔒 {{ c['session_token'] }}</span>
+          {% else %}
+          <span style="color:var(--muted);font-size:.82rem;">— open access</span>
+          {% endif %}
+        </td>
+        <td>
+          <form method="post" action="{{ url_for('admin_set_token', candidate_id=c['id']) }}" style="display:flex;gap:.4rem;align-items:center;">
+            <input type="text" name="session_token" value="{{ c['session_token'] or '' }}" placeholder="Enter token code…" style="flex:1;min-width:110px;font-size:.88rem;font-weight:600;padding:.38rem .6rem;border-radius:8px;border:1.5px solid var(--border);background:var(--surface);color:var(--text);">
+            <button class="button compact" type="submit" style="white-space:nowrap;">Save →</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <p style="color:var(--muted);font-size:.88rem;">No candidates yet. Add one below.</p>
+  {% endif %}
+</div>
+
+<!-- ============================================================
+     ADD NEW CANDIDATE
+     ============================================================ -->
+<details class="glass-card" style="margin-bottom:1.5rem;">
+  <summary style="cursor:pointer;list-style:none;display:flex;align-items:center;gap:.6rem;font-weight:700;font-size:.95rem;">
+    <span style="font-size:1.2rem;">➕</span> Add new candidate
+    <span style="margin-left:auto;font-size:.75rem;color:var(--muted);font-weight:400;">Click to expand</span>
+  </summary>
+  <form method="post" action="{{ url_for('admin_create_candidate') }}" style="display:grid;grid-template-columns:1fr 1fr;gap:.85rem 1rem;margin-top:1.25rem;">
+    <label style="display:flex;flex-direction:column;gap:.3rem;font-size:.8rem;font-weight:700;color:var(--muted);">Full name<input type="text" name="full_name" placeholder="Samantha …" required style="margin-top:.2rem;padding:.45rem .65rem;border-radius:8px;border:1.5px solid var(--border);background:var(--surface);color:var(--text);font-size:.92rem;font-weight:500;"></label>
+    <label style="display:flex;flex-direction:column;gap:.3rem;font-size:.8rem;font-weight:700;color:var(--muted);">Registration ID<input type="text" name="registration_id" placeholder="25736122" required style="margin-top:.2rem;padding:.45rem .65rem;border-radius:8px;border:1.5px solid var(--border);background:var(--surface);color:var(--text);font-size:.92rem;font-weight:500;"></label>
+    <label style="display:flex;flex-direction:column;gap:.3rem;font-size:.8rem;font-weight:700;color:var(--muted);">ATT Number<input type="text" name="att_number" placeholder="V9276630" required style="margin-top:.2rem;padding:.45rem .65rem;border-radius:8px;border:1.5px solid var(--border);background:var(--surface);color:var(--text);font-size:.92rem;font-weight:500;"></label>
+    <label style="display:flex;flex-direction:column;gap:.3rem;font-size:.8rem;font-weight:700;color:var(--muted);">Session token (optional)<input type="text" name="session_token" placeholder="55236811" style="margin-top:.2rem;padding:.45rem .65rem;border-radius:8px;border:1.5px solid var(--border);background:var(--surface);color:var(--text);font-size:.92rem;font-weight:500;"></label>
+    <label style="display:flex;flex-direction:column;gap:.3rem;font-size:.8rem;font-weight:700;color:var(--muted);">Exam type
+      <select name="exam_type" style="margin-top:.2rem;padding:.45rem .65rem;border-radius:8px;border:1.5px solid var(--border);background:var(--surface);color:var(--text);font-size:.92rem;">
+        <option value="RN">RN</option><option value="CNA">CNA</option><option value="LPN">LPN</option>
+      </select>
+    </label>
+    <label style="display:flex;flex-direction:column;gap:.3rem;font-size:.8rem;font-weight:700;color:var(--muted);">Question plan
+      <select name="plan" style="margin-top:.2rem;padding:.45rem .65rem;border-radius:8px;border:1.5px solid var(--border);background:var(--surface);color:var(--text);font-size:.92rem;">
+        <option value="type_one">NCLEX Sequential Exam</option>
+      </select>
+    </label>
+    <div style="grid-column:1/-1;display:flex;justify-content:flex-end;margin-top:.25rem;">
+      <button class="button primary" type="submit">Create candidate →</button>
+    </div>
+  </form>
+</details>
+
+<form method="post" action="{{ url_for('admin_settings') }}" class="glass-card setting-row" style="margin-bottom:1.5rem;"><div><b>Show Answers Immediately</b><span>Learning Mode displays rationale after each answer. OFF preserves Exam Mode.</span></div><label class="switch"><input type="checkbox" name="show_answers_immediately" {% if learning_mode %}checked{% endif %} onchange="this.form.submit()"><i></i></label></form>
+
+<div class="admin-grid">
+<article class="glass-card table-card"><div class="card-label">Session monitoring</div><div class="table-wrap"><table><thead><tr><th>Candidate</th><th>Status</th><th>Token</th><th>Progress</th><th>Score</th><th>Started</th></tr></thead><tbody>{% for row in sessions %}<tr><td><b>{{ row['full_name'] }}</b><small>{{ row['registration_id'] }} · {{ row['exam_type'] }}</small></td><td><span class="status-badge {{ row['status'] }}">{{ row['status'] }}</span></td><td>{% if row['token_verified'] %}<span style="font-size:.75rem;color:#22c55e;font-weight:700;">✓ verified</span>{% else %}<span style="font-size:.75rem;color:#f59e0b;font-weight:700;">⏳ pending</span>{% endif %}</td><td>{{ row['answered'] }}</td><td>{{ row['score'] if row['score'] is not none else '—' }}</td><td>{{ row['started_at'][:16]|replace('T',' ') if row['started_at'] else 'Not started' }}</td></tr>{% endfor %}</tbody></table></div></article>
+<aside class="glass-card activity-card"><div class="card-label">Recent activity</div>{% for row in activities %}<div class="activity-item"><i class="{{ 'alert' if row['event'] in ['tab_hidden','fullscreen_exit','browser_exit'] else '' }}"></i><div><b>{{ row['event']|replace('_',' ')|title }}</b><span>{{ row['full_name'] or 'System' }}</span><small>{{ row['created_at'][:16]|replace('T',' ') }}</small></div></div>{% else %}<p class="muted">No activity yet.</p>{% endfor %}</aside>
+</div>
+</section>
+{% endblock %}
